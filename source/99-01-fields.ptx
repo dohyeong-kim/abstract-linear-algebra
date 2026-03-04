@@ -6,14 +6,14 @@
     <p>
       선형대수학에서 벡터 공간을 정의할 때, 우리는 스칼라라고 
       <aside><p>스칼라:scalar</p></aside>
-      불리는 원소들을 사용하여 벡터의 길이를 늘이거나 줄입니다. 앞선 강의에서 스칼라의 집합으로 실수 집합 <m>\mathbb{R}</m>이나 복소수 집합 <m>\mathbb{C}</m>를 주로 언급했지만, 수학적으로 <q>스칼라</q>의 역할을 수행하기 위해서는 덧셈, 뺄셈, 곱셈, 그리고 0이 아닌 수로 나누는 나눗셈이 자유롭게 가능해야 합니다. 이러한 네 가지 사칙연산이 완벽하게 정의되고 우리가 익숙한 대수적 법칙들을 만족하는 수학적 구조를 추상화하여 <em>체</em>라고 부릅니다. 
+      불리는 원소들을 사용하여 벡터의 길이를 늘이거나 줄입니다. 앞선 강의에서 스칼라의 집합으로 실수 집합 <m>\mathbb{R}</m>이나 복소수 집합 <m>\mathbb{C}</m>를 주로 언급했지만, 수학적으로 <q>스칼라</q>의 역할을 수행하기 위해서는 덧셈, 뺄셈, 곱셈, 그리고 0이 아닌 수로 나누는 나눗셈이 자유롭게 가능해야 합니다. 이러한 네 가지 사칙연산이 완벽하게 정의되고 우리가 익숙한 대수적 법칙들을 만족하는 수학적 구조를 추상화하여 체라고 부를 것입니다. 
       <aside><p>체:field</p></aside>
       선형대수학의 정리 대부분은 스칼라가 어떤 체에서 왔는지에 상관없이 보편적으로 성립하며, 일부 정리는 그 성립가능성이나 참거짓 여부가 체의 특성에 의존하기도 합니다.
     </p>
   </introduction>
   <definition xml:id="def-field">
     <title>체</title>
-    <p>집합 <m>\mathbb{F}</m>에 두 개의 이항 연산인 덧셈(<m>+</m>)과 곱셈(<m>\cdot</m>)이 정의되어 있고, 임의의 <m>a, b, c \in \mathbb{F}</m>에 대하여 다음의 공리들을 만족할 때, (<m>\mathbb{F}, +, \cdot</m>)를 체(Field)라고 한다.</p>
+    <p>집합 <m>\mathbb{F}</m>에 두 개의 이항 연산인 덧셈(<m>+</m>)과 곱셈(<m>\cdot</m>)이 정의되어 있고, 임의의 <m>a, b, c \in \mathbb{F}</m>에 대하여 다음의 공리들을 만족할 때, (<m>\mathbb{F}, +, \cdot</m>)를 <term>체</term>라고 한다.</p>
     <ol>
       <li>덧셈에 대한 공리:
         <aside>
@@ -42,7 +42,12 @@
       <li>분배법칙 (덧셈과 곱셈의 연결): <m>a(b + c) = ab + ac</m></li>
     </ol>
   </definition>
-
+  <remark xml:id="rmk-zere-one-in-a-field">
+    <title>체의 0과 1</title>
+    <p>
+      체의 공리에 <m>0 \neq 1</m>이 포함되어 있습니다.
+    </p>
+  </remark>
   <example xml:id="ex-fields-basic-examples">
     <title>체의 기초적 예시</title>
     <ol>
@@ -62,8 +67,11 @@
   </example>
 
   <example xml:id="ex-fields-finite">
-    <title>유한체 (Finite Fields)</title>
-    <p>체는 반드시 무한히 많은 원소를 가질 필요는 없습니다. 소수(Prime number) <m>p</m>에 대하여 정수를 <m>p</m>로 나눈 나머지들의 집합 <m>\mathbb{Z}/p\mathbb{Z}</m> (또는 <m>\mathbb{F}_p</m>로 표기)는 모듈로 <m>p</m> 덧셈과 곱셈에 대하여 체를 이룹니다.</p>
+    <title>유한체</title>
+    <aside>
+      <p>유한체:finite fields</p>
+    </aside>
+    <p>체는 반드시 무한히 많은 원소를 가질 필요는 없습니다. 소수 <m>p</m>에 대하여 정수를 <m>p</m>로 나눈<aside><p>소수:prime numbers</p></aside> 나머지들의 집합 <m>\mathbb{Z}/p\mathbb{Z}</m> (또는 <m>\mathbb{F}_p</m>로 표기)는 모듈로 <m>p</m> 덧셈과 곱셈에 대하여 체를 이룹니다.</p>
     <p>예를 들어 <m>\mathbb{F}_2 = \{0, 1\}</m>에서 <m>1+1=0</m>이며, 이는 컴퓨터 과학과 부호 이론(Coding Theory)에서 가장 핵심적인 역할을 하는 체입니다.</p>
   </example>
 
