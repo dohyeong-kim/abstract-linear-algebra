@@ -13,7 +13,7 @@
     <definition xml:id="def-multilinear">
       <title>다중선형함수</title>
       <statement>
-        <p>체 <m>\mathbb{F}</m> 상의 <m>n</m>개의 벡터공간 <m>V_1, V_2, \dots, V_n</m>과 공역 벡터공간 <m>W</m>에 대하여, 함수 <m>D: V_1 \times V_2 \times \dots \times V_n \to W</m>가 각 변수에 대하여 선형성을 만족할 때, 이를 <term>다중선형함수</term>라고 합니다. <aside><p>다중선형함수:multilinear function</p></aside> 즉, 임의의 <m>1 \le i \le n</m>과 스칼라 <m>c \in \mathbb{F}</m>, 벡터 <m>v_i, u_i \in V_i</m>에 대하여 (나머지 변수들은 고정된 상태에서) 다음이 성립합니다.
+        <p>체 <m>\mathbb{F}</m> 상의 <m>n</m>개의 벡터공간 <m>V_1, V_2, \dots, V_n</m>과 공역 벡터공간 <m>W</m>에 대하여, 함수 <m>D: V_1 \times V_2 \times \dots \times V_n \to W</m>가 각 변수에 대하여 선형성을 만족할 때, 이를 <term>다중선형함수</term><idx><h>다중선형함수</h></idx>라고 합니다. <aside><p>다중선형함수:multilinear function</p></aside> 즉, 임의의 <m>1 \le i \le n</m>과 스칼라 <m>c \in \mathbb{F}</m>, 벡터 <m>v_i, u_i \in V_i</m>에 대하여 (나머지 변수들은 고정된 상태에서) 다음이 성립합니다.
         <me>D(v_1, \dots, v_{i-1}, cv_i + u_i, v_{i+1}, \dots, v_n) = cD(v_1, \dots, v_{i-1}, v_i, v_{i+1}, \dots, v_n) + D(v_1, \dots, v_{i-1}, u_i, v_{i+1}, \dots, v_n)</me>
         </p>
       </statement>
@@ -29,7 +29,7 @@
     <definition xml:id="def-alternating">
       <title>교대형식</title>
       <statement>
-        <p>체 <m>\mathbb{F}</m>로 매핑되는 다중선형함수 <m>D: V \times \dots \times V \to \mathbb{F}</m>에 대하여, 인접한 두 인수가 같을 때 함수의 값이 항등적으로 0이 되면, 즉 임의의 <m>i</m>에 대하여 <m>v_i = v_{i+1}</m>일 때 <m>D(v_1, \dots, v_n) = 0</m>이면, <m>D</m>를 <term>교대형식</term>이라고 합니다.</p>
+        <p>체 <m>\mathbb{F}</m>로 매핑되는 다중선형함수 <m>D: V \times \dots \times V \to \mathbb{F}</m>에 대하여, 인접한 두 인수가 같을 때 함수의 값이 항등적으로 0이 되면, 즉 임의의 <m>i</m>에 대하여 <m>v_i = v_{i+1}</m>일 때 <m>D(v_1, \dots, v_n) = 0</m>이면, <m>D</m>를 <term>교대형식</term><idx><h>교대형식</h></idx>이라고 합니다.</p>
         <aside><p>교대형식: alternating form</p></aside>
       </statement>
     </definition>
@@ -68,9 +68,13 @@
       행렬식은 <m>n \times n</m> 행렬의 열벡터들을 입력으로 받아 스칼라를 출력하는 교대형식입니다. 행렬식의 기초적 성질을 유도하기 위해 필요한 치환에 관련된 사실들은 부록을 참조하십시오.
     </p>
     <theorem xml:id="thm-det-existence">
+      <idx><h>행렬식</h><h>~의 존재성과 유일성</h></idx>
       <title>행렬식의 존재성과 유일성</title>
       <statement>
         <p><m>n \times n</m> 행렬의 각 열벡터를 변수로 받는 함수 <m>D: \mathbb{F}^n \times \dots \times \mathbb{F}^n \to \mathbb{F}</m> 중에서 다음 세 가지 성질을 모두 만족하는 함수는 유일하게 존재한다.</p>
+        <idx><h>행렬식</h><h>~의 교대성</h></idx>
+        <idx><h>행렬식</h><h>~의 정규화</h></idx>
+        <idx><h>행렬식</h><h>~의 다중선형성</h></idx>
         <ul>
           <li><p><term>다중선형성</term>: 각 열벡터에 대하여 선형이다.</p></li>
           <li><p><term>교대성</term>: 인접한 두 열벡터가 같으면 값은 0이다.</p></li>
@@ -78,7 +82,7 @@
         </ul>
       </statement>
       <proof>
-        <p><term>유일성</term>: 함수 <m>D</m>가 위 세 성질을 만족한다고 가정하자. 행렬 <m>A</m>의 <m>j</m>번째 열벡터를 <m>v_j</m>라 하고, 이를 표준기저들의 선형결합 <m>v_j = \sum_{i=1}^n A_{ij} e_i</m>로 표현하자. 다중선형성을 반복 적용하면 <m>D(A) = D(v_1, \dots, v_n)</m>는 다음과 같이 전개된다.
+        <p><q>유일성</q>: 함수 <m>D</m>가 위 세 성질을 만족한다고 가정하자. 행렬 <m>A</m>의 <m>j</m>번째 열벡터를 <m>v_j</m>라 하고, 이를 표준기저들의 선형결합 <m>v_j = \sum_{i=1}^n A_{ij} e_i</m>로 표현하자. 다중선형성을 반복 적용하면 <m>D(A) = D(v_1, \dots, v_n)</m>는 다음과 같이 전개된다.
         <me>D(A) = \sum_{i_1=1}^n \dots \sum_{i_n=1}^n A_{i_1 1} \dots A_{i_n n} D(e_{i_1}, \dots, e_{i_n})</me>
         교대성(및 반대칭성)에 의해 인덱스 <m>i_1, \dots, i_n</m> 중 중복되는 것이 하나라도 있으면 <m>D(e_{i_1}, \dots, e_{i_n}) = 0</m>이다. 따라서 중복이 없는 경우, 즉 인덱스가 <m>1, \dots, n</m>의 순열 <m>\sigma</m>를 이루는 경우만 남는다.
         <me>D(A) = \sum_{\sigma \in S_n} A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_{\sigma(1)}, \dots, e_{\sigma(n)})</me>
@@ -86,7 +90,7 @@
         <me>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_1, \dots, e_n)</me>
         정규화 조건에 의해 <m>D(e_1, \dots, e_n) = 1</m>이므로, <m>D(A)</m>의 값은 행렬 <m>A</m>의 성분들에 의해 유일하게 결정된다.</p>
 
-        <p><term>존재성</term>: 위 전개 과정에서 유도된 식 <m>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>으로 함수를 정의하면, 이 함수가 다중선형성, 교대성, 정규화를 모두 만족함을 대수적으로 검증할 수 있다. <m>\blacksquare</m></p>
+        <p><q>존재성</q>: 위 전개 과정에서 유도된 식 <m>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>으로 함수를 정의하면, 이 함수가 다중선형성, 교대성, 정규화를 모두 만족함을 대수적으로 검증할 수 있다. <m>\blacksquare</m></p>
       </proof>
     </theorem>
 

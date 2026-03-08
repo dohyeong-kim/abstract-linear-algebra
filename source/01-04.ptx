@@ -6,7 +6,7 @@
   <subsection xml:id="subsec-quotients">
     <title>몫</title>
     <p>
-      <term>몫</term> 또는 <term>몫공간</term>의 개념은 동치관계라는 보다 일반적 개념의 특수한 경우입니다. 동치관계는 집합에 대해 적용되며 그 대상이 꼭 선형공간일 필요는 없습니다.<fn><p>동치관계에 대한 기초적 사실들은 부록 <xref ref="99-03-equivalence"/>을 참조.</p></fn>
+      <term>몫</term><idx><h>몫</h></idx> 또는 <term>몫공간</term><idx><h>몫공간</h></idx>의 개념은 동치관계라는 보다 일반적 개념의 특수한 경우입니다. 동치관계는 집합에 대해 적용되며 그 대상이 꼭 선형공간일 필요는 없습니다.<fn><p>동치관계에 대한 기초적 사실들은 부록 <xref ref="99-03-equivalence"/>을 참조.</p></fn>
     </p>
     <p>
       벡터공간 <m>V</m>에 부분공간 <m>W\subset V</m>가 주어진 경우 다음과 같은 이항관계를 생각해 봅시다.
@@ -35,9 +35,9 @@
       <title>잉여류와 몫공간</title>
       <statement>
         <p>
-          <m>V</m>를 체 <m>F</m> 위에서 정의된 벡터공간이라 하고, <m>W</m>를 <m>V</m>의 부분공간이라 하자. 임의의 <m>v \in V</m>에 대하여 <m>v</m>를 포함하는 <m>W</m>의 <term>잉여류</term>를 다음과 같이 정의한다:<aside><p>잉여류:coset</p></aside>
+          <m>V</m>를 체 <m>F</m> 위에서 정의된 벡터공간이라 하고, <m>W</m>를 <m>V</m>의 부분공간이라 하자. 임의의 <m>v \in V</m>에 대하여 <m>v</m>를 포함하는 <m>W</m>의 <term>잉여류</term><idx><h>잉여류</h></idx>를 다음과 같이 정의한다:<aside><p>잉여류:coset</p></aside>
           <me>v + W = \{ v + w \mid w \in W \}</me>
-          이러한 잉여류들의 집합을 <m>W</m>에 대한 <m>V</m>의 <term>몫공간</term>이라 하고 <m>V/W</m>로 표기한다. 즉, <m>V/W = \{ v + W \mid v \in V \}</m> 이다.<aside><p>몫공간:quotient space</p></aside>
+          이러한 잉여류들의 집합을 <m>W</m>에 대한 <m>V</m>의 <term>몫공간</term><idx><h>몫공간</h></idx>이라 하고 <m>V/W</m>로 표기한다. 즉, <m>V/W = \{ v + W \mid v \in V \}</m> 이다.<aside><p>몫공간:quotient space</p></aside>
         </p>
       </statement>
     </definition>
@@ -78,7 +78,7 @@
     </proposition>
     <remark xml:id="rmk-well-defined">
       <p>
-        분할 또는 동치류가 주어진 경우, 대표원에 의지하여 표현한 무언가가 대표원과 무관한 경우 해당 표현이 <term>잘 정의되었다</term>고 말합니다. <aside><p>잘 정의된:well-defined</p></aside>
+        분할 또는 동치류가 주어진 경우, 대표원에 의지하여 표현한 무언가가 대표원과 무관한 경우 해당 표현이 <term>잘 정의되었다</term><idx><h>잘 정의되었다</h></idx>고 말합니다. <aside><p>잘 정의된:well-defined</p></aside>
       </p>
     </remark>
 
@@ -167,7 +167,7 @@
     <title>코커널</title>
     <statement>
     <p>
-      <m>T: V \to W</m>가 선형변환일 때, <m>T</m>의 <term>코커널</term>은 공역 <m>W</m>를 <m>T</m>의 치역으로 나눈 몫공간으로 정의되며 <m>\text{coker}(T)</m>로 표기합니다.
+      <m>T: V \to W</m>가 선형변환일 때, <m>T</m>의 <term>코커널</term><idx><h>선형변환</h><h>~의 코커널</h></idx><idx><h>코커널</h><h>선형변환의 ~</h></idx><idx><h>cokernel</h></idx>은 공역 <m>W</m>를 <m>T</m>의 치역으로 나눈 몫공간으로 정의되며 <m>\text{coker}(T)</m>로 표기합니다.
       <me>\text{coker}(T) = W / \text{im}(T)</me>
     </p>
     </statement>
@@ -203,7 +203,7 @@
           <title>행렬의 닮음</title>
           <statement>
           <p>
-            <m>n \times n</m> 행렬의 공간 <m>M_{n \times n}(\mathbb{F})</m>에서, 어떤 가역행렬 <m>P</m>가 존재하여 <m>B = P^{-1}AP</m>를 만족할 때 <m>A \sim B</m>라 정의한다. 이를 <term>닮음</term>이라 한다.<aside><p>닮음:similarity</p></aside>
+            <m>n \times n</m> 행렬의 공간 <m>M_{n \times n}(\mathbb{F})</m>에서, 어떤 가역행렬 <m>P</m>가 존재하여 <m>B = P^{-1}AP</m>를 만족할 때 <m>A \sim B</m>라 정의한다. 이를 <term>닮음</term><idx><h>닮음</h></idx>이라 한다.<aside><p>닮음:similarity</p></aside>
           </p>
           </statement>
         </definition>
@@ -266,7 +266,9 @@
         <definition xml:id="def-invariant-subspace">
           <statement>
             <p>
-              <m>\mathbb{F}</m>상의 벡터공간 <m>V</m>와 그 부분공간 <m>W</m>가 주어졌을 때, 임의의 <m>v \in W</m>에 대하여 <m>T(v) \in W</m>가 성립하면, 이때 <m>W</m>를 <term><m>T</m>-불변 부분공간</term>이라고 합니다. <aside><p>불변 부분공간:invariant subspace</p></aside>
+              <m>\mathbb{F}</m>상의 벡터공간 <m>V</m>에 선형변환 <m>T \colon V \to V</m>에 대하여, 어떤 부분공간 <m>W</m>에 대하여 임의의 <m>v \in W</m>가 <m>T(v) \in W</m>를 만족하면,<fn><p>간단히 <m>T(W)\subset W</m>라고도 씁니다.</p></fn> 이때 <m>W</m>를 <term><m>T</m>-불변 부분공간</term><idx><h>불변 부분공간</h></idx>이라고 합니다. 
+              
+              <aside><p>불변 부분공간:invariant subspace</p></aside>
             </p>
           </statement>
         </definition>

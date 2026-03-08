@@ -10,6 +10,7 @@
   
   <theorem xml:id="thm-first-isomorphism">
     <title>제1동형정리</title>
+    <idx><h>동형정리</h><h>제1~</h></idx>
     <statement>
       <p><m>V</m>와 <m>W</m>가 체 <m>\mathbb{F}</m> 위의 벡터공간이고, <m>T: V \to W</m>가 선형변환이라 하자. 사상 <m>\bar{T}: V/\ker(T) \to \text{im}(T)</m>를 임의의 <m>v \in V</m>에 대하여 다음과 같이 정의하자:
       <me>\bar{T}(v + \ker(T)) = T(v)</me>
@@ -39,6 +40,7 @@
   
   <theorem xml:id="thm-second-isomorphism">
     <title>제2동형정리</title>
+    <idx><h>동형정리</h><h>제2~</h></idx>
     <statement>
       <p><m>V</m>가 체 <m>\mathbb{F}</m> 위의 벡터공간이고, <m>U</m>와 <m>W</m>가 <m>V</m>의 부분공간이라 하자. 사상 <m>\Phi: U / (U \cap W) \to (U + W) / W</m> 를 임의의 <m>u \in U</m> 에 대하여 다음과 같이 정의하자:
       <me>\Phi(u + (U \cap W)) = u + W</me>
@@ -66,6 +68,7 @@
   
   <theorem xml:id="thm-third-isomorphism">
     <title>제3동형정리</title>
+    <idx><h>동형정리</h><h>제3~</h></idx>
     <statement>
       <p><m>V</m>가 체 <m>\mathbb{F}</m> 위의 벡터공간이고, <m>U</m>와 <m>W</m>가 <m>U \subseteq W \subseteq V</m> 를 만족하는 부분공간이라 하자. 사상 <m>\Psi: (V / U) / (W / U) \to V / W</m> 를 임의의 <m>v \in V</m> 에 대하여 다음과 같이 정의하자:
       <me>\Psi((v + U) + W / U) = v + W</me>

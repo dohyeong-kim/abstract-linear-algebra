@@ -3,7 +3,7 @@
 <section xml:id="02-01-isomorphisms" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>동형사상</title>
   <p>
-    두 벡터공간이 포함하는 원소의 구체적인 형태와 무관하게, 두 공간 사이를 오가며 덧셈과 스칼라 곱셈의 구조를 보존할 수 있다면 두 공간은 본질적으로 같다고 볼 수 있습니다. 이를 엄밀하게 규정하기 위해 <q>역변환</q>의 개념을 도입합니다. 일반적으로 역이 존재하는 사상을 <term>가역</term>이라고 합니다. <aside><p>가역:invertible</p></aside>
+    두 벡터공간이 포함하는 원소의 구체적인 형태와 무관하게, 두 공간 사이를 오가며 덧셈과 스칼라 곱셈의 구조를 보존할 수 있다면 두 공간은 본질적으로 같다고 볼 수 있습니다. 이를 엄밀하게 규정하기 위해 <q>역변환</q><idx><h>역변환</h></idx>의 개념을 도입합니다. 일반적으로 역이 존재하는 사상을 <term>가역</term><idx><h>가역</h></idx>이라고 합니다. <aside><p>가역:invertible</p></aside>
   </p>
   
   <definition xml:id="def-isomorphism">
@@ -11,16 +11,18 @@
     <statement>
       <p>
         <aside><p>동형사상:isomorphism</p></aside>
-        임의의 체 <m>\mathbb{F}</m> 위에서 정의된 두 벡터공간 <m>V</m>와 <m>W</m>에 대하여, 선형변환 <m>T: V \to W</m>가 가역일 때 <m>T</m>를 <term>동형사상</term>이라 한다. 즉, 다음을 만족하는 선형변환 <m>S: W \to V</m> 가 존재할 때 <m>T</m>를 동형사상이라 정의한다:
+        임의의 체 <m>\mathbb{F}</m> 위에서 정의된 두 벡터공간 <m>V</m>와 <m>W</m>에 대하여, 선형변환 <m>T: V \to W</m>가 가역일 때 <m>T</m>를 <term>동형사상</term><idx><h>동형사상</h></idx><idx><h>동형</h><h>~사상</h></idx>이라 한다. 즉, 다음을 만족하는 선형변환 <m>S: W \to V</m> 가 존재할 때 <m>T</m>를 동형사상이라 정의한다:
         <me>S \circ T = I_V \quad \text{이고} \quad T \circ S = I_W</me>
         (단, <m>I_V</m>와 <m>I_W</m>는 각각 <m>V</m>와 <m>W</m> 상의 항등변환이다.)
       </p>
       <p>
         이때 <m>S</m>를 <m>T</m>의 역변환이라 하고 <m>T^{-1}</m>으로 표기한다.
+        <idx><h>역변환</h><h>정의</h></idx>
       </p>
       <p>
-        동형사상이 존재하는 경우 두 공간 <m>V</m>와 <m>W</m>는 서로 <term>동형</term>이라 하며, <m>V \cong W</m>로 표기한다. <aside><p>동형:isomorphic</p></aside>
+        동형사상이 존재하는 경우 두 공간 <m>V</m>와 <m>W</m>는 서로 <term>동형</term><idx><h>동형</h><h>~공간</h></idx>이라 하며, <m>V \cong W</m>로 표기한다. <aside><p>동형:isomorphic</p></aside>
         동형사상을 명시할 때에는 <m>T \colon V \xrightarrow{\sim}W</m>로 표기한다.
+        <idx><h>isomorphic</h></idx>
       </p>
     </statement>
   </definition>
@@ -113,7 +115,7 @@
       <title>직합</title>
       <statement>
       <p>
-        벡터공간 <m>V</m>의 두 부분공간 <m>U, W</m>에 대하여, <m>V = U + W</m> 이고 <m>U \cap W = \{0_V\}</m> 일 때, <m>V</m>는 <m>U</m>와 <m>W</m>의 <term>직합</term>이라 하고 <m>V = U \oplus W</m> 로 표기한다. <aside><p>직합:direct sum</p></aside>
+        벡터공간 <m>V</m>의 두 부분공간 <m>U, W</m>에 대하여, <m>V = U + W</m> 이고 <m>U \cap W = \{0_V\}</m> 일 때, <m>V</m>는 <m>U</m>와 <m>W</m>의 <term>직합</term><idx><h>직합</h></idx>이라 하고 <m>V = U \oplus W</m> 로 표기한다. <aside><p>직합:direct sum</p></aside>
       </p>
       </statement>
     </definition>
@@ -180,7 +182,7 @@
       <title>직합 (일반적인 경우)</title>
       <statement>
       <p>
-        <m>V</m>를 벡터공간이라 하고, <m>\{U_i\}_{i \in I}</m>를 인덱스 집합 <m>I</m>에 의해 인덱스된 <m>V</m>의 부분공간들의 족이라 하자. 다음 두 조건을 만족할 때 <m>V</m>는 부분공간들 <m>U_i</m>의 <term>직합</term>이라 하고, <m>V = \bigoplus_{i \in I} U_i</m>로 표기한다.
+        <m>V</m>를 벡터공간이라 하고, <m>\{U_i\}_{i \in I}</m>를 인덱스 집합 <m>I</m>에 의해 인덱스된 <m>V</m>의 부분공간들의 족이라 하자. 다음 두 조건을 만족할 때 <m>V</m>는 부분공간들 <m>U_i</m>의 <term>직합</term><idx><h>직합</h></idx>이라 하고, <m>V = \bigoplus_{i \in I} U_i</m>로 표기한다.
       </p>
       <p>
         <em>생성:</em> <m>V = \sum_{i \in I} U_i</m>. (즉, <m>V</m>의 모든 원소는 <m>U_i</m>들의 원소들의 유한 개의 합으로 표현된다.)

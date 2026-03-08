@@ -10,9 +10,9 @@
   <definition xml:id="def-eigenvalue">
     <statement>
       <aside><p>고윳값:eigenvalue</p></aside>
-      <p>임의의 체 <m>\mathbb{F}</m> 상의 벡터공간 <m>V</m>와 선형변환 <m>T: V \to V</m>에 대하여, 다음을 만족하는 영벡터가 아닌 벡터 <m>v \in V</m>가 존재할 때, 스칼라 <m>\lambda \in \mathbb{F}</m>를 <m>T</m>의 <term>고윳값</term>이라 한다.
+      <p>임의의 체 <m>\mathbb{F}</m> 상의 벡터공간 <m>V</m>와 선형변환 <m>T: V \to V</m>에 대하여, 다음을 만족하는 영벡터가 아닌 벡터 <m>v \in V</m>가 존재할 때, 스칼라 <m>\lambda \in \mathbb{F}</m>를 <m>T</m>의 <term>고윳값</term><idx><h>고윳값</h></idx>이라 한다.
       <me>T(v) = \lambda v</me>
-      이때 벡터 <m>v</m>를 고윳값 <m>\lambda</m>에 대응하는 <m>T</m>의 <term>고유벡터</term>라 한다.</p>
+      이때 벡터 <m>v</m>를 고윳값 <m>\lambda</m>에 대응하는 <m>T</m>의 <term>고유벡터</term><idx><h>고유벡터</h></idx>라 한다.</p>
       <aside><p>고유벡터:eigenvector</p></aside>
     </statement>
   </definition>
@@ -26,7 +26,7 @@
 
   <definition xml:id="def-eigenspace">
     <statement>
-      <p>선형변환 <m>T: V \to V</m>와 어떤 스칼라 <m>\lambda \in \mathbb{F}</m>에 대하여, 고윳값 방정식을 만족하는 모든 벡터들의 집합을 <m>E_\lambda</m>라 표기하고 이를 <m>\lambda</m>에 대응하는 <term>고유공간</term>이라 한다. 즉,
+      <p>선형변환 <m>T: V \to V</m>와 어떤 스칼라 <m>\lambda \in \mathbb{F}</m>에 대하여, 고윳값 방정식을 만족하는 모든 벡터들의 집합을 <m>E_\lambda</m>라 표기하고 이를 <m>\lambda</m>에 대응하는 <term>고유공간</term><idx><h>고유공간</h></idx>이라 한다. 즉,
       <me>E_\lambda = \{ v \in V \mid T(v) = \lambda v \}</me>
       </p>
       이다.<aside><p>고유공간:eigenspace</p></aside>
@@ -118,7 +118,7 @@
 
   <definition xml:id="def-diagonalizable-linear">
     <statement>
-      <p>벡터공간 <m>V</m> 상의 선형변환 <m>T: V \to V</m>에 대하여, <m>V</m>의 기저 <m>\mathcal{B}</m>가 <m>T</m>의 고유벡터들로만 구성될 수 있을 때, 선형변환 <m>T</m>를 <term>대각화 가능하다</term>고 한다.</p>
+      <p>벡터공간 <m>V</m> 상의 선형변환 <m>T: V \to V</m>에 대하여, <m>V</m>의 기저 <m>\mathcal{B}</m>가 <m>T</m>의 고유벡터들로만 구성될 수 있을 때, 선형변환 <m>T</m>를 <term>대각화 가능하다</term><idx><h>대각화</h><h>~ 가능하다</h></idx>고 한다.</p>
       <aside><p>대각화 가능한:diagonalizable</p></aside>
     </statement>
   </definition>
@@ -138,7 +138,7 @@
 
   <definition xml:id="def-diagonalizable-matrix">
     <statement>
-      <p><m>n \times n</m> 행렬 <m>A \in M_{n \times n}(\mathbb{F})</m>에 대하여, 어떤 가역행렬 <m>Q \in M_{n \times n}(\mathbb{F})</m>가 존재하여 행렬곱 <m>Q^{-1}A Q</m>가 대각행렬이 될 때, 행렬 <m>A</m>를 <term>대각화 가능하다</term>고 한다.</p>
+      <p><m>n \times n</m> 행렬 <m>A \in M_{n \times n}(\mathbb{F})</m>에 대하여, 어떤 가역행렬 <m>Q \in M_{n \times n}(\mathbb{F})</m>가 존재하여 행렬곱 <m>Q^{-1}A Q</m>가 대각행렬이 될 때, 행렬 <m>A</m>를 <term>대각화 가능하다</term><idx><h>대각화 가능하다</h></idx>고 한다.</p>
     </statement>
   </definition>
 
@@ -155,12 +155,12 @@
     </statement>
   </example>
   <p>
-    <term>순서기저</term>란<aside><p>순서기저:ordered basis</p></aside> 벡터공간의 기저에 순서가 부여된 것을 말합니다. 통상 순서기저 <m>\alpha</m>의 원소는 자연수 첨자를 이용해 <m>v_1,\cdots,v_n</m> 등으로 표기하고 그 순서는 첨자 수의 순서를 따릅니다.
+    <term>순서기저</term><idx><h>순서기저</h></idx>란<aside><p>순서기저:ordered basis</p></aside> 벡터공간의 기저에 순서가 부여된 것을 말합니다. 통상 순서기저 <m>\alpha</m>의 원소는 자연수 첨자를 이용해 <m>v_1,\cdots,v_n</m> 등으로 표기하고 그 순서는 첨자 수의 순서를 따릅니다.
   </p>
 
   <definition xml:id="def-matrix-representation">
     <statement>
-      <p>체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V, W</m>와 선형변환 <m>T: V \to W</m>를 합시다. <m>V</m>와 <m>W</m>의 순서기저를 각각 <m>\alpha = \{v_1, \dots, v_n\}</m>, <m>\beta = \{w_1, \dots, w_m\}</m>이라 합시다. 기저 <m>\alpha</m>와 <m>\beta</m>에 대한 <m>T</m>의 <term>행렬표현</term>을 <m>[T]_\alpha^\beta</m>로 표기하며, 이는 <m>j</m>번째 열벡터가 <m>T(v_j)</m>의 기저 <m>\beta</m>에 대한 좌표벡터인 <m>m \times n</m> 행렬로 정의됩니다. 즉, 행렬 <m>A = [T]_\alpha^\beta</m>의 각 성분 <m>A_{ij} \in \mathbb{F}</m>는 다음 방정식을 통해 유일하게 결정됩니다.
+      <p>체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V, W</m>와 선형변환 <m>T: V \to W</m>를 합시다. <m>V</m>와 <m>W</m>의 순서기저를 각각 <m>\alpha = \{v_1, \dots, v_n\}</m>, <m>\beta = \{w_1, \dots, w_m\}</m>이라 합시다. 기저 <m>\alpha</m>와 <m>\beta</m>에 대한 <m>T</m>의 <term>행렬표현</term><idx><h>행렬표현</h><h>선형변환의 ~</h></idx>을 <m>[T]_\alpha^\beta</m>로 표기하며, 이는 <m>j</m>번째 열벡터가 <m>T(v_j)</m>의 기저 <m>\beta</m>에 대한 좌표벡터인 <m>m \times n</m> 행렬로 정의됩니다. 즉, 행렬 <m>A = [T]_\alpha^\beta</m>의 각 성분 <m>A_{ij} \in \mathbb{F}</m>는 다음 방정식을 통해 유일하게 결정됩니다.
       <me>T(v_j) = \sum_{i=1}^m A_{ij} w_i \quad (1 \le j \le n)</me>
       </p>
       <aside><p>행렬표현:matrix representation</p></aside>

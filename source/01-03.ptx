@@ -175,7 +175,8 @@
       <statement>
       <p>선형 변환 <m>T: V \to W</m>에 대하여, <m>V</m>의 원소들이 <m>T</m>에 의해 도달하는 <m>W</m> 안의 모든 원소들의 집합을 <m>T</m>의 <term>이미지</term>라고 하고, <m>\operatorname{im}(T)</m>로 표기한다.</p>
       <me>\operatorname{im}(T) = \{ T(v) \mid v \in V \} = \{ w \in W \mid \text{어떤 } v \in V \text{에 대해 } T(v) = w \}</me>
-      <idx><h>이미지</h></idx><idx><h>image</h></idx>
+      <idx><h>이미지</h><h>선형변환의 ~</h></idx><idx><h>image</h></idx>
+      <idx><h>선형변환</h><h>~의 이미지</h></idx>
       </statement>
     </definition>
   </subsection>
@@ -183,6 +184,7 @@
   <p>
     집합 간 함수의 전사성은 이미지를 이용해 다시 표현할 수 있습니다. 선형 변환 <m>T: V \to W</m>가 전사라는 것은 공역 <m>W</m>의 모든 원소가 정의역 <m>V</m>의 어떤 원소에 의해 매핑된다는 것을 의미합니다. 즉, <m>\operatorname{im}(T) = W</m>입니다. 따라서, 선형 변환이 전사이려면 이미지가 공역 전체와 일치해야 하며, 그 역도 성립합니다.
     <aside><p>전사:surjective</p></aside>
+    <idx><h>전사</h></idx>
   </p>
   
   <proposition xml:id="thm-image-is-subspace">
@@ -242,6 +244,8 @@
     <title>행렬 변환의 랭크</title>
     <statement>
       <m>m \times n</m> 행렬 <m>A</m>가 나타내는 선형변환 <m>L_A: \mathbb{F}^n \to \mathbb{F}^m</m>의 랭크는 행렬 <m>A</m>의 열벡터 중 선형 독립인 최대 집합의 크기와 같습니다. <m>L_A</m>의 랭크는 <m>A</m>의 열공간의 차원과 일치합니다. 따라서, 열공간의 차원으로 정의한 랭크의 개념은 선형변환의 랭크 개념과 부합합니다. 
+      <idx><h>열공간</h></idx>
+      <idx><h>랭크</h><h>열공간과의 관계</h></idx>
     </statement>
   </example>
 

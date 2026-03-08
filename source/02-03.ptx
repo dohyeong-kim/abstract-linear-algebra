@@ -10,7 +10,8 @@
     <definition xml:id="def-projection">
       <statement>
         <p>
-          체 <m>\mathbb{F}</m> 위의 벡터공간 <m>V</m> 상의 선형 연산자 <m>P: V \to V</m> 가 <m>P^2 = P</m> 를 만족할 때, <m>P</m>를 사영이라 한다.
+          체 <m>\mathbb{F}</m> 위의 벡터공간 <m>V</m> 상의 선형 연산자 <m>P: V \to V</m> 가 <m>P^2 = P</m> 를 만족할 때, <m>P</m>를 <term>사영</term>이라 한다.
+          <aside><p>사영:projection</p></aside><idx><h>사영</h></idx>
         </p>
       </statement>
     </definition>
@@ -65,7 +66,7 @@
       <title>직곱</title>
       <statement>
         <p>
-          체 <m>\mathbb{F}</m> 위의 두 벡터공간 <m>V</m>와 <m>W</m>에 대하여, 데카르트 곱 <m>V \times W = \{ (v, w) \mid v \in V, w \in W \}</m> 상에 덧셈과 스칼라 곱셈을 성분별로 정의한 벡터공간을 <m>V</m>와 <m>W</m>의 직곱이라 한다.
+          체 <m>\mathbb{F}</m> 위의 두 벡터공간 <m>V</m>와 <m>W</m>에 대하여, 데카르트 곱 <m>V \times W = \{ (v, w) \mid v \in V, w \in W \}</m> 상에 덧셈과 스칼라 곱셈을 성분별로 정의한 벡터공간을 <m>V</m>와 <m>W</m>의 <term>직곱</term>이라 한다.<aside><p>직곱:direct product</p></aside><idx><h>직곱</h></idx>
         </p>
       </statement>
     </definition>
@@ -110,7 +111,9 @@
       <title>쌍대공간</title>
       <statement>
         <p>
-          체 <m>\mathbb{F}</m> 위의 벡터공간 <m>V</m> 에 대하여, <m>V</m>에서 스칼라 체 <m>\mathbb{F}</m> 로 가는 선형범함수들의 공간 <m>\mathcal{L}(V, \mathbb{F})</m> 를 <m>V</m>의 쌍대공간이라 하고 <m>V^*</m> 로 표기한다.
+          체 <m>\mathbb{F}</m> 위의 벡터공간 <m>V</m> 에 대하여, <m>V</m>에서 스칼라 체 <m>\mathbb{F}</m> 로 가는 선형범함수들의 공간 <m>\mathcal{L}(V, \mathbb{F})</m> 를 <m>V</m>의 <term>쌍대공간</term>이라 하고 <m>V^*</m> 로 표기한다.<aside>
+          <p>쌍대공간:dual space</p>
+          </aside><idx><h>쌍대공간</h></idx>
         </p>
       </statement>
     </definition>
@@ -118,7 +121,7 @@
       <title>소멸자</title>
       <statement>
         <p>
-          <m>V</m>의 부분공간 <m>U</m>에 대하여, <m>U</m>의 모든 원소를 0으로 보내는 <m>V^*</m> 의 부분공간을 <m>U</m>의 소멸자라 하고 <m>U^0 = \{ f \in V^* \mid f(u) = 0 \text{ for all } u \in U \}</m> 로 정의한다.
+          <m>V</m>의 부분공간 <m>U</m>에 대하여, <m>U</m>의 모든 원소를 0으로 보내는 <m>V^*</m> 의 부분공간을 <m>U</m>의 <term>소멸자</term><aside><p>소멸자:annihilator</p></aside><idx><h>소멸자</h></idx>이라 하고 <m>U^0 = \{ f \in V^* \mid f(u) = 0 \text{ for all } u \in U \}</m> 로 정의한다.
         </p>
       </statement>
     </definition>
@@ -153,13 +156,13 @@
       <title>쌍대사상</title>
       <statement>
       <p>
-      체 <m>\mathbb{F}</m> 상의 두 벡터공간 <m>V, W</m>와 선형변환 <m>T: V \to W</m>가 주어졌다고 합시다. <m>T</m>의 쌍대사상 <m>T^*: W^* \to V^*</m>는 임의의 선형범함수 <m>g \in W^*</m>에 대하여 다음과 같이 합성함수로 정의된다.
+      체 <m>\mathbb{F}</m> 상의 두 벡터공간 <m>V, W</m>와 선형변환 <m>T: V \to W</m>가 주어졌다고 합시다. <m>T</m>의 <term>쌍대사상</term><aside><p>쌍대사상:dual transformation</p></aside><idx><h>쌍대사상</h></idx> <m>T^*: W^* \to V^*</m>는 임의의 선형범함수 <m>g \in W^*</m>에 대하여 다음과 같이 합성함수로 정의합니다.
       </p>
       <p>
       <m>T^*(g) = g \circ T</m>
       </p>
       <p>
-      즉, 임의의 <m>v \in V</m>에 대하여 <m>(T^*(g))(v) = g(T(v))</m>이다.
+      즉, 임의의 <m>v \in V</m>에 대하여 <m>(T^*(g))(v) = g(T(v))</m>입니다.
       </p>
       </statement>
     </definition>
@@ -174,7 +177,7 @@
         <m>(T^*(g))(x, y) = g(T(x, y)) = g(x+y, x) = 2(x+y) - x = x + 2y</m>
       </p>
       <p>
-        따라서 <m>T^*(g)</m>는 <m>V</m> 상의 선형범함수 <m>(x, y) \mapsto x+2y</m>가 된다.
+        따라서 <m>T^*(g)</m>는 <m>V</m> 상의 선형범함수 <m>(x, y) \mapsto x+2y</m>가 됩니다.
       </p>
       </statement>
     </example>
@@ -183,7 +186,7 @@
       <title>미분 연산자의 쌍대사상</title>
       <statement>
       <p>
-        미분 연산자 <m>D: \mathbb{F}[x]_{\le 2} \to \mathbb{F}[x]_{\le 1}</m>를 <m>D(p(x)) = p'(x)</m>로 정의합시다. <m>W = \mathbb{F}[x]_{\le 1}</m> 상의 선형범함수 <m>g</m>를 <m>g(q) = q(0)</m> (상수항 평가)로 두면, <m>D^*(g) \in \mathbb{F}[x]_{\le 2}^*</m>는 <m>(D^*(g))(p) = g(D(p)) = g(p') = p'(0)</m>이 된다. 즉, 원래 다항식의 1차항 계수를 추출합니다 범함수가 된다.
+        미분 연산자 <m>D: \mathbb{F}[x]_{\le 2} \to \mathbb{F}[x]_{\le 1}</m>를 <m>D(p(x)) = p'(x)</m>로 정의합시다. <m>W = \mathbb{F}[x]_{\le 1}</m> 상의 선형범함수 <m>g</m>를 <m>g(q) = q(0)</m> (상수항 평가)로 두면, <m>D^*(g) \in \mathbb{F}[x]_{\le 2}^*</m>는 <m>(D^*(g))(p) = g(D(p)) = g(p') = p'(0)</m>이 된다. 즉, 원래 다항식의 1차항 계수를 추출하는 범함수가 됩니다.
       </p>
       </statement>
     </example>
@@ -215,7 +218,7 @@
       <title>쌍대기저</title>
       <statement>
       <p>
-      체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V</m>의 기저를 <m>\mathcal{B} = \{v_1, \dots, v_n\}</m>이라 합시다. 쌍대공간 <m>V^*</m>의 원소들로 이루어진 집합 <m>\mathcal{B}^* = \{f_1, \dots, f_n\}</m>이 모든 <m>1 \le i, j \le n</m>에 대하여 다음을 만족할 때, 이를 <m>\mathcal{B}</m>에 대한 쌍대기저라고 합니다.
+      체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V</m>의 기저를 <m>\mathcal{B} = \{v_1, \dots, v_n\}</m>이라 합시다. 쌍대공간 <m>V^*</m>의 원소들로 이루어진 집합 <m>\mathcal{B}^* = \{f_1, \dots, f_n\}</m>이 모든 <m>1 \le i, j \le n</m>에 대하여 다음을 만족할 때, 이를 <m>\mathcal{B}</m>에 대한 <term>쌍대기저</term><aside><p>쌍대기저:dual basis</p></aside><idx><h>쌍대기저</h></idx>라고 합니다.
       </p>
       <p>
       <m>f_i(v_j) = \delta_{ij} = \begin{cases} 1 &amp; \text{if } i=j \\ 0 &amp; \text{if } i \neq j \end{cases}</m>
