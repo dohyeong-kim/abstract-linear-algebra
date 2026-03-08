@@ -8,6 +8,7 @@
     <aside><p>선형독립:linear Independence</p></aside>
     공간을 생성하는 독립적인 집합인 <term>기저</term>가 임의의 벡터공간에 반드시 존재함을 엄밀하게 증명합니다.</p>
     <p>더 나아가, 기저의 존재는 벡터공간의 <term>차원</term><aside><p>차원:dimension</p></aside>이라는 중요한 개념으로 이어집니다. 차원은 기저에 속한 벡터의 수로 이해할 수 있으며, 이를 엄밀하게 정당화하기 위해서 집합론을 사용할 것입니다.</p>
+    <idx><h>기저</h></idx><idx><h>차원</h></idx><idx><h>basis</h></idx><idx><h>dimension</h></idx>
   </subsection>
   <subsection xml:id="subsec-existence-of-basis">
     <title>기저의 정의와 존재</title>
@@ -19,6 +20,7 @@
             체 <m>\mathbb{F}</m> 위의 벡터 공간 <m>V</m>의 부분집합 <m>S</m>를 생각합니다. 유한 개의 서로 다른 벡터 <m>v_1, v_2, \dots, v_n \in S</m>와 스칼라 <m>c_1, c_2, \dots, c_n \in \mathbb{F}</m>에 대하여 방정식<md><mrow>c_1 v_1 + c_2 v_2 + \dots + c_n v_n = \mathbf{0}</mrow></md>을 만족하는 유일한 해가 <m>c_1 = c_2 = \dots = c_n = 0</m>(자명한 해) 뿐일 때, 집합 <m>S</m>는 <term>선형독립</term>이라고 합니다.<aside><p>선형독립:linearly independent</p></aside> 만약 적어도 하나가 0이 아닌 스칼라들 <m>c_1, \dots, c_n</m>이 존재하여 위 방정식을 만족시킨다면, 집합 <m>S</m>는 <term>선형종속</term>이라고 합니다. 
           <aside><p>선형종속:linearly dependent</p></aside> 관습적으로 공집합은 선형 독립으로 간주합니다.
         </p>
+        <idx><h>선형종속</h></idx><idx><h>linearly dependent</h></idx>
       </statement>
     </definition>
     <definition xml:id="def-basis">
@@ -31,6 +33,7 @@
         <li><m>\operatorname{span}(\beta) = V</m>이다.</li>
       </ol>
       </p>
+      <idx><h>기저</h><h>정의</h></idx>
       </statement>
     </definition>
     
@@ -40,6 +43,8 @@
         <p>튜플:tuple:순서쌍</p>
       </aside>
       <p>체 <m>\mathbb{F}</m> 위의 <m>n</m>-튜플들의 공간 <m>\mathbb{F}^n</m>에서 집합 <m>\beta = \{e_1, e_2, \dots, e_n\}</m>는 기저입니다. 여기서 <m>e_i</m>는 <m>i</m>번째 위치에 1이 있고 나머지 위치에는 0이 있는 벡터입니다. 이들은 <m>\mathbb{F}^n</m>을 생성하며, 그 선형결합이 영벡터가 되기 위한 유일한 조건은 모든 계수가 0이 되는 것뿐이므로 선형 독립입니다. 이를 <term>표준 기저</term><aside><p>표준 기저:standard basis</p></aside>라 부릅니다.</p>
+      <idx><h>기저</h><h>표준기저</h></idx>
+      <idx><h>basis</h><h>standard basis</h></idx>
     </example>
     <example xml:id="ex-standard-basis-for-polynomial-space">
       <title>다항식 공간의 기저</title>
@@ -50,6 +55,7 @@
 
     <theorem xml:id="thm-existence-of-basis">
       <title>기저의 존재성</title>
+      <idx><h>기저</h><h>존재성</h></idx>
       <statement>
       <p>체 <m>\mathbb{F}</m> 위의 임의의 벡터 공간 <m>V</m>는 기저를 가진다.</p>
       </statement>
@@ -63,7 +69,7 @@
         <md><mrow>c_1 v_1 + c_2 v_2 + \dots + c_n v_n = \mathbf{0} \quad (c_i \in \mathbb{F})</mrow></md>
         <m>U</m>의 정의에 의해, 각각의 <m>v_i</m>는 <m>\mathcal{C}</m>에 속하는 어떤 집합 <m>S_i</m>의 원소입니다. <m>\mathcal{C}</m>는 사슬이므로 임의의 두 원소는 포함 관계를 가집니다. 유한 개의 집합 <m>S_1, S_2, \dots, S_n</m> 중에서 포함 관계에 따라 가장 큰 집합을 <m>S_k</m>라고 하면, 모든 <m>v_1, \dots, v_n</m>은 <m>S_k</m>에 속하게 됩니다. 그런데 <m>S_k \in \mathcal{C} \subseteq \mathcal{P}</m>이므로 <m>S_k</m>는 선형 독립입니다. 따라서 위 선형결합을 만족하는 스칼라는 오직 <m>c_1 = c_2 = \dots = c_n = 0</m> 뿐입니다. 이는 <m>U</m>에 속하는 임의의 유한 부분집합이 선형 독립임을 의미하므로, <m>U</m> 자체도 선형 독립입니다. 따라서 <m>U \in \mathcal{P}</m>입니다.</p>
   
-        <p>명백하게 모든 <m>S \in \mathcal{C}</m>에 대하여 <m>S \subseteq U</m>이므로, <m>U</m>는 부분순서집합 <m>\mathcal{P}</m> 안에서 사슬 <m>\mathcal{C}</m>의 상계입니다. 임의의 사슬이 상계를 가지므로, 초른의 보조정리에 의해 <m>\mathcal{P}</m>는 적어도 하나의 극대원소(Maximal element) <m>B</m>를 가집니다.</p>
+        <p>명백하게 모든 <m>S \in \mathcal{C}</m>에 대하여 <m>S \subseteq U</m>이므로, <m>U</m>는 부분순서집합 <m>\mathcal{P}</m> 안에서 사슬 <m>\mathcal{C}</m>의 상계입니다. 임의의 사슬이 상계를 가지므로, 초른의 보조정리에 의해 <m>\mathcal{P}</m>는 적어도 하나의 극대원소(maximal element) <m>B</m>를 가집니다.</p>
   
         <p>이제 이 극대 선형 독립 집합 <m>B</m>가 <m>V</m>를 생성함(<m>\operatorname{span}(B) = V</m>)을 증명하여 기저임을 보입니다. 결론을 부정하여 <m>\operatorname{span}(B) \neq V</m>라고 가정합니다. 그러면 <m>V</m> 안에는 <m>\operatorname{span}(B)</m>에 속하지 않는 어떤 벡터 <m>w</m>가 존재합니다. 새로운 집합 <m>B' = B \cup \{w\}</m>를 생각합니다. <m>w \notin \operatorname{span}(B)</m>이므로, 이 집합은 여전히 선형 독립입니다. (만약 종속이라면 <m>w</m>가 <m>B</m>의 선형결합으로 표현되어 모순이 발생하기 때문입니다). 따라서 <m>B' \in \mathcal{P}</m>입니다. 그런데 <m>B \subsetneq B'</m>이므로, 이는 <m>B</m>가 극대원소라는 사실에 명백하게 모순됩니다.</p>
   
@@ -86,6 +92,12 @@
       <p>흥미롭게도, 초른의 보조정리는 존재성만을 보장할 뿐, 하멜 기저의 구체적인 원소들을 단 하나도 명시적으로 구성하는 방법을 알려주지 않습니다. 우리는 그것이 존재한다는 기이한 확신만을 가질 뿐입니다.</p>
       </statement>
     </example>
+    <remark xml:id="remark-hamel-is-obsolete">
+      <title>하멜 기저라는 용어가 도태된 이유</title>
+      <p>
+        하멜 기저는 우리가 정의한 기저 개념의 특수한 경우입니다. 따라서 하멜 기저라는 용어는 엄밀히 말해서 더 이상 필요하지 않습니다. 그러나 역사적으로는 하멜 기저가 존재한다는 사실이 벡터 공간 이론에서 중요한 이정표였기 때문에, 그 용어가 한동안 사용되었습니다. 한편, 우리가 다루지 않을 개념인 샤우더 기저(Schauder basis)와 이름을 쉽게 구별하기 위해서 하멜 기저라는 용어가 여전히 사용되는 경우도 있습니다. 결론적으로, 단순히 <q>기저</q>라고 부르는 것이 더 간결하고 현대적인 표현입니다.
+      </p>
+    </remark>
   </subsection>
   <subsection xml:id="subsec-invariance-of-basis-size">
     <title>기저의 크기 불변성</title>

@@ -16,6 +16,7 @@
   </example>
   <p>
   벡터공간의 경우 주어진 함수가 덧셈과 스칼라곱 구조를 보존하는 경우 <term>선형변환</term>이라고 부를 것입니다. <aside><p>선형 변환:linear transformation</p></aside> 벡터 만큼이나 선형변환의 개념도 어디에나 있습니다. 선형변환은 기하학적인 회전과 대칭부터 미분방정식의 연산자에 이르기까지 수학 전반에 걸쳐 광범위하게 등장합니다.
+  <idx><h>선형변환</h></idx><idx><h>linear transformation</h></idx>
   </p>
 
   
@@ -30,6 +31,7 @@
         <li>스칼라 곱셈의 보존: <m>T(cu) = cT(u)</m></li>
         </ol>
       </p>
+      <idx><h>선형변환</h><h>정의</h></idx>
       </statement>
     </definition>
     <p>
@@ -173,6 +175,7 @@
       <statement>
       <p>선형 변환 <m>T: V \to W</m>에 대하여, <m>V</m>의 원소들이 <m>T</m>에 의해 도달하는 <m>W</m> 안의 모든 원소들의 집합을 <m>T</m>의 <term>이미지</term>라고 하고, <m>\operatorname{im}(T)</m>로 표기한다.</p>
       <me>\operatorname{im}(T) = \{ T(v) \mid v \in V \} = \{ w \in W \mid \text{어떤 } v \in V \text{에 대해 } T(v) = w \}</me>
+      <idx><h>이미지</h></idx><idx><h>image</h></idx>
       </statement>
     </definition>
   </subsection>
@@ -232,6 +235,7 @@
       <p>
         선형변환 <m>T: V \to W</m>의 <term>랭크</term>는 이미지 <m>\operatorname{im}(T)</m>의 차원으로 정의합니다. 랭크는 <m>\operatorname{rank}(T)</m>로 표기합니다.
       </p>
+      <idx><h>랭크</h></idx><idx><h>rank</h></idx>
     </statement>
   </definition>
   <example xml:id="ex-rank-of-matrix-transformation">
