@@ -96,25 +96,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.16';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.0f480e95eedd3cd4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.75d8d8257df1449f.css">
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
 #01-vector-space-2-2-2 > li { counter-increment: 01-vector-space-2-2-2; }
-#def-vector-space-1-2 { counter-set: def-vector-space-1-2 0; }
-#def-vector-space-1-2 > li::marker { content: ""counter(def-vector-space-1-2,decimal)"."; }
-#def-vector-space-1-2 > li { counter-increment: def-vector-space-1-2; }
-#ex-vector-space-2-2 { counter-set: ex-vector-space-2-2 0; }
-#ex-vector-space-2-2 > li::marker { content: ""counter(ex-vector-space-2-2,decimal)"."; }
-#ex-vector-space-2-2 > li { counter-increment: ex-vector-space-2-2; }
+#def-vector-space-3-2-1 { counter-set: def-vector-space-3-2-1 0; }
+#def-vector-space-3-2-1 > li::marker { content: ""counter(def-vector-space-3-2-1,decimal)"."; }
+#def-vector-space-3-2-1 > li { counter-increment: def-vector-space-3-2-1; }
+#ex-vector-space-3-2 { counter-set: ex-vector-space-3-2 0; }
+#ex-vector-space-3-2 > li::marker { content: ""counter(ex-vector-space-3-2,decimal)"."; }
+#ex-vector-space-3-2 > li { counter-increment: ex-vector-space-3-2; }
 #prop-basic-properties-2-2 { counter-set: prop-basic-properties-2-2 0; }
 #prop-basic-properties-2-2 > li::marker { content: ""counter(prop-basic-properties-2-2,decimal)"."; }
 #prop-basic-properties-2-2 > li { counter-increment: prop-basic-properties-2-2; }
@@ -377,14 +377,20 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">색인</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="99-02-set-theory-background"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">집합</span>
 </h2>
 <div class="para" id="99-02-set-theory-background-2">이 절에서는 필요한 집합론적 배경을 다룹니다.</div>
 <section class="subsection" id="subsec-zorn"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="space"> </span><span class="title">초른의 보조정리</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="space"> </span><span class="title">초른의 보조정리</span>
 </h3>
 <aside class="aside aside-like" id="subsec-zorn-2"><div class="para" id="subsec-zorn-2-1">초른:Zorn</div></aside><article class="definition definition-like" id="def-partially-ordered-set"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">부분순서집합.</span>
@@ -430,7 +436,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">보조설명</span><span class="space"> </span><span class="codenumber">5.2.10</span><span class="period">.</span>
 </h4>
 <div class="para" id="rmk-zorns-lemma-and-equivalents-1">표준적인 수학의 체계(체르멜로-프렝켈 집합론, ZF) 내에서, 초른의 보조정리는 기본 공리들만으로는 증명할 수 없습니다. 대신, 이 정리는 <em class="emphasis">선택공리</em><aside class="aside aside-like" id="rmk-zorns-lemma-and-equivalents-1-2"><div class="para" id="rmk-zorns-lemma-and-equivalents-1-2-1">선택공리:axiom of Choice</div></aside> 및 <em class="emphasis">정렬정리</em><aside class="aside aside-like" id="rmk-zorns-lemma-and-equivalents-1-4"><div class="para" id="rmk-zorns-lemma-and-equivalents-1-4-1">정렬정리:Well-Ordering Theorem</div></aside>와 논리적으로 동치임이 알려져 있습니다. 수학자들은 보편적으로 선택 공리를 수용하므로(ZFC 체계), <aside class="aside aside-like" id="rmk-zorns-lemma-and-equivalents-1-5"><div class="para" id="rmk-zorns-lemma-and-equivalents-1-5-1">ZFC에서 C는 choice의 머릿글자.</div></aside> 초른의 보조정리 역시 하나의 공리처럼 취급되며, 이 정리의 "증명"은 본질적으로 선택 공리와의 동치성을 증명하는 과정이 됩니다.</div></article></section><section class="subsection" id="subsec-schroeder-bernstein"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="space"> </span><span class="title">슈뢰더-베른슈타인 정리</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="space"> </span><span class="title">슈뢰더-베른슈타인 정리</span>
 </h3>
 <aside class="aside aside-like" id="subsec-schroeder-bernstein-2"><div class="para" id="subsec-schroeder-bernstein-2-1">슈뢰더-베른슈타인:Schroeder-Bernstein</div></aside><article class="definition definition-like" id="def-cardinality-inequality"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">5.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">기수의 대소관계.</span>
@@ -510,7 +516,7 @@ h(x) = \begin{cases} f(x) &amp; \text{if } x \in C \\ g^{-1}(x) &amp; \text{if }
 <div class="para" id="ex-schroeder-bernstein-open-closed-intervals-4">
 <span class="process-math">\(g: [0, 1] \to (0, 1)\)</span>은 <span class="process-math">\(B\)</span>의 범위를 선형적으로 축소하여 <span class="process-math">\(A\)</span> 내부에 밀어넣으면 됩니다. 예를 들어 <span class="process-math">\(g(x) = \frac{1}{4} + \frac{1}{2}x\)</span>로 정의하면, <span class="process-math">\(g\)</span>의 치역은 <span class="process-math">\([1/4, 3/4] \subset (0, 1)\)</span>이 되며 이는 일차함수이므로 단사 함수입니다.</div>
 <div class="para" id="ex-schroeder-bernstein-open-closed-intervals-5">두 단사 함수가 존재하므로, <a href="99-02-set-theory-background.html#thm-schroeder-bernstein" class="xref" data-knowl="./knowl/xref/thm-schroeder-bernstein.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 5.2.15: 슈뢰더-베른슈타인 정리">정리 5.2.15</a>에 의해 <span class="process-math">\(|(0, 1)| = |[0, 1]|\)</span>이 즉각적으로 도출됩니다.</div></article></details></section><section class="subsection" id="subsec-arithmetic-of-cardinals"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="space"> </span><span class="title">기수의 산술</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="space"> </span><span class="title">기수의 산술</span>
 </h3>
 <div class="para" id="subsec-arithmetic-of-cardinals-2">기수는 집합의 크기를 측정하는 도구입니다. 기수의 대소관계와 등호에 대한 정의를 통해, 우리는 집합의 크기에 대한 비교와 동등성에 대한 엄밀한 개념을 갖게 되었습니다. 기수는 수처럼 덧셈, 곱셈, 지수화가 가능합니다. 기수의 연산과 대소관계의 상호작용에 대한 주요 결과를 증명 없이 나열하겠습니다.</div>
 <article class="proposition theorem-like" id="prop-cardinal-inequality-preservation"><h4 class="heading">

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h4 class="heading">
+<span class="type">정리</span><span class="space"> </span><span class="codenumber">3.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">케일리-해밀턴 정리.</span>
+</h4>
+<div class="para logical">
+<div class="para">체 <span class="process-math">\(\mathbb{F}\)</span> 상의 임의의 정사각행렬 <span class="process-math">\(A\)</span>에 대하여, 그 특성다항식을 <span class="process-math">\(p_A(x) = \det(xI - A)\)</span>라 하자. 다항식 <span class="process-math">\(p_A(x)\)</span>에 행렬 <span class="process-math">\(A\)</span>를 대입하면 영행렬이 된다. 즉,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_A(A) = 0
+\end{equation*}
+</div>
+</div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">다항식을 성분으로 가지는 행렬 <span class="process-math">\(xI - A\)</span>를 합시다. 행렬식의 전개와 크라메르 공식에서 유도되는 수반행렬 항등식은 가환인 다항식 성분 위에서도 그대로 성립하므로 다음 등식을 세울 수 있습니다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(xI - A)\text{adj}(xI - A) = \det(xI - A)I = p_A(x)I
+\end{equation*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">행렬 <span class="process-math">\(B(x) = \text{adj}(xI - A)\)</span>의 각 성분은 <span class="process-math">\(xI - A\)</span>의 부분행렬의 행렬식이므로, <span class="process-math">\(x\)</span>에 대한 차수가 최대 <span class="process-math">\(n-1\)</span>인 다항식들입니다. 따라서 <span class="process-math">\(B(x)\)</span>를 행렬을 계수로 가지는 다항식 형태로 전개할 수 있습니다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B(x) = B_{n-1}x^{n-1} + B_{n-2}x^{n-2} + \dots + B_1 x + B_0
+\end{equation*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">특성다항식을 <span class="process-math">\(p_A(x) = x^n + c_{n-1}x^{n-1} + \dots + c_1 x + c_0\)</span>라 합시다. 앞선 수반행렬 항등식 좌우변의 다항식 계수(행렬)들을 차수별로 비교하면 <span class="process-math">\(n+1\)</span>개의 연립방정식을 얻습니다.</div>
+<div class="displaymath process-math">
+\begin{align*}
+x^n: \quad B_{n-1} &amp;= I\\
+x^{n-1}: \quad B_{n-2} - A B_{n-1} &amp;= c_{n-1}I\\
+&amp;\vdots\\
+x^1: \quad B_0 - A B_1 &amp;= c_1 I\\
+x^0: \quad -A B_0 &amp;= c_0 I
+\end{align*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">이 <span class="process-math">\(n+1\)</span>개의 등식 중 <span class="process-math">\(x^k\)</span>에 해당하는 등식의 양변 왼쪽에 행렬 <span class="process-math">\(A^k\)</span>를 곱합시다.</div>
+<div class="displaymath process-math">
+\begin{align*}
+A^n B_{n-1} &amp;= A^n\\
+A^{n-1} B_{n-2} - A^n B_{n-1} &amp;= c_{n-1} A^{n-1}\\
+&amp;\vdots\\
+A B_0 - A^2 B_1 &amp;= c_1 A\\
+-A B_0 &amp;= c_0 I
+\end{align*}
+</div>
+</div>
+<div class="para">새롭게 얻어진 이 <span class="process-math">\(n+1\)</span>개의 등식을 양변 모두 더합니다. 좌변은 이웃한 항들이 연쇄적으로 상쇄되어 정확히 영행렬만 남습니다. 우변을 모두 더한 결과는 <span class="process-math">\(A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I\)</span>가 되며, 이는 행렬 평가 사상의 정의에 의해 <span class="process-math">\(p_A(A)\)</span>입니다. 결론적으로 영행렬과 <span class="process-math">\(p_A(A)\)</span>는 일치합니다.</div></article></details><span class="incontext"><a class="internal" href="03-03-cayley.html#thm-cayley-hamilton">in-context</a></span>
+</body>
+</html>

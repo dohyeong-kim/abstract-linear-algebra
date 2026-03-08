@@ -96,25 +96,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.16';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.0f480e95eedd3cd4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.75d8d8257df1449f.css">
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
 #01-vector-space-2-2-2 > li { counter-increment: 01-vector-space-2-2-2; }
-#def-vector-space-1-2 { counter-set: def-vector-space-1-2 0; }
-#def-vector-space-1-2 > li::marker { content: ""counter(def-vector-space-1-2,decimal)"."; }
-#def-vector-space-1-2 > li { counter-increment: def-vector-space-1-2; }
-#ex-vector-space-2-2 { counter-set: ex-vector-space-2-2 0; }
-#ex-vector-space-2-2 > li::marker { content: ""counter(ex-vector-space-2-2,decimal)"."; }
-#ex-vector-space-2-2 > li { counter-increment: ex-vector-space-2-2; }
+#def-vector-space-3-2-1 { counter-set: def-vector-space-3-2-1 0; }
+#def-vector-space-3-2-1 > li::marker { content: ""counter(def-vector-space-3-2-1,decimal)"."; }
+#def-vector-space-3-2-1 > li { counter-increment: def-vector-space-3-2-1; }
+#ex-vector-space-3-2 { counter-set: ex-vector-space-3-2 0; }
+#ex-vector-space-3-2 > li::marker { content: ""counter(ex-vector-space-3-2,decimal)"."; }
+#ex-vector-space-3-2 > li { counter-increment: ex-vector-space-3-2; }
 #prop-basic-properties-2-2 { counter-set: prop-basic-properties-2-2 0; }
 #prop-basic-properties-2-2 > li::marker { content: ""counter(prop-basic-properties-2-2,decimal)"."; }
 #prop-basic-properties-2-2 > li { counter-increment: prop-basic-properties-2-2; }
@@ -377,13 +377,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">색인</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="99-04-perm"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.4</span><span class="space"> </span><span class="title">치환</span>
 </h2>
 <section class="subsection" id="99-04-perm-transposition"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="space"> </span><span class="title">치환과 호환</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="space"> </span><span class="title">치환과 호환</span>
 </h3>
 <article class="definition definition-like" id="def-permutation-symmetric-group"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
@@ -410,7 +416,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></article></details><details id="ex-cycle-decomposition" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">순환의 호환 분해.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-cycle-decomposition-2">순환 <span class="process-math">\((1 \ 2 \ 3 \ 4)\)</span>는 <span class="process-math">\((1 \ 4)(1 \ 3)(1 \ 2)\)</span>로 분해된다. 치환 역시 함수이므로, 합성은 오른쪽에서 왼쪽으로 적용됨에 유의해야 한다.</div></article></details></section><section class="subsection" id="99-04-perm-sign"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="space"> </span><span class="title">치환의 부호</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="space"> </span><span class="title">치환의 부호</span>
 </h3>
 <article class="definition definition-like" id="def-inversion-sign"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="period">.</span>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h4 class="heading">
+<span class="type">정리</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">크라메르 공식.</span>
+</h4>
+<div class="para logical">
+<div class="para">가역행렬 <span class="process-math">\(A \in M_{n \times n}(\mathbb{F})\)</span>와 열벡터 <span class="process-math">\(b \in \mathbb{F}^n\)</span>에 대하여, 연립일차방정식 <span class="process-math">\(Ax = b\)</span>의 유일한 해 <span class="process-math">\(x = (x_1, \dots, x_n)^T\)</span>의 각 성분은 다음과 같이 주어진다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_i = \frac{\det(A_i)}{\det(A)}
+\end{equation*}
+</div>
+<div class="para">여기서 <span class="process-math">\(A_i\)</span>는 행렬 <span class="process-math">\(A\)</span>의 <span class="process-math">\(i\)</span>번째 열을 상수 벡터 <span class="process-math">\(b\)</span>로 대체한 행렬이다.</div>
+</div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">행렬 <span class="process-math">\(A\)</span>가 가역이므로 <span class="process-math">\(\det(A) \neq 0\)</span>이며, 연립방정식의 해는 <span class="process-math">\(x = A^{-1}b\)</span>로 유일하게 존재한다. 수반행렬 항등식에 의해 <span class="process-math">\(A^{-1} = \frac{1}{\det(A)}\text{adj}(A)\)</span>이므로, 다음이 성립한다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x = \frac{1}{\det(A)}\text{adj}(A)b
+\end{equation*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">해 벡터 <span class="process-math">\(x\)</span>의 <span class="process-math">\(i\)</span>번째 성분 <span class="process-math">\(x_i\)</span>를 구하기 위해 행렬곱을 전개하면 다음과 같다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_i = \frac{1}{\det(A)} \sum_{j=1}^n (\text{adj}(A))_{ij} b_j = \frac{1}{\det(A)} \sum_{j=1}^n C_{ji} b_j
+\end{equation*}
+</div>
+</div>
+<div class="para">여기서 합 <span class="process-math">\(\sum_{j=1}^n b_j C_{ji}\)</span>를 관찰해 보자. 이는 행렬 <span class="process-math">\(A\)</span>의 <span class="process-math">\(i\)</span>번째 열의 각 성분 <span class="process-math">\(A_{ji}\)</span>를 <span class="process-math">\(b_j\)</span>로 바꾼 뒤, <span class="process-math">\(i\)</span>번째 열에 대하여 여인수 전개를 수행한 식과 정확히 일치한다. 행렬 <span class="process-math">\(A\)</span>의 <span class="process-math">\(i\)</span>번째 열을 <span class="process-math">\(b\)</span>로 대체한 행렬이 곧 <span class="process-math">\(A_i\)</span>이므로, 이 합은 <span class="process-math">\(\det(A_i)\)</span>가 된다. 따라서 <span class="process-math">\(x_i = \frac{\det(A_i)}{\det(A)}\)</span>이다.</div></article></details><span class="incontext"><a class="internal" href="03-03-cayley.html#thm-cramer-rule">in-context</a></span>
+</body>
+</html>

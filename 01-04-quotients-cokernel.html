@@ -96,25 +96,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.16';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.0f480e95eedd3cd4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.75d8d8257df1449f.css">
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
 #01-vector-space-2-2-2 > li { counter-increment: 01-vector-space-2-2-2; }
-#def-vector-space-1-2 { counter-set: def-vector-space-1-2 0; }
-#def-vector-space-1-2 > li::marker { content: ""counter(def-vector-space-1-2,decimal)"."; }
-#def-vector-space-1-2 > li { counter-increment: def-vector-space-1-2; }
-#ex-vector-space-2-2 { counter-set: ex-vector-space-2-2 0; }
-#ex-vector-space-2-2 > li::marker { content: ""counter(ex-vector-space-2-2,decimal)"."; }
-#ex-vector-space-2-2 > li { counter-increment: ex-vector-space-2-2; }
+#def-vector-space-3-2-1 { counter-set: def-vector-space-3-2-1 0; }
+#def-vector-space-3-2-1 > li::marker { content: ""counter(def-vector-space-3-2-1,decimal)"."; }
+#def-vector-space-3-2-1 > li { counter-increment: def-vector-space-3-2-1; }
+#ex-vector-space-3-2 { counter-set: ex-vector-space-3-2 0; }
+#ex-vector-space-3-2 > li::marker { content: ""counter(ex-vector-space-3-2,decimal)"."; }
+#ex-vector-space-3-2 > li { counter-increment: ex-vector-space-3-2; }
 #prop-basic-properties-2-2 { counter-set: prop-basic-properties-2-2 0; }
 #prop-basic-properties-2-2 > li::marker { content: ""counter(prop-basic-properties-2-2,decimal)"."; }
 #prop-basic-properties-2-2 > li { counter-increment: prop-basic-properties-2-2; }
@@ -377,17 +377,23 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">색인</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="01-04-quotients-cokernel"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">몫과 코커널</span>
 </h2>
 <div class="para" id="01-04-quotients-cokernel-2">이 절에서는 몫과 코커널을 소개합니다.</div>
 <section class="subsection" id="subsec-quotients"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">몫</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">몫</span>
 </h3>
 <div class="para" id="subsec-quotients-2">
-<dfn class="terminology">몫</dfn> 또는 <dfn class="terminology">몫공간</dfn>의 개념은 동치관계라는 보다 일반적 개념의 특수한 경우입니다. 동치관계는 집합에 대해 적용되며 그 대상이 꼭 선형공간일 필요는 없습니다.<details class="ptx-footnote" aria-live="polite" id="subsec-quotients-2-3"><summary class="ptx-footnote__number" title="Footnote 1.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-quotients-2-3"><div class="para" id="subsec-quotients-2-3-1">동치관계에 대한 기초적 사실들은 부록 <a href="99-03-equivalence.html" class="internal" title="Section 5.3: 동치관계와 분할">Section 5.3</a>을 참조.</div></div></details>
+<dfn class="terminology">몫</dfn> 또는 <dfn class="terminology">몫공간</dfn>의 개념은 동치관계라는 보다 일반적 개념의 특수한 경우입니다. 동치관계는 집합에 대해 적용되며 그 대상이 꼭 선형공간일 필요는 없습니다.<details class="ptx-footnote" aria-live="polite" id="subsec-quotients-2-5"><summary class="ptx-footnote__number" title="Footnote 1.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-quotients-2-5"><div class="para" id="subsec-quotients-2-5-1">동치관계에 대한 기초적 사실들은 부록 <a href="99-03-equivalence.html" class="internal" title="Section 5.3: 동치관계와 분할">Section 5.3</a>을 참조.</div></div></details>
 </div>
 <div class="para logical" id="subsec-quotients-3">
 <div class="para">벡터공간 <span class="process-math">\(V\)</span>에 부분공간 <span class="process-math">\(W\subset V\)</span>가 주어진 경우 다음과 같은 이항관계를 생각해 봅시다.</div>
@@ -417,14 +423,14 @@ v \sim w \iff v - w \in W\tag{1.4.1}
 </h4>
 <div class="para logical" id="def-coset-quotient-space-2-1">
 <div class="para">
-<span class="process-math">\(V\)</span>를 체 <span class="process-math">\(F\)</span> 위에서 정의된 벡터공간이라 하고, <span class="process-math">\(W\)</span>를 <span class="process-math">\(V\)</span>의 부분공간이라 하자. 임의의 <span class="process-math">\(v \in V\)</span>에 대하여 <span class="process-math">\(v\)</span>를 포함하는 <span class="process-math">\(W\)</span>의 <dfn class="terminology">잉여류</dfn>를 다음과 같이 정의한다:<aside class="aside aside-like" id="def-coset-quotient-space-2-1-9"><div class="para" id="def-coset-quotient-space-2-1-9-1">잉여류:coset</div></aside>
+<span class="process-math">\(V\)</span>를 체 <span class="process-math">\(F\)</span> 위에서 정의된 벡터공간이라 하고, <span class="process-math">\(W\)</span>를 <span class="process-math">\(V\)</span>의 부분공간이라 하자. 임의의 <span class="process-math">\(v \in V\)</span>에 대하여 <span class="process-math">\(v\)</span>를 포함하는 <span class="process-math">\(W\)</span>의 <dfn class="terminology">잉여류</dfn>를 다음과 같이 정의한다:<aside class="aside aside-like" id="def-coset-quotient-space-2-1-10"><div class="para" id="def-coset-quotient-space-2-1-10-1">잉여류:coset</div></aside>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
 v + W = \{ v + w \mid w \in W \}
 \end{equation*}
 </div>
-<div class="para">이러한 잉여류들의 집합을 <span class="process-math">\(W\)</span>에 대한 <span class="process-math">\(V\)</span>의 <dfn class="terminology">몫공간</dfn>이라 하고 <span class="process-math">\(V/W\)</span>로 표기한다. 즉, <span class="process-math">\(V/W = \{ v + W \mid v \in V \}\)</span> 이다.<aside class="aside aside-like" id="def-coset-quotient-space-2-1-16"><div class="para" id="def-coset-quotient-space-2-1-16-1">몫공간:quotient space</div></aside>
+<div class="para">이러한 잉여류들의 집합을 <span class="process-math">\(W\)</span>에 대한 <span class="process-math">\(V\)</span>의 <dfn class="terminology">몫공간</dfn>이라 하고 <span class="process-math">\(V/W\)</span>로 표기한다. 즉, <span class="process-math">\(V/W = \{ v + W \mid v \in V \}\)</span> 이다.<aside class="aside aside-like" id="def-coset-quotient-space-2-1-18"><div class="para" id="def-coset-quotient-space-2-1-18-1">몫공간:quotient space</div></aside>
 </div>
 </div></article><details id="ex-coset-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">잉여류의 기하학적 해석.</span>
@@ -454,7 +460,7 @@ c(v + W) \amp = cv + W \quad \text{(단, $c \in F$)}
 </div></article></details><article class="remark remark-like" id="rmk-well-defined"><h4 class="heading">
 <span class="type">보조설명</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="rmk-well-defined-1">분할 또는 동치류가 주어진 경우, 대표원에 의지하여 표현한 무언가가 대표원과 무관한 경우 해당 표현이 <dfn class="terminology">잘 정의되었다</dfn>고 말합니다. <aside class="aside aside-like" id="rmk-well-defined-1-2"><div class="para" id="rmk-well-defined-1-2-1">잘 정의된:well-defined</div></aside>
+<div class="para" id="rmk-well-defined-1">분할 또는 동치류가 주어진 경우, 대표원에 의지하여 표현한 무언가가 대표원과 무관한 경우 해당 표현이 <dfn class="terminology">잘 정의되었다</dfn>고 말합니다. <aside class="aside aside-like" id="rmk-well-defined-1-3"><div class="para" id="rmk-well-defined-1-3-1">잘 정의된:well-defined</div></aside>
 </div></article><details id="ex-coset-addition" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">잉여류의 덧셈.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-coset-addition-2">예제 <a href="01-04-quotients-cokernel.html#ex-coset-example" class="xref" data-knowl="./knowl/xref/ex-coset-example.html" data-reveal-label="Reveal" data-close-label="Close" title="예시 1.4.3: 잉여류의 기하학적 해석">예시 1.4.3</a> 상황에서 <span class="process-math">\(v_1 = (0, 1)\)</span>이고 <span class="process-math">\(v_2 = (1, 0)\)</span>이라 합시다. 잉여류의 합은 <span class="process-math">\((v_1 + W) + (v_2 + W) = (1, 1) + W\)</span>가 됩니다. 기하학적으로 두 평행이동된 직선을 더하여 새로운 평행이동된 직선을 얻는 과정입니다.</div></article></details><article class="theorem theorem-like" id="thm-quotient-space-dimension"><h4 class="heading">
@@ -508,7 +514,7 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <div class="para" id="thm-rank-nullity-3-4">
 <em class="emphasis">선형독립</em>: <span class="process-math">\(\sum_{j=1}^{n-k} c_j T(w_j) = 0\)</span>이면 <span class="process-math">\(T\left(\sum_{j=1}^{n-k} c_j w_j\right) = 0\)</span>이므로 <span class="process-math">\(\sum_{j=1}^{n-k} c_j w_j \in \ker(T)\)</span>입니다. 따라서 <span class="process-math">\(\sum_{j=1}^{n-k} c_j w_j = \sum_{i=1}^k d_i v_i\)</span>인 스칼라 <span class="process-math">\(d_i\)</span>가 존재합니다. <span class="process-math">\(V\)</span>의 기저 선형독립성에 의해 모든 <span class="process-math">\(c_j = 0\)</span>입니다.</div>
 <div class="para" id="thm-rank-nullity-3-5">그러므로 <span class="process-math">\(\dim(\ker(T)) = k\)</span>이고 <span class="process-math">\(\dim(\operatorname{im}(T)) = n - k\)</span>이므로, <span class="process-math">\(\dim(\ker(T)) + \dim(\operatorname{im}(T)) = n = \dim(V)\)</span>입니다.</div></article></details></section><section class="subsection" id="subsec-cokernel"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">코커널</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">코커널</span>
 </h3>
 <article class="definition definition-like" id="def-cokernel"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">코커널.</span>
@@ -540,7 +546,7 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">행렬의 닮음.</span>
 </h5>
 <div class="para" id="def-matrix-similarity-2-1">
-<span class="process-math">\(n \times n\)</span> 행렬의 공간 <span class="process-math">\(M_{n \times n}(\mathbb{F})\)</span>에서, 어떤 가역행렬 <span class="process-math">\(P\)</span>가 존재하여 <span class="process-math">\(B = P^{-1}AP\)</span>를 만족할 때 <span class="process-math">\(A \sim B\)</span>라 정의한다. 이를 <dfn class="terminology">닮음</dfn>이라 한다.<aside class="aside aside-like" id="def-matrix-similarity-2-1-7"><div class="para" id="def-matrix-similarity-2-1-7-1">닮음:similarity</div></aside>
+<span class="process-math">\(n \times n\)</span> 행렬의 공간 <span class="process-math">\(M_{n \times n}(\mathbb{F})\)</span>에서, 어떤 가역행렬 <span class="process-math">\(P\)</span>가 존재하여 <span class="process-math">\(B = P^{-1}AP\)</span>를 만족할 때 <span class="process-math">\(A \sim B\)</span>라 정의한다. 이를 <dfn class="terminology">닮음</dfn>이라 한다.<aside class="aside aside-like" id="def-matrix-similarity-2-1-8"><div class="para" id="def-matrix-similarity-2-1-8-1">닮음:similarity</div></aside>
 </div></article><div class="para" id="exercise-matrix-similarity-3">정의 <a href="01-04-quotients-cokernel.html#def-matrix-similarity" class="xref" data-knowl="./knowl/xref/def-matrix-similarity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.4.12: 행렬의 닮음">정의 1.4.12</a>의 행렬의 닮음 관계가 동치관계임을 증명하시오.</div></article><article class="exercise exercise-like" id="exercise-intersection-subspace-equivalence"><h4 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">부분공간의 교집합 위의 동치관계.</span>
 </h4>
@@ -576,7 +582,7 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.13</span><span class="period">.</span>
 </h5>
 <div class="para" id="def-invariant-subspace-1-1">
-<span class="process-math">\(\mathbb{F}\)</span>상의 벡터공간 <span class="process-math">\(V\)</span>와 그 부분공간 <span class="process-math">\(W\)</span>가 주어졌을 때, 임의의 <span class="process-math">\(v \in W\)</span>에 대하여 <span class="process-math">\(T(v) \in W\)</span>가 성립하면, 이때 <span class="process-math">\(W\)</span>를 <dfn class="terminology"><span class="process-math">\(T\)</span>-불변 부분공간</dfn>이라고 합니다. <aside class="aside aside-like" id="def-invariant-subspace-1-1-8"><div class="para" id="def-invariant-subspace-1-1-8-1">불변 부분공간:invariant subspace</div></aside>
+<span class="process-math">\(\mathbb{F}\)</span>상의 벡터공간 <span class="process-math">\(V\)</span>에 선형변환 <span class="process-math">\(T \colon V \to V\)</span>에 대하여, 어떤 부분공간 <span class="process-math">\(W\)</span>에 대하여 임의의 <span class="process-math">\(v \in W\)</span>가 <span class="process-math">\(T(v) \in W\)</span>를 만족하면,<details class="ptx-footnote" aria-live="polite" id="def-invariant-subspace-1-1-7"><summary class="ptx-footnote__number" title="Footnote 1.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="def-invariant-subspace-1-1-7"><div class="para" id="def-invariant-subspace-1-1-7-1">간단히 <span class="process-math">\(T(W)\subset W\)</span>라고도 씁니다.</div></div></details> 이때 <span class="process-math">\(W\)</span>를 <dfn class="terminology"><span class="process-math">\(T\)</span>-불변 부분공간</dfn>이라고 합니다. <aside class="aside aside-like" id="def-invariant-subspace-1-1-11"><div class="para" id="def-invariant-subspace-1-1-11-1">불변 부분공간:invariant subspace</div></aside>
 </div></article><div class="para" id="exercise-induced-map-quotient-space-3">체 <span class="process-math">\(\mathbb{F}\)</span> 상의 벡터공간 <span class="process-math">\(V\)</span>와 선형 연산자 <span class="process-math">\(T\colon V\to V\)</span>가 주어졌다. <span class="process-math">\(T\)</span>-불변 부분공간 <span class="process-math">\(W\subset V\)</span>에 대하여, 사상 <span class="process-math">\(\bar{T}: V/W \to V/W\)</span>를 <span class="process-math">\(\bar{T}(v+W) = T(v)+W\)</span>로 정의하면 이 사상이 잘 정의된 선형변환임을 증명하시오.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="01-03-linear-transformation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="02-isomorphisms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

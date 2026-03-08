@@ -96,25 +96,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.16';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.0f480e95eedd3cd4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.75d8d8257df1449f.css">
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
 #01-vector-space-2-2-2 > li { counter-increment: 01-vector-space-2-2-2; }
-#def-vector-space-1-2 { counter-set: def-vector-space-1-2 0; }
-#def-vector-space-1-2 > li::marker { content: ""counter(def-vector-space-1-2,decimal)"."; }
-#def-vector-space-1-2 > li { counter-increment: def-vector-space-1-2; }
-#ex-vector-space-2-2 { counter-set: ex-vector-space-2-2 0; }
-#ex-vector-space-2-2 > li::marker { content: ""counter(ex-vector-space-2-2,decimal)"."; }
-#ex-vector-space-2-2 > li { counter-increment: ex-vector-space-2-2; }
+#def-vector-space-3-2-1 { counter-set: def-vector-space-3-2-1 0; }
+#def-vector-space-3-2-1 > li::marker { content: ""counter(def-vector-space-3-2-1,decimal)"."; }
+#def-vector-space-3-2-1 > li { counter-increment: def-vector-space-3-2-1; }
+#ex-vector-space-3-2 { counter-set: ex-vector-space-3-2 0; }
+#ex-vector-space-3-2 > li::marker { content: ""counter(ex-vector-space-3-2,decimal)"."; }
+#ex-vector-space-3-2 > li { counter-increment: ex-vector-space-3-2; }
 #prop-basic-properties-2-2 { counter-set: prop-basic-properties-2-2 0; }
 #prop-basic-properties-2-2 > li::marker { content: ""counter(prop-basic-properties-2-2,decimal)"."; }
 #prop-basic-properties-2-2 > li { counter-increment: prop-basic-properties-2-2; }
@@ -377,14 +377,20 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">색인</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="99-05-poly"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.5</span><span class="space"> </span><span class="title">다항식</span>
 </h2>
 <div class="para" id="99-05-poly-2">선형변환 분석에 다항식의 대수적 성질을 활용하기 위해서는, 먼저 체 <span class="process-math">\(\mathbb{F}\)</span>의 원소를 계수로 가지는 다항식들의 집합 <span class="process-math">\(\mathbb{F}[x]\)</span>의 나눗셈 구조를 엄밀하게 이해해야 합니다. 이 절에서는 다항식의 나눗셈 알고리즘과 최소 차수 다항식의 인수 성질, 그리고 행렬 평가 사상에 대해 살펴보겠습니다.</div>
 <section class="subsection" id="subsec-poly-division-algorithm"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.5.1</span><span class="space"> </span><span class="title">다항식의 나눗셈 알고리즘</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.5.1</span><span class="space"> </span><span class="title">다항식의 나눗셈 알고리즘</span>
 </h3>
 <article class="theorem theorem-like" id="thm-poly-division-algorithm"><h4 class="heading">
 <span class="type">정리</span><span class="space"> </span><span class="codenumber">5.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">다항식의 나눗셈 알고리즘.</span>
@@ -395,14 +401,14 @@ f(x) = q(x)g(x) + r(x)
 </div>이때 <span class="process-math">\(r(x)\)</span>는 영다항식이거나 <span class="process-math">\(r(x)\)</span>의 차수가 <span class="process-math">\(g(x)\)</span>의 차수보다 작다.</article><details id="thm-poly-division-algorithm-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><span class="process-math">\(f(x)\)</span><span class="process-math">\(f(x)\)</span><span class="process-math">\(g(x)\)</span><span class="process-math">\(q(x) = 0\text{,}\)</span><span class="process-math">\(r(x) = f(x)\)</span><span class="process-math">\(f(x)\)</span><span class="process-math">\(g(x)\)</span><span class="process-math">\(f(x) = a_n x^n + \dots\text{,}\)</span><span class="process-math">\(g(x) = b_m x^m + \dots\)</span><span class="process-math">\(n \ge m\text{,}\)</span><span class="process-math">\(a_n, b_m \neq 0\)</span><span class="process-math">\(h(x) = f(x) - \frac{a_n}{b_m}x^{n-m}g(x)\)</span><span class="process-math">\(h(x)\)</span><span class="process-math">\(f(x)\)</span><span class="process-math">\(h(x) = q_1(x)g(x) + r(x)\)</span><span class="process-math">\(q_1(x), r(x)\)</span><span class="process-math">\(f(x) = \left(q_1(x) + \frac{a_n}{b_m}x^{n-m}\right)g(x) + r(x)\)</span><span class="process-math">\(f(x) = q_1(x)g(x) + r_1(x) = q_2(x)g(x) + r_2(x)\)</span><span class="process-math">\((q_1(x) - q_2(x))g(x) = r_2(x) - r_1(x)\)</span><span class="process-math">\(q_1(x) \neq q_2(x)\)</span><span class="process-math">\(g(x)\)</span><span class="process-math">\(g(x)\)</span><span class="process-math">\(g(x)\)</span><span class="process-math">\(q_1(x) = q_2(x)\)</span><span class="process-math">\(r_1(x) = r_2(x)\)</span><span class="process-math">\(\blacksquare\)</span></article></details><details id="ex-poly-division-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">5.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">다항식 나눗셈의 예.</span>
 </h4></summary><article class="example example-like knowl__content"><span class="process-math">\(f(x) = x^3 - 2x^2 + x - 1\)</span><span class="process-math">\(g(x) = x^2 + 1\)</span><span class="process-math">\(x^3 - 2x^2 + x - 1 = (x - 2)(x^2 + 1) + 1\)</span><span class="process-math">\(q(x) = x - 2\text{,}\)</span><span class="process-math">\(r(x) = 1\)</span><span class="process-math">\(x^2+1\)</span></article></details></section><section class="subsection" id="subsec-poly-minimal-degree"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.5.2</span><span class="space"> </span><span class="title">최소 차수 다항식의 인수 성질</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.5.2</span><span class="space"> </span><span class="title">최소 차수 다항식의 인수 성질</span>
 </h3>
 <article class="theorem theorem-like" id="thm-poly-minimal-degree-theorem"><h4 class="heading">
 <span class="type">정리</span><span class="space"> </span><span class="codenumber">5.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">최소 차수 다항식의 인수 성질.</span>
 </h4>체 <span class="process-math">\(\mathbb{F}\)</span> 상의 다항식들을 모은 집합 <span class="process-math">\(S\)</span>가 다음 두 조건을 만족한다고 하자. 첫째, <span class="process-math">\(S\)</span>의 임의의 두 원소의 덧셈과 뺄셈의 결과는 다시 <span class="process-math">\(S\)</span>에 속한다. 둘째, <span class="process-math">\(S\)</span>의 임의의 원소에 체 <span class="process-math">\(\mathbb{F}\)</span> 상의 임의의 다항식을 곱한 결과는 다시 <span class="process-math">\(S\)</span>에 속한다. 이때 <span class="process-math">\(S\)</span>가 영다항식만으로 이루어진 집합이 아니라면, <span class="process-math">\(S\)</span>에 속한 영이 아닌 다항식 중 차수가 가장 낮은 다항식을 <span class="process-math">\(d(x)\)</span>라 할 때, <span class="process-math">\(S\)</span>에 속한 모든 다항식은 <span class="process-math">\(d(x)\)</span>를 인수로 가진다.</article><details id="thm-poly-minimal-degree-theorem-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><span class="process-math">\(S\)</span><span class="process-math">\(f(x)\)</span><span class="process-math">\(d(x)\)</span><span class="process-math">\(f(x) = q(x)d(x) + r(x)\)</span><span class="process-math">\(q(x), r(x)\)</span><span class="process-math">\(q(x)d(x)\)</span><span class="process-math">\(S\)</span><span class="process-math">\(r(x) = f(x) - q(x)d(x)\)</span><span class="process-math">\(S\)</span><span class="process-math">\(r(x)\)</span><span class="process-math">\(r(x)\)</span><span class="process-math">\(d(x)\)</span><span class="process-math">\(d(x)\)</span><span class="process-math">\(S\)</span><span class="process-math">\(f(x) = q(x)d(x)\)</span><span class="process-math">\(d(x)\)</span><span class="process-math">\(f(x)\)</span><span class="process-math">\(\blacksquare\)</span></article></details><details id="ex-poly-minimal-degree-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">5.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">공통근을 가지는 다항식의 집합.</span>
 </h4></summary><article class="example example-like knowl__content"><span class="process-math">\(a, b\)</span><span class="process-math">\(f(a)=0\)</span><span class="process-math">\(f(b)=0\)</span><span class="process-math">\(S\)</span><span class="process-math">\(h(x)\)</span><span class="process-math">\(S\)</span><span class="process-math">\((x-a)(x-b)\)</span><span class="process-math">\(S\)</span></article></details></section><section class="subsection" id="subsec-poly-matrix-evaluation"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.5.3</span><span class="space"> </span><span class="title">행렬 평가 사상</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">5.5.3</span><span class="space"> </span><span class="title">행렬 평가 사상</span>
 </h3>
 <article class="definition definition-like" id="def-poly-matrix-evaluation"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">5.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">행렬 평가 사상.</span>

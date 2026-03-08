@@ -96,25 +96,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.16';
+eBookConfig.runestone_version = '7.11.17';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.0f480e95eedd3cd4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.75d8d8257df1449f.css">
+<script src="_static/prefix-runtime.86a1bdf80f338ffc.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
 #01-vector-space-2-2-2 > li { counter-increment: 01-vector-space-2-2-2; }
-#def-vector-space-1-2 { counter-set: def-vector-space-1-2 0; }
-#def-vector-space-1-2 > li::marker { content: ""counter(def-vector-space-1-2,decimal)"."; }
-#def-vector-space-1-2 > li { counter-increment: def-vector-space-1-2; }
-#ex-vector-space-2-2 { counter-set: ex-vector-space-2-2 0; }
-#ex-vector-space-2-2 > li::marker { content: ""counter(ex-vector-space-2-2,decimal)"."; }
-#ex-vector-space-2-2 > li { counter-increment: ex-vector-space-2-2; }
+#def-vector-space-3-2-1 { counter-set: def-vector-space-3-2-1 0; }
+#def-vector-space-3-2-1 > li::marker { content: ""counter(def-vector-space-3-2-1,decimal)"."; }
+#def-vector-space-3-2-1 > li { counter-increment: def-vector-space-3-2-1; }
+#ex-vector-space-3-2 { counter-set: ex-vector-space-3-2 0; }
+#ex-vector-space-3-2 > li::marker { content: ""counter(ex-vector-space-3-2,decimal)"."; }
+#ex-vector-space-3-2 > li { counter-increment: ex-vector-space-3-2; }
 #prop-basic-properties-2-2 { counter-set: prop-basic-properties-2-2 0; }
 #prop-basic-properties-2-2 > li::marker { content: ""counter(prop-basic-properties-2-2,decimal)"."; }
 #prop-basic-properties-2-2 > li { counter-increment: prop-basic-properties-2-2; }
@@ -377,14 +377,20 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">맺음말</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">색인</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="03-04-triangulation-and-jordan"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">삼각화와 조르당 표준형</span>
 </h2>
 <div class="para" id="03-04-triangulation-and-jordan-2">임의의 선형변환이 대각화 가능한 것은 아닙니다. 하지만 체 <span class="process-math">\(\mathbb{F}\)</span> 위에서 특성다항식이 일차식으로 완전히 분해된다는 조건만 만족한다면, 대각행렬에 가장 가까운 형태인 상삼각행렬, 나아가 구조적 유일성을 담보하는 조르단 표준형으로 변환을 단순화할 수 있습니다.</div>
 <section class="subsection" id="03-04-01-triangulation"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="space"> </span><span class="title">몫공간을 이용한 삼각화</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="space"> </span><span class="title">몫공간을 이용한 삼각화</span>
 </h3>
 <article class="definition definition-like" id="def-triangularizable"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">삼각화.</span>
@@ -413,7 +419,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></article></details><details id="03-04-01-triangulation-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">실수와 복소수에서의 삼각화 가능성.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="03-04-01-triangulation-5-2-1">실수체 <span class="process-math">\(\mathbb{R}\)</span> 위에서 <span class="process-math">\(A = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix}\)</span>의 특성다항식은 <span class="process-math">\(x^2 + 1\)</span>이므로 <span class="process-math">\(\mathbb{R}\)</span>에서 일차식으로 분해되지 않는다. 정리 <a href="03-04-triangulation-and-jordan.html#thm-triangularization" class="xref" data-knowl="./knowl/xref/thm-triangularization.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 3.4.3: 삼각화의 필요충분조건">정리 3.4.3</a>에 의해 이 행렬은 실수 범위 내에서 삼각화가 불가능하다. 하지만 복소수체 <span class="process-math">\(\mathbb{C}\)</span>로 확장하면 <span class="process-math">\((x-i)(x+i)\)</span>로 분해되므로 삼각화, 나아가 대각화까지 가능해진다.</div></article></details></section><section class="subsection" id="03-04-02-generalized-eigenspace"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="space"> </span><span class="title">일반화된 고유공간 분해</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="space"> </span><span class="title">일반화된 고유공간 분해</span>
 </h3>
 <div class="para" id="03-04-02-generalized-eigenspace-2">대각화가 불가능한 행렬을 분석하기 위해 고유공간의 개념을 확장해야 합니다.</div>
 <article class="definition definition-like" id="def-generalized-eigenvector"><h4 class="heading">
@@ -441,7 +447,7 @@ V = K_{\lambda_1} \oplus K_{\lambda_2} \oplus \dots \oplus K_{\lambda_k}
 </div></article></details><details id="03-04-02-generalized-eigenspace-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="period">.</span><span class="space"> </span><span class="title">소분해 정리의 응용.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="03-04-02-generalized-eigenspace-6-2-1">특성다항식이 <span class="process-math">\(p_T(x) = (x-1)^2(x-2)\)</span>인 변환에 대하여, 공간 <span class="process-math">\(V\)</span>는 고윳값 1에 대한 일반화된 고유공간 <span class="process-math">\(K_1\)</span>과 고윳값 2에 대한 일반화된 고유공간 <span class="process-math">\(K_2\)</span>(여기서는 대수적 중복도가 1이므로 일반 고유공간 <span class="process-math">\(E_2\)</span>와 일치함)의 직합 <span class="process-math">\(V = K_1 \oplus K_2\)</span>로 완벽하게 분리된다. <span class="process-math">\(T\)</span>의 작용은 이 두 독립적인 블록 안에서의 작용으로 완전히 분해된다.</div></article></details></section><section class="subsection" id="03-04-03-jordan-form"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="space"> </span><span class="title">조르당 표준형</span>
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="space"> </span><span class="title">조르당 표준형</span>
 </h3>
 <div class="para" id="03-04-03-jordan-form-2">직합으로 분해된 각각의 일반화된 고유공간 <span class="process-math">\(K_\lambda\)</span> 내부에서, 변환 <span class="process-math">\(T - \lambda I\)</span>는 멱영 작용소(거듭제곱하면 영변환이 되는 작용소)가 됩니다. 이 멱영 작용소의 구조를 파헤쳐 얻는 가장 단순한 행렬표현이 조르당 블록입니다.</div>
 <article class="definition definition-like" id="def-jordan-block"><h4 class="heading">
