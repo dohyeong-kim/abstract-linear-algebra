@@ -12,7 +12,7 @@
       <title>삼각화</title>
       <statement>
         <p>
-          체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V</m>와 선형변환 <m>T: V \to V</m>에 대하여, <m>V</m>의 어떤 순서기저 <m>\beta</m>에 대한 행렬표현 <m>[T]_\beta</m>가 상삼각행렬일 때, 선형변환 <m>T</m>를 <term>삼각화</term> 가능하다고 한다.<aside><p>삼각화:triangularization</p></aside>
+          체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V</m>와 선형변환 <m>T: V \to V</m>에 대하여, <m>V</m>의 어떤 순서기저 <m>\beta</m>에 대한 행렬표현 <m>[T]_\beta</m>가 상삼각행렬일 때, 선형변환 <m>T</m>를 <term>삼각화</term><idx><h>삼각화</h></idx> 가능하다고 한다.<aside><p>삼각화:triangularization</p></aside>
         </p>
       </statement>
     </definition>
@@ -74,7 +74,7 @@
       <title>일반화된 고유벡터와 일반화된 고유공간</title>
       <statement>
         <p>
-          선형변환 <m>T</m>와 고윳값 <m>\lambda</m>에 대하여,<aside><p>일반화된 고유벡터:generalized eigenvector</p></aside> 어떤 양의 정수 <m>k</m>가 존재하여 <m>(T - \lambda I)^k(v) = 0</m>을 만족하는 영벡터가 아닌 벡터 <m>v</m>를 <term>일반화된 고유벡터</term>라 한다. 주어진 <m>\lambda</m>에 대응하는 모든 일반화된 고유벡터와 영벡터의 집합을 <term>일반화된 고유공간</term>이라 하고 <m>K_\lambda</m>로 표기한다.
+          선형변환 <m>T</m>와 고윳값 <m>\lambda</m>에 대하여,<aside><p>일반화된 고유벡터:generalized eigenvector</p></aside> 어떤 양의 정수 <m>k</m>가 존재하여 <m>(T - \lambda I)^k(v) = 0</m>을 만족하는 영벡터가 아닌 벡터 <m>v</m>를 <term>일반화된 고유벡터</term><idx><h>고유벡터</h><h>일반화된 ~</h></idx>라 한다. 주어진 <m>\lambda</m>에 대응하는 모든 일반화된 고유벡터와 영벡터의 집합을 <term>일반화된 고유공간</term><idx><h>고유공간</h><h>일반화된 ~</h></idx>이라 하고 <m>K_\lambda</m>로 표기한다.
           <aside>
             <p>
               일반화된 고유공간:generalized eigenspace
@@ -143,7 +143,7 @@
           <aside>
             <p>조르당 블록:Jordan block</p>
           </aside>
-          대각성분이 모두 <m>\lambda</m>이고, 바로 위 대각선 성분이 모두 1이며, 나머지 성분은 모두 0인 정사각행렬을 <m>\lambda</m>에 대한 <term>조르당 블록</term>이라 한다. 주대각선을 따라 조르당 블록들이 나열된 블록 대각행렬을 <term>조르당 행렬</term>이라 한다.
+          대각성분이 모두 <m>\lambda</m>이고, 바로 위 대각선 성분이 모두 1이며, 나머지 성분은 모두 0인 정사각행렬을 <m>\lambda</m>에 대한 <term>조르당 블록</term><idx><h>조르당 블록</h></idx>이라 한다. 주대각선을 따라 조르당 블록들이 나열된 블록 대각행렬을 <term>조르당 행렬</term><idx><h>조르당 행렬</h></idx>이라 한다.
           <aside>
             <p>조르당 행렬:Jordan matrix</p>
           </aside>
