@@ -28,7 +28,7 @@
       </definition>
 
       <p>
-      이 정의는 무척 부드럽고 유연합니다. <m>V \times W</m>에서 출발하는 임의의 쌍선형사상 <m>B</m>는 반드시 텐서곱이라는 관문을 통과한 뒤, 단순한 선형사상 <m>\tilde{B}</m>가 되어 목적지 <m>Z</m>로 향해야 한다는 뜻입니다.
+      <xref ref="def-tensor-prod-univprop"/>는 텐서곱의 개념을 보편성질에 기대어 정의하고 있습니다. 보편성질에 기반한 정의는 그 성질을 구현하는 대상을 특정하지 않았기 때문에 <q>유연</q>합니다.
       </p>
       <example xml:id="ex-scalar-mult-tensor">
       <title>스칼라 곱셈과 텐서곱</title>
