@@ -47,6 +47,7 @@
       </p>
       <theorem xml:id="thm-tensor-uniqueness-structured">
       <title>텐서곱의 유일성</title>
+      <idx><h>텐서곱</h><h>유일성</h></idx>
       <statement>
         <p>
         보편성질을 만족하는 두 텐서곱 <m>(T_1, \otimes_1)</m>과 <m>(T_2, \otimes_2)</m>가 존재한다면, 다음 등식을 만족하는 동형사상 <m>f: T_1 \to T_2</m>가 유일하게 존재한다.
@@ -85,6 +86,7 @@
 
       <theorem xml:id="thm-tensor-existence">
       <title>텐서곱의 존재성</title>
+      <idx><h>텐서곱</h><h>존재성</h></idx>
       <statement>
         <p>
         체 <m>\mathbb{F}</m> 상의 임의의 두 벡터공간 <m>V</m>와 <m>W</m>에 대하여, 텐서곱의 보편성질을 완벽하게 만족하는 쌍 <m>(V \otimes W, \otimes)</m>가 항상 존재한다.

@@ -4,6 +4,7 @@
   <title>몫과 코커널</title>
   <p>이 절에서는 몫과 코커널을 소개합니다.</p>
   <subsection xml:id="subsec-quotients">
+    <idx><h>몫</h></idx>
     <title>몫</title>
     <p>
       <term>몫</term><idx><h>몫</h></idx> 또는 <term>몫공간</term><idx><h>몫공간</h></idx>의 개념은 동치관계라는 보다 일반적 개념의 특수한 경우입니다. 동치관계는 집합에 대해 적용되며 그 대상이 꼭 선형공간일 필요는 없습니다.<fn><p>동치관계에 대한 기초적 사실들은 부록 <xref ref="99-03-equivalence"/>을 참조.</p></fn>
@@ -77,6 +78,7 @@
       </proof>
     </proposition>
     <remark xml:id="rmk-well-defined">
+      <idx><h>잘 정의되었다</h></idx>
       <p>
         분할 또는 동치류가 주어진 경우, 대표원에 의지하여 표현한 무언가가 대표원과 무관한 경우 해당 표현이 <term>잘 정의되었다</term><idx><h>잘 정의되었다</h></idx>고 말합니다. <aside><p>잘 정의된:well-defined</p></aside>
       </p>
@@ -164,6 +166,7 @@
   <subsection xml:id="subsec-cokernel">
     <title>코커널</title>
   <definition xml:id="def-cokernel">
+    <idx><h>코커널</h></idx>
     <title>코커널</title>
     <statement>
     <p>
@@ -200,6 +203,7 @@
       <exercise xml:id="exercise-matrix-similarity">
         <title>닮음과 동치관계</title>
         <definition xml:id="def-matrix-similarity">
+          <idx><h>닮음</h></idx>
           <title>행렬의 닮음</title>
           <statement>
           <p>
