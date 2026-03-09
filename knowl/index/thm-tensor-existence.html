@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h4 class="heading">
+<span class="type">정리</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">텐서곱의 존재성.</span>
+</h4>
+<div class="para">체 <span class="process-math">\(\mathbb{F}\)</span> 상의 임의의 두 벡터공간 <span class="process-math">\(V\)</span>와 <span class="process-math">\(W\)</span>에 대하여, 텐서곱의 보편성질을 완벽하게 만족하는 쌍 <span class="process-math">\((V \otimes W, \otimes)\)</span>가 항상 존재한다.</div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para"> 집합 <span class="process-math">\(V \times W\)</span>의 모든 원소 <span class="process-math">\((v, w)\)</span>들을 기저로 가지는 거대한 자유벡터공간 <span class="process-math">\(F\)</span>를 구성한다. 이 공간 <span class="process-math">\(F\)</span>의 원소는 기호 <span class="process-math">\((v, w)\)</span>들의 유한 선형결합으로 표현된다.</div>
+<div class="para"> 우리가 최종적으로 원하는 연산 <span class="process-math">\(\otimes\)</span>는 쌍선형변환이어야 한다. 이를 위해 <span class="process-math">\(F\)</span> 안에서 다음 형태의 모든 벡터들에 의해 생성되는 부분공간 <span class="process-math">\(S\)</span>를 정의한다. (단, <span class="process-math">\(v, v_1, v_2 \in V\text{,}\)</span> <span class="process-math">\(w, w_1, w_2 \in W\text{,}\)</span> <span class="process-math">\(c \in \mathbb{F}\)</span>)</div>
+<ul class="disc" id="thm-tensor-existence-4-3">
+<li><div class="para"><span class="process-math">\(\displaystyle (v_1 + v_2, w) - (v_1, w) - (v_2, w)\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle (cv, w) - c(v, w)\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle (v, w_1 + w_2) - (v, w_1) - (v, w_2)\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle (v, cw) - c(v, w)\)</span></div></li>
+</ul>
+<div class="para"> 이제 <span class="process-math">\(F\)</span>를 부분공간 <span class="process-math">\(S\)</span>로 나눈 몫공간을 <span class="process-math">\(V \otimes W = F/S\)</span>로 정의한다. 임의의 잉여류 대표원 <span class="process-math">\((v, w)\)</span>에 대응하는 잉여류 <span class="process-math">\((v, w) + S\)</span>를 기호 <span class="process-math">\(v \otimes w\)</span>로 표기한다.</div>
+<div class="para">사상 <span class="process-math">\(\otimes: V \times W \to V \otimes W\)</span>를 <span class="process-math">\(\otimes(v, w) = v \otimes w\)</span>로 정의하자. 부분공간 <span class="process-math">\(S\)</span>를 법으로 몫공간을 취했으므로, <span class="process-math">\(S\)</span>의 생성원들은 모두 이 몫공간에서 영벡터가 된다. 이 구조적 특징으로 인해 사상 <span class="process-math">\(\otimes\)</span>는 자연스럽게 쌍선형변환이 된다. (예를 들어, <span class="process-math">\((v_1 + v_2) \otimes w = (v_1 + v_2, w) + S = ((v_1, w) + (v_2, w)) + S = v_1 \otimes w + v_2 \otimes w\)</span>가 성립한다.)</div>
+<div class="para"> 이 몫공간이 실제로 보편성질을 만족하는지 확인하자. 임의의 벡터공간 <span class="process-math">\(Z\)</span>와 쌍선형변환 <span class="process-math">\(B: V \times W \to Z\)</span>가 주어졌다고 가정한다.</div>
+<div class="para">집합 <span class="process-math">\(V \times W\)</span>에서 <span class="process-math">\(Z\)</span>로 가는 함수 <span class="process-math">\(B\)</span>를 자유벡터공간 <span class="process-math">\(F\)</span>의 기저 위에서 정의된 함수로 보고, 이를 전체 공간으로 선형적으로 확장하여 유일한 선형변환 <span class="process-math">\(\bar{B}: F \to Z\)</span>를 얻는다. 기저에서의 값은 <span class="process-math">\(\bar{B}(v, w) = B(v, w)\)</span>이다.</div>
+<div class="para">
+<span class="process-math">\(B\)</span>가 원래 쌍선형변환이었으므로, 부분공간 <span class="process-math">\(S\)</span>의 모든 생성원들은 <span class="process-math">\(\bar{B}\)</span>에 의해 영벡터로 맵핑된다. (예: <span class="process-math">\(\bar{B}((cv, w) - c(v, w)) = B(cv, w) - cB(v, w) = 0\)</span>). 따라서 <span class="process-math">\(S \subseteq \ker(\bar{B})\)</span>가 성립한다.</div>
+<div class="para">
+<a href="02-02-isomorphism-theorems.html#thm-first-isomorphism" class="xref" data-knowl="./knowl/xref/thm-first-isomorphism.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 2.2.1: 제1동형정리">동형정리 2.2.1</a>에 의해, <span class="process-math">\(S\)</span>가 커널에 포함되므로 선형변환 <span class="process-math">\(\tilde{B}: F/S \to Z\)</span>가 유일하게 유도된다. 이 유도된 사상은 <span class="process-math">\(\tilde{B}(v \otimes w) = \tilde{B}((v, w) + S) = \bar{B}(v, w) = B(v, w)\)</span>를 완벽하게 만족한다.</div>
+<div class="para">결과적으로 <span class="process-math">\(\tilde{B} \circ \otimes = B\)</span>를 만족하는 유일한 선형변환 <span class="process-math">\(\tilde{B}\)</span>를 항상 찾을 수 있으므로, 우리가 구성한 몫공간 <span class="process-math">\(F/S\)</span>는 텐서곱의 보편성질을 충족하며 그 존재성이 증명되었다. <span class="process-math">\(\blacksquare\)</span>
+</div></article></details><span class="incontext"><a class="internal" href="04-01-tensor-product.html#thm-tensor-existence">in-context</a></span>
+</body>
+</html>
