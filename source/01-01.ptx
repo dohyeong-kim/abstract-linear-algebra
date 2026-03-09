@@ -176,7 +176,8 @@
     </p>
 
     <definition xml:id="def-span">
-      <statement><p>정의 2 (스팬, 생성). 벡터 공간 <m>V</m>의 부분집합 <m>S</m>에 대하여, <m>S</m>의 원소들로 만들 수 있는 모든 가능한 선형결합들의 집합을 <m>S</m>의 <term>스팬</term>이라 하고 <m>\operatorname{span}(S)</m>로 표기한다.
+      <title>스팬, 생성</title>
+      <statement><p>벡터 공간 <m>V</m>의 부분집합 <m>S</m>에 대하여, <m>S</m>의 원소들로 만들 수 있는 모든 가능한 선형결합들의 집합을 <m>S</m>의 <term>스팬</term>이라 하고 <m>\operatorname{span}(S)</m>로 표기한다.
         <aside>
           <p>스팬:span, 생성:generate</p>
         </aside>
@@ -198,6 +199,26 @@
         </p>
       </statement>
     </example>
+    <p>
+      위에서 살펴본 예시는 스팬의 결과가 항상 부분공간이 될 수 있음을 시사합니다. 실제로, 스팬의 결과는 언제나 부분공간입니다.
+    </p>
+    <proposition xml:id="prop-span-is-subspace">
+      <title>스팬은 부분공간이다</title>
+      <statement>
+        <p><m>V</m>가 체 <m>\mathbb{F}</m> 위의 벡터공간이고 <m>S \subseteq V</m>가 임의의 부분집합일 때, <m>\operatorname{span}(S)</m>는 <m>V</m>의 부분공간이다.</p>
+      </statement>
+      <proof>
+        <p><xref ref="thm-subspace-test"/>의 부분공간 판정법을 사용하여 증명합니다.</p>
+        <p><em>공집합이 아님:</em> <m>\operatorname{span}(\emptyset) = \{\mathbf{0}\}</m>이므로 임의의 <m>S</m>에 대하여 <m>\operatorname{span}(S)</m>는 공집합이 아닙니다.</p>
+        <p><em>덧셈에 대한 닫힘:</em> 임의의 <m>u, v \in \operatorname{span}(S)</m>를 택합시다. 정의에 의해 다음과 같이 나타낼 수 있습니다.</p>
+        <md><mrow>u = \sum_{i=1}^{m} a_i s_i, \quad v = \sum_{j=1}^{n} b_j t_j</mrow></md>
+        <p>여기서 <m>s_i, t_j \in S</m>이고 <m>a_i, b_j \in \mathbb{F}</m>입니다. 따라서 <m>u + v = \sum_{i=1}^{m} a_i s_i + \sum_{j=1}^{n} b_j t_j</m>는 <m>S</m>의 벡터들의 선형결합이므로 <m>u + v \in \operatorname{span}(S)</m>입니다.</p>
+        <p><em>스칼라 곱셈에 대한 닫힘:</em> 임의의 스칼라 <m>c \in \mathbb{F}</m>와 <m>v \in \operatorname{span}(S)</m>를 택합시다. <m>v = \sum_{i=1}^{k} d_i s_i</m>이면 다음이 성립합니다.</p>
+        <md><mrow>cv = c\sum_{i=1}^{k} d_i s_i = \sum_{i=1}^{k} (cd_i) s_i</mrow></md>
+        <p>여기서 <m>cd_i \in \mathbb{F}</m>이고 <m>s_i \in S</m>이므로, <m>cv</m>는 <m>S</m>의 벡터들의 선형결합입니다. 따라서 <m>cv \in \operatorname{span}(S)</m>입니다.</p>
+        <p>부분공간 판정법의 세 가지 조건이 모두 만족되므로, <m>\operatorname{span}(S)</m>는 <m>V</m>의 부분공간입니다.</p>
+      </proof>
+    </proposition>
   </subsection>
   
   <exercises xml:id="exercises-01-01">
