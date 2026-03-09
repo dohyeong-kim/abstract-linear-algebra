@@ -351,7 +351,7 @@
       <title>다항식의 최대공약수</title>
       <statement>
         <p>
-        보충 읽기자료의 정리 1(나눗셈 알고리즘)과 정리 2(최소 차수 다항식의 인수 성질)를 결합하여, 두 다항식 <m>f(x), g(x)</m>의 공통 인수 중 차수가 가장 높은 다항식(최대공약수) <m>d(x)</m>가 존재함을 증명하시오.
+        보충 읽기자료의 <xref ref="thm-poly-division-algorithm"/>과 <xref ref="thm-poly-minimal-degree-theorem"/>를 결합하여, 두 다항식 <m>f(x), g(x)</m>의 공통 인수 중 차수가 가장 높은 다항식<fn><p>최대공약수와의 유사성을 관찰할 수 있습니다.</p></fn> <m>d(x)</m>가 존재함을 증명하시오.
         </p>
       </statement>
     </exercise>

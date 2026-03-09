@@ -9,6 +9,7 @@
   <subsection xml:id="subsec-extension-field">
     <title>확장체</title>
     <definition xml:id="def-extension-field">
+      <idx><h>확장체</h></idx>
       <title>확장체</title>
       <statement>
         <p>
@@ -43,6 +44,7 @@
     <title>스칼라 확장</title>
     
     <definition xml:id="def-scalar-extension">
+      <idx><h>스칼라 확장</h></idx>
       <title>스칼라 확장</title>
       <statement>
         <p>
@@ -87,42 +89,43 @@
 
 <subsection xml:id="subsec-extension-of-maps">
   
-  <title>사상의 확장</title>
+  <title>선형변환의 확장</title>
   <p>
-    스칼라 확장은 벡터공간뿐만 아니라 선형사상에도 자연스럽게 확장될 수 있습니다. 체 <m>\mathbb{F}</m> 상의 선형변환 <m>T: V \to W</m>가 주어졌을 때, 텐서곱을 이용하여 <m>K</m>-선형변환 <m>T_K: V_K \to W_K</m>를 다음과 같이 정의할 수 있습니다.
+    스칼라 확장은 벡터공간뿐만 아니라 선형변환에도 자연스럽게 확장될 수 있습니다. 체 <m>\mathbb{F}</m> 상의 선형변환 <m>T: V \to W</m>가 주어졌을 때, 텐서곱을 이용하여 <m>K</m>-선형변환 <m>T_K: V_K \to W_K</m>를 다음과 같이 정의할 수 있습니다.
       <me>T_K(c \otimes v) = c \otimes T(v) \quad (c \in K, v \in V)</me>
       이 정의는 선형성에 의해 전체 공간으로 확장되며, 결과적으로 <m>T_K</m>는 체 <m>K</m> 상의 선형변환이 됩니다. 이 과정은 원래의 선형변환이 확장된 공간에서도 동일한 행위를 하도록 보장합니다.
   </p>
   <proposition xml:id="prop-linear-map-space-scalar-extension">
-    <title>선형사상 공간과 스칼라 확장의 가환성</title>
+    <title>선형변환 공간과 스칼라 확장의 가환성</title>
     <statement>
       <p>
+
         체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V, W</m>와 확장체 <m>K</m>에 대하여, 다음 <m>K</m>-벡터공간의 자연스러운 동형사상이 성립한다.
         <me>K \otimes_{\mathbb{F}} \mathcal{L}_{\mathbb{F}}(V, W) \cong \mathcal{L}_K(V_K, W_K)</me>
-        즉, 선형사상 공간을 먼저 구성하고 스칼라를 나중에 확장하는 것과, 각각 스칼라 확장을 거친 공간들 사이에서 선형사상 공간을 새롭게 구성하는 것은 대수적으로 완전히 동일하다.
+        즉, 선형변환 공간을 먼저 구성하고 스칼라를 나중에 확장하는 것과, 각각 스칼라 확장을 거친 공간들 사이에서 선형변환 공간을 새롭게 구성하는 것은 대수적으로 완전히 동일하다.
       </p>
     </statement>
     <proof>
       <p>
-        사상 <m>B: K \times \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_K(V_K, W_K)</m>을 <m>B(c, T) = c T_K</m>로 정의하자. 여기서 <m>T_K: V_K \to W_K</m>은 <m>T_K(a \otimes v) = (ca) \otimes T(v)</m>로 작용하는 <m>K</m>-선형사상이다. 사상 <m>B</m>는 <m>c</m>와 <m>T</m> 각각에 대해 선형성을 가지므로 <m>\mathbb{F}</m>-쌍선형사상이다.
+        사상 <m>B: K \times \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_K(V_K, W_K)</m>을 <m>B(c, T) = c T_K</m>로 정의하자. 여기서 <m>T_K: V_K \to W_K</m>은 <m>T_K(a \otimes v) = (ca) \otimes T(v)</m>로 작용하는 <m>K</m>-선형변환이다. 사상 <m>B</m>는 <m>c</m>와 <m>T</m> 각각에 대해 선형성을 가지므로 <m>\mathbb{F}</m>-쌍선형변환이다.
       </p>
       <p>
-        텐서곱의 보편성질에 의해, <m>\Phi(c \otimes T) = c T_K</m>을 만족하는 <m>\mathbb{F}</m>-선형사상 <m>\Phi: K \otimes_{\mathbb{F}} \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_K(V_K, W_K)</m>이 유일하게 존재한다. 또한 임의의 스칼라 <m>k \in K</m>에 대하여 <m>\Phi(k(c \otimes T)) = \Phi((kc) \otimes T) = (kc)T_K = k(cT_K) = k\Phi(c \otimes T)</m>가 성립하므로, 이 사상 <m>\Phi</m>는 사실 <m>K</m>-선형사상이다.
+        텐서곱의 보편성질에 의해, <m>\Phi(c \otimes T) = c T_K</m>을 만족하는 <m>\mathbb{F}</m>-선형변환 <m>\Phi: K \otimes_{\mathbb{F}} \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_K(V_K, W_K)</m>이 유일하게 존재한다. 또한 임의의 스칼라 <m>k \in K</m>에 대하여 <m>\Phi(k(c \otimes T)) = \Phi((kc) \otimes T) = (kc)T_K = k(cT_K) = k\Phi(c \otimes T)</m>가 성립하므로, 이 사상 <m>\Phi</m>는 사실 <m>K</m>-선형변환이다.
       </p>
       <p>
         <m>V</m>와 <m>W</m>의 <m>\mathbb{F}</m>-차원을 각각 <m>n, m</m>이라 하자. 양변의 <m>K</m>-벡터공간으로서의 차원을 계산해 보면 모두 <m>nm</m>으로 동일하다.
       </p>
       <p>
-        <m>V</m>의 기저 <m>\{v_1, \dots, v_n\}</m>와 <m>W</m>의 기저 <m>\{w_1, \dots, w_m\}</m>에 대하여, <m>v_i</m>를 <m>w_j</m>로 보내고 나머지는 영벡터로 보내는 기본 선형사상 <m>E_{ji} \in \mathcal{L}_{\mathbb{F}}(V, W)</m>들을 생각하자. 사상 <m>\Phi</m>에 의해 <m>1 \otimes E_{ji}</m>는 기저 <m>1 \otimes v_k</m>를 <m>\delta_{ik} (1 \otimes w_j)</m>로 보내는 공역의 기본 <m>K</m>-선형사상으로 매핑된다. 이 결과물들이 <m>\mathcal{L}_K(V_K, W_K)</m>의 <m>K</m>-기저를 완벽하게 생성하므로 <m>\Phi</m>는 전사사상이며, 양변의 차원이 유한하고 동일하므로 전단사 동형사상이 된다.
+        <m>V</m>의 기저 <m>\{v_1, \dots, v_n\}</m>와 <m>W</m>의 기저 <m>\{w_1, \dots, w_m\}</m>에 대하여, <m>v_i</m>를 <m>w_j</m>로 보내고 나머지는 영벡터로 보내는 기본 선형변환 <m>E_{ji} \in \mathcal{L}_{\mathbb{F}}(V, W)</m>들을 생각하자. 사상 <m>\Phi</m>에 의해 <m>1 \otimes E_{ji}</m>는 기저 <m>1 \otimes v_k</m>를 <m>\delta_{ik} (1 \otimes w_j)</m>로 보내는 공역의 기본 <m>K</m>-선형변환으로 매핑된다. 이 결과물들이 <m>\mathcal{L}_K(V_K, W_K)</m>의 <m>K</m>-기저를 완벽하게 생성하므로 <m>\Phi</m>는 전사사상이며, 양변의 차원이 유한하고 동일하므로 전단사 동형사상이 된다.
       </p>
     </proof>
   </proposition>
 
   <example xml:id="ex-linear-map-scalar-extension">
-    <title>선형사상 공간의 스칼라 확장</title>
+    <title>선형변환 공간의 스칼라 확장</title>
     <statement>
       <p>
-        실수 공간 <m>V = \mathbb{R}^n, W = \mathbb{R}^m</m>과 복소수체 <m>\mathbb{C}</m>를 생각하자. 실수 위에서의 선형사상 공간 <m>\mathcal{L}_{\mathbb{R}}(\mathbb{R}^n, \mathbb{R}^m)</m>은 <m>m \times n</m> 실수 행렬 공간 <m>M_{m \times n}(\mathbb{R})</m>과 동형이다. <xref ref="prop-linear-map-space-scalar-extension"/>에 따르면, 이 실수 행렬 공간을 복소수체로 스칼라 확장한 <m>\mathbb{C} \otimes_{\mathbb{R}} M_{m \times n}(\mathbb{R})</m>은, 확장된 공간 <m>\mathbb{C}^n</m>에서 <m>\mathbb{C}^m</m>으로 가는 선형사상 공간인 복소 행렬 공간 <m>M_{m \times n}(\mathbb{C})</m>와 동형이 된다. 요컨대, 복소수 텐서를 곱하는 행위는 실수 행렬의 각 성분에 <m>i</m>를 포함한 복소수를 허용하여 행렬 공간 전체를 복소 행렬 공간으로 확장하는 직관적인 과정과 정확히 일치한다.
+        실수 공간 <m>V = \mathbb{R}^n, W = \mathbb{R}^m</m>과 복소수체 <m>\mathbb{C}</m>를 생각하자. 실수 위에서의 선형변환 공간 <m>\mathcal{L}_{\mathbb{R}}(\mathbb{R}^n, \mathbb{R}^m)</m>은 <m>m \times n</m> 실수 행렬 공간 <m>M_{m \times n}(\mathbb{R})</m>과 동형이다. <xref ref="prop-linear-map-space-scalar-extension"/>에 따르면, 이 실수 행렬 공간을 복소수체로 스칼라 확장한 <m>\mathbb{C} \otimes_{\mathbb{R}} M_{m \times n}(\mathbb{R})</m>은, 확장된 공간 <m>\mathbb{C}^n</m>에서 <m>\mathbb{C}^m</m>으로 가는 선형변환 공간인 복소 행렬 공간 <m>M_{m \times n}(\mathbb{C})</m>와 동형이 된다. 요컨대, 복소수 텐서를 곱하는 행위는 실수 행렬의 각 성분에 <m>i</m>를 포함한 복소수를 허용하여 행렬 공간 전체를 복소 행렬 공간으로 확장하는 직관적인 과정과 정확히 일치한다.
       </p>
     </statement>
   </example>
@@ -170,7 +173,7 @@
       <title>유도된 사상의 선형성</title>
       <statement>
         <p>
-          선형사상 <m>T: V \to W</m>가 주어졌을 때, 텐서곱 공간 상의 유도된 사상 <m>T_{\mathbb{C}}: V_{\mathbb{C}} \to W_{\mathbb{C}}</m>를 <m>T_{\mathbb{C}}(c \otimes v) = c \otimes T(v)</m>로 정의한다. 이 사상이 복소수 상에서 선형사상이 됨을 보이시오.
+          선형변환 <m>T: V \to W</m>가 주어졌을 때, 텐서곱 공간 상의 유도된 사상 <m>T_{\mathbb{C}}: V_{\mathbb{C}} \to W_{\mathbb{C}}</m>를 <m>T_{\mathbb{C}}(c \otimes v) = c \otimes T(v)</m>로 정의한다. 이 사상이 복소수 상에서 선형변환이 됨을 보이시오.
         </p>
       </statement>
     </exercise>
