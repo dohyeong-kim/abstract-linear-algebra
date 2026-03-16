@@ -260,7 +260,7 @@
     <exercise xml:id="exercise-injectivity-preserves-linear-independence">
       <title>단사 변환과 선형 독립성</title>
       <statement>
-      <p>단사 선형 변환 <m>T: V \to W</m>가 주어졌다. 정의역 <m>V</m>의 부분집합 <m>\{v_1, v_2, \dots, v_k\}</m>가 선형 독립이면, 그들의 상(Image)인 <m>\{T(v_1), T(v_2), \dots, T(v_k)\}</m> 역시 <m>W</m>에서 선형 독립이 됨을 증명하시오.</p>
+      <p>단사 선형 변환 <m>T: V \to W</m>가 주어졌다. 정의역 <m>V</m>의 부분집합 <m>\{v_1, v_2, \dots, v_k\}</m>가 선형 독립이면, 그들의 상(image)인 <m>\{T(v_1), T(v_2), \dots, T(v_k)\}</m> 역시 <m>W</m>에서 선형 독립이 됨을 증명하시오.</p>
       </statement>
     </exercise>
 
