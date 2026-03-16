@@ -60,9 +60,9 @@
       <p>체 <m>\mathbb{F}</m> 위의 임의의 벡터 공간 <m>V</m>는 기저를 가진다.</p>
       </statement>
       <proof>
-        <p>벡터 공간 <m>V</m>의 모든 선형 독립인 부분집합들의 모임을 <m>\mathcal{P}</m>라고 정의합니다. 즉, <m>\mathcal{P} = \{ S \subseteq V \mid S \text{는 선형 독립이다} \}</m> 입니다. 이 모임 <m>\mathcal{P}</m>에 집합의 포함 관계(<m>\subseteq</m>)를 부여하면, <m>(\mathcal{P}, \subseteq)</m>는 부분순서집합(Partially ordered set)이 됩니다. 공집합 <m>\emptyset</m>은 관례에 따라 선형 독립이므로 <m>\emptyset \in \mathcal{P}</m>이며, 따라서 <m>\mathcal{P}</m>는 공집합이 아닙니다.</p>
+        <p>벡터 공간 <m>V</m>의 모든 선형 독립인 부분집합들의 모임을 <m>\mathcal{P}</m>라고 정의합니다. 즉, <m>\mathcal{P} = \{ S \subseteq V \mid S \text{는 선형 독립이다} \}</m> 입니다. 이 모임 <m>\mathcal{P}</m>에 집합의 포함 관계(<m>\subseteq</m>)를 부여하면, <m>(\mathcal{P}, \subseteq)</m>는 부분순서집합이 됩니다.<aside><p>부분순서집합:partially ordered set</p></aside> 공집합 <m>\emptyset</m>은 관례에 따라 선형 독립이므로 <m>\emptyset \in \mathcal{P}</m>이며, 따라서 <m>\mathcal{P}</m>는 공집합이 아닙니다.</p>
   
-        <p>초른의 보조정리를 적용하기 위해, <m>\mathcal{P}</m> 안의 임의의 사슬(Chain) <m>\mathcal{C}</m>가 <m>\mathcal{P}</m> 안에서 상계(Upper bound)를 가짐을 보여야 합니다. 사슬 <m>\mathcal{C}</m>에 속하는 모든 선형 독립 집합들의 합집합을 <m>U</m>라고 정의합니다.
+        <p>초른의 보조정리를 적용하기 위해, <m>\mathcal{P}</m> 안의 임의의 사슬(Chain) <m>\mathcal{C}</m>가 <m>\mathcal{P}</m> 안에서 상계(upper bound)를 가짐을 보여야 합니다. 사슬 <m>\mathcal{C}</m>에 속하는 모든 선형 독립 집합들의 합집합을 <m>U</m>라고 정의합니다.
         <md><mrow>U = \bigcup_{S \in \mathcal{C}} S</mrow></md>
         이 합집합 <m>U</m>가 <m>\mathcal{P}</m>의 원소, 즉 <m>U</m> 역시 선형 독립임을 증명합니다.</p>
         <p>선형 독립성을 확인하기 위해, <m>U</m>에서 임의의 유한 개의 벡터 <m>v_1, v_2, \dots, v_n</m>을 택하고 이들의 선형결합이 영벡터가 된다고 가정합니다.
@@ -125,7 +125,7 @@
           
           <p><m>\{v_1, v_2, \dots, v_n\}</m>은 <m>V</m>를 생성하는 집합이므로, 위 방정식이 성립하려면 각 <m>j = 1, 2, \dots, n</m>에 대하여
           <md><mrow>\sum_{i=1}^{m} c_i a_{ij} = 0</mrow></md>
-          이 성립해야 합니다.</p>
+          이 성립하는 것으로 충분합니다.</p>
           
           <p>이제 행렬 형태로 표현하면, <m>m \times n</m> 행렬 <m>A = (a_{ij})</m>에 대하여 벡터 <m>\mathbf{c} = (c_1, c_2, \dots, c_m)^T</m>가 동차 선형 방정식 <m>A^T \mathbf{c} = \mathbf{0}</m>을 만족해야 합니다.</p>
           
@@ -133,7 +133,7 @@
           
           <p>그러나 이는 <m>c_1 w_1 + c_2 w_2 + \dots + c_m w_m = \mathbf{0}</m>을 만족하는 영이 아닌 계수들이 존재함을 의미하므로, <m>S</m>가 선형 종속이라는 모순이 발생합니다.</p>
           
-          <p>따라서 우리의 가정 <m>|S| > n</m>은 거짓이고, <m>|S| \le n</m>이 성립해야 합니다.</p>
+          <p>따라서 우리의 가정 <m>|S| &gt; n</m>은 거짓이고, <m>|S| \le n</m>이 성립해야 합니다.</p>
         </proof>
       </proposition>
     </p>
@@ -178,7 +178,7 @@
     <example xml:id="ex-dimension-examples">
       <title>차원의 예시</title>
       <statement>
-      <p>체 <m>\mathbb{F}</m> 위의 벡터 공간 <m>\mathbb{F}^n</m>의 차원은 <m>n</m>입니다. 다항식 공간 <m>P_n(\mathbb{F})</m>의 차원은 <m>n+1</m>입니다. 실수 집합 <m>\mathbb{R}</m>을 유리수 체 <m>\mathbb{Q}</m> 위의 벡터 공간으로 취급할 때, 그 차원은 무한입니다.</p>
+      <p>체 <m>\mathbb{F}</m> 위의 벡터 공간 <m>\mathbb{F}^n</m>의 차원은 <m>n</m>입니다. 다항식 공간 <m>\mathbb{F}[x]_{\le n}</m>의 차원은 <m>n+1</m>입니다. 실수 집합 <m>\mathbb{R}</m>을 유리수 체 <m>\mathbb{Q}</m> 위의 벡터 공간으로 취급할 때, 그 차원은 무한입니다.</p>
       </statement>
     </example>
     <p>
