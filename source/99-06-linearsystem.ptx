@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="99-06-linearsystem" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>연립선형방정식</title>
+  <introduction>
+    <p>
+      이 절에서는 벡터공간의 기본 성질을 증명할 때 필요한 최소한의 선형방정식 이론을 소개합니다.
+    </p>
+  </introduction>
+  <section xml:id="sec-linear-system">
+    <title>연립일차방정식</title>
+    <p>
+      체 <m>\mathbb{F}</m> 위에서 <m>n</m>개의 변수 <m>x_1, x_2, \dots, x_n</m>에 대한 <m>m</m>개의 일차방정식으로 이루어진 <term>연립일차방정식</term>은 다음과 같은 형태를 갖습니다. <aside><p>연립일차방정식: System of linear equations</p></aside>
+      <me>a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1</me>
+      <me>a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2</me>
+      <me>\vdots</me>
+      <me>a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m</me>
+      여기서 계수 <m>a_{ij}</m>와 상수항 <m>b_i</m>는 모두 체 <m>\mathbb{F}</m>의 원소입니다. 특히 모든 <m>i</m>에 대하여 <m>b_i = 0</m>인 경우, 이를 <term>동차연립일차방정식</term>이라 합니다. <aside><p>동차연립일차방정식:homogeneous system of linear equations</p></aside>
+    </p>
+    <p>
+      동차연립방정식의 경우 각 변수 <m>x_i</m>에 대하여 <m>x_i=0</m>로 놓으면 해가 됩니다. 이 해를 <term>자명한 해</term>라 합니다. <aside><p>자명한 해:trivial solution</p></aside> 자명하지 않은 해를 <term>비자명해</term> 또는 <term>비자명한 해</term>라 합니다. <aside><p>비자명한 해:nontrivial solution</p></aside>
+    </p>
+  </section>
+  <theorem xml:id="thm-existence">
+    <title>동차연립일차방정식의 비자명해 존재</title>
+    <statement>
+      <p>
+        체 <m>\mathbb{F}</m> 위에서 <m>n</m>개의 변수와 <m>m</m>개의 방정식으로 이루어진 동차연립일차방정식에서 <m>n &gt; m</m>이면, 영벡터가 아닌 해, 즉 비자명해가 존재합니다.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        변수를 소거하여 증명할 수 있습니다. 엄밀한 구성을 위하여 <m>m</m>에 대한 귀납법을 사용하겠습니다.
+      </p>
+      <p>
+        <m>m = 0</m>이면 방정식이 없으므로 임의의 영이 아닌 벡터가 비자명해가 됩니다.
+      </p>
+      <p>
+        <m>m \geq 1</m>이라 하고, 변수의 수가 방정식의 수보다 많은 <m>m-1</m>개의 방정식으로 이루어진 모든 동차연립일차방정식에 대해 명제가 성립한다고 가정하겠습니다.
+        이제 <m>n &gt; m</m>인 <m>n</m>개의 변수 <m>x_1, \ldots, x_n</m>에 대한 동차연립일차방정식
+        <me>
+          \sum_{j=1}^{n} a_{ij} x_j = 0, \quad i = 1, \ldots, m
+        </me>
+        을 고려합니다. 두 가지 경우로 나눕니다.
+      </p>
+      <p>
+        <em>경우 1.</em> 모든 <m>i</m>에 대해 <m>a_{i1} = 0</m>인 경우.
+        그러면 <m>x_1 = 1,\, x_2 = \cdots = x_n = 0</m>으로 놓으면 모든 방정식을 만족하므로 <m>(1, 0, \ldots, 0)</m>이 비자명해입니다.
+      </p>
+      <p>
+        <em>경우 2.</em> 어떤 <m>i</m>에 대해 <m>a_{i1} \neq 0</m>인 경우.
+        방정식의 순서를 바꾸어 <m>a_{11} \neq 0</m>으로 할 수 있습니다.
+        각 <m>i = 2, \ldots, m</m>에 대해 <m>i</m>번째 방정식에서 첫 방정식의 <m>\dfrac{a_{i1}}{a_{11}}</m>배를 빼면 변수 <m>x_1</m>이 소거되어
+        <me>
+          \sum_{j=2}^{n} \left(a_{ij} - \frac{a_{i1}}{a_{11}} a_{1j}\right) x_j = 0, \quad i = 2, \ldots, m
+        </me>
+        을 얻습니다. 이는 <m>n-1</m>개의 변수 <m>x_2, \ldots, x_n</m>에 대한 <m>m-1</m>개의 동차방정식이고, <m>n - 1 &gt; m - 1</m>이므로 귀납 가정에 의해 비자명해 <m>(c_2, \ldots, c_n) \neq \mathbf{0}</m>이 존재합니다.
+        이제
+        <me>
+          c_1 = -\frac{1}{a_{11}} \sum_{j=2}^{n} a_{1j} c_j
+        </me>
+        로 정의하면, <m>(c_1, c_2, \ldots, c_n)</m>은 첫 방정식을 만족합니다. 또한 <m>(c_2, \ldots, c_n)</m>이 소거 후의 방정식들을 만족하므로 원래의 연립방정식 전체를 만족합니다.
+        <m>(c_2, \ldots, c_n) \neq \mathbf{0}</m>이므로 <m>(c_1, \ldots, c_n)</m>은 비자명해입니다.
+      </p>
+    </proof>
+  </theorem>
+  
+  
+
+</section>

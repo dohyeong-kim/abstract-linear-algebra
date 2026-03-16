@@ -2,9 +2,11 @@
 
 <section xml:id="99-03-equivalence" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>동치관계와 분할</title>
+  <introduction>
   <p>
     이 절에서는 동치관계와 분할의 개념을 소개합니다. 
   </p>
+  </introduction>
   <definition xml:id="def-equivalence-relation">
   <title>동치관계</title>
   <p>
