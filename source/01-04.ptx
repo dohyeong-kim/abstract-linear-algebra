@@ -271,7 +271,6 @@
           <statement>
             <p>
               <m>\mathbb{F}</m>상의 벡터공간 <m>V</m>에 선형변환 <m>T \colon V \to V</m>에 대하여, 어떤 부분공간 <m>W</m>에 대하여 임의의 <m>v \in W</m>가 <m>T(v) \in W</m>를 만족하면,<fn><p>간단히 <m>T(W)\subset W</m>라고도 씁니다.</p></fn> 이때 <m>W</m>를 <term><m>T</m>-불변 부분공간</term><idx><h>불변 부분공간</h></idx>이라고 합니다. 
-              
               <aside><p>불변 부분공간:invariant subspace</p></aside>
             </p>
           </statement>
