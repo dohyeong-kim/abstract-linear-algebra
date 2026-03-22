@@ -170,7 +170,7 @@
     <title>코커널</title>
     <statement>
     <p>
-      <m>T: V \to W</m>가 선형변환일 때, <m>T</m>의 <term>코커널</term><idx><h>선형변환</h><h>~의 코커널</h></idx><idx><h>코커널</h><h>선형변환의 ~</h></idx><idx><h>cokernel</h></idx>은 공역 <m>W</m>를 <m>T</m>의 치역으로 나눈 몫공간으로 정의되며 <m>\text{coker}(T)</m>로 표기합니다.
+      <m>T: V \to W</m>가 선형변환일 때, <m>T</m>의 <term>코커널</term><idx><h>선형변환</h><h>~의 코커널</h></idx><idx><h>코커널</h><h>선형변환의 ~</h></idx>은 공역 <m>W</m>를 <m>T</m>의 치역으로 나눈 몫공간으로 정의되며 <m>\text{coker}(T)</m>로 표기합니다.
       <me>\text{coker}(T) = W / \text{im}(T)</me>
     </p>
     </statement>

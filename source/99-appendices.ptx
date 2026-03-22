@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch-appendices" xmlns:xi="http://www.w3.org/2001/XInclude">
+<appendix xml:id="ch-appendices" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>부록</title>
     <introduction>
       <p>필요한 사전지식을 갈무리하였다.</p>
@@ -13,4 +13,4 @@
   <xi:include href="99-04-perm.ptx" />
   <xi:include href="99-05-poly.ptx" />
   <xi:include href="99-06-linearsystem.ptx" />
-</chapter>
+</appendix>

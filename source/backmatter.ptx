@@ -15,8 +15,10 @@
   <!-- <appendix> <title>List of Symbols</title> <notation-list/> </appendix> -->
 
   <!-- <index> <title>Index</title> <index-list/> </index> -->
-
-  <appendix> <title>색인</title> <index-list/> </appendix>
+  
+  <xi:include href="./99-appendices.ptx" />
+  
+  <appendix> <title>색인</title> <p>한글 용어만 색인에 포함하였다. 아쉽게도 pretext가 한글 검색을 지원하지 않아<fn>해결 방법을 아시는 분은 제보 부탁드립니다.</fn> 색인에 최대한 많은 용어를 포함하려 하였다. 로마자 용어의 경우 pretext 자체 기능으로(제목 아래에 있는 돋보기 클릭) 전체 강의록 검색이 가능하다.</p> <index-list/> </appendix>
   
   <colophon>
     <p> 이 웹문서는 <pretext />로 제작하였음. </p>

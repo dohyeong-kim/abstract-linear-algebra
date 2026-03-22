@@ -22,7 +22,6 @@
       <p>
         동형사상이 존재하는 경우 두 공간 <m>V</m>와 <m>W</m>는 서로 <term>동형</term><idx><h>동형</h><h>~공간</h></idx>이라 하며, <m>V \cong W</m>로 표기한다. <aside><p>동형:isomorphic</p></aside>
         동형사상을 명시할 때에는 <m>T \colon V \xrightarrow{\sim}W</m>로 표기한다.
-        <idx><h>isomorphic</h></idx>
       </p>
     </statement>
   </definition>

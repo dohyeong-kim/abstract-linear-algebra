@@ -11,7 +11,7 @@
     </p>
     <definition xml:id="def-vector-space">
       <idx><h>벡터공간</h><h>정의</h></idx>
-      <idx><h>vector space</h></idx>
+      
       <statement>
         <p>
            <m>\mathbb{F}</m>를 체라고 합시다. <aside><p>체:field</p></aside> 집합 <m>V</m>에 다음 두 가지 연산, 즉 덧셈(<m>+\colon V \times V \to V</m>)과 스칼라곱(<m>\cdot: \mathbb{F} \times V \to V</m>)이 주어져 있을 때, 두 연산이 임의의 <m>u, v, w \in V</m>와 <m>a, b \in \mathbb{F}</m>에 대해 다음의 8가지 공리를 만족합니다. 이때 <m>V</m>를 <m>\mathbb{F}</m> 위의 <term>벡터공간</term>이라고 부릅니다.
@@ -155,7 +155,7 @@
       <title>선형결합</title>
       <statement>
         <p>체 <m>\mathbb{F}</m> 위의 벡터 공간 <m>V</m>와 부분집합 <m>S \subseteq V</m>를 생각하자. <m>S</m>에 속하는 유한 개의 벡터 <m>v_1, v_2, \dots, v_k</m>와 체 <m>\mathbb{F}</m>의 스칼라 <m>c_1, c_2, \dots, c_k</m>에 대하여, 다음 형태의 합으로 표현되는 <m>V</m>의 원소 <m>v</m>를 <m>S</m>에 속한 벡터들의 <term>선형결합</term>이라고 한다.
-        <aside><p>선형결합:linear combination</p></aside><idx><h>선형결합</h></idx><idx><h>linear combination</h></idx>
+        <aside><p>선형결합:linear combination</p></aside><idx><h>선형결합</h></idx>
         <md><mrow>v = c_1 v_1 + c_2 v_2 + \dots + c_k v_k = \sum_{i=1}^{k} c_i v_i</mrow></md></p>
       </statement>
     </definition>
@@ -181,7 +181,7 @@
         <aside>
           <p>스팬:span, 생성:generate</p>
         </aside>
-        <idx><h>스팬</h></idx><idx><h>span</h></idx>
+        <idx><h>스팬</h></idx>
       수학적 관례에 따라 공집합의 스팬은 영벡터만을 포함하는 집합으로 정의한다. 즉, <m>\operatorname{span}(\emptyset) = \{ \mathbf{0} \}</m> 이다.</p>
       </statement>
     </definition>
@@ -293,7 +293,7 @@
           <p><m>V = M_{n \times n}(\mathbb{F})</m>를 체 <m>\mathbb{F}</m> 위의 <m>n \times n</m> 행렬들의 벡터 공간이라고 합니다. 고정된 행렬 <m>M \in V</m>에 대하여, <m>M</m>과 교환 법칙이 성립하는 모든 행렬들의 집합을 <m>M</m>의 <term>중심화기</term>라고 부릅니다. 그리고 <m>C(M)</m>으로 표기합니다. 즉,
           <md><mrow>C(M) =  \{ A \in V \mid AM = MA \}</mrow></md>
           입니다.
-          <idx><h>중심화기</h></idx><idx><h>centralizer</h></idx>
+          <idx><h>중심화기</h></idx>
           </p>
         </statement>
        </definition>
@@ -347,7 +347,7 @@
           <statement>
             <p>체 <m>\mathbb{F}</m>의 곱셈에 대한 항등원 <m>1</m>에 대하여 <m>1+1=0</m>이 성립할 때, <m>\mathbb{F}</m>를 <aside><p>표수:characteristic</p></aside> <term>표수</term>가 2인 체라고 한다. <fn>이러한 체에서는 임의의 원소 <m>a \in \mathbb{F}</m>에 대하여 <m>a+a=0</m>이 성립하며, 이는 곧 덧셈에 대한 역원이 자기 자신(<m>-a=a</m>)임을 의미한다.</fn></p>
             <idx><h>표수</h><h>표수가 2인 체</h></idx>
-            <idx><h>characteristic</h><h>field of characteristic 2</h></idx>
+            
           </statement>
         </definition>
       <p>임의의 체 <m>\mathbb{F}</m>와 그 위에서 정의된 함수들의 벡터 공간 <m>V = \mathcal{F}(\mathbb{F}, \mathbb{F})</m>를 생각하자. <m>V</m>의 두 부분집합인 우함수 공간 <m>W_e</m>와 기함수 공간 <m>W_o</m>를 다음과 같이 정의한다.</p>
