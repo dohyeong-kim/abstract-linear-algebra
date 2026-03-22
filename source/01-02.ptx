@@ -266,7 +266,7 @@
     <exercise xml:id="exercise-spanning-set-contains-basis">
       <title>생성 집합으로부터 기저의 추출</title>
       <statement>
-      <p>벡터공간 <m>V</m>에 포함된 집합 <m>S</m>가 <m>V</m>를 생성하면, <m>S</m>를 포함하는 <m>V</m>의 기저가 존재함을 보이시오.</p>
+      <p>벡터공간 <m>V</m>에 포함된 집합 <m>S</m>가 <m>V</m>를 생성하면, <m>S</m>에 포함되는 <m>V</m>의 기저가 존재함을 보이시오.</p>
       </statement>
     </exercise>
   </exercises>
