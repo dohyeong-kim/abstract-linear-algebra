@@ -19,7 +19,7 @@
       <title>사영의 직합 분해</title>
       <statement>
         <p>
-          선형 연산자 <m>P: V \to V</m> 가 사영이면, <m>V = \ker(P) \oplus \text{im}(P)</m> 로 직합 분해된다.
+          선형 연산자 <m>P: V \to V</m> 가 사영이면, <m>V = \ker(P) \oplus \operatorname{im}(P)</m> 로 직합 분해된다.
         </p>
       </statement>
       <proof>
