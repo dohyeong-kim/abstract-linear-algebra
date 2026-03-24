@@ -427,7 +427,7 @@ v \sim w \iff v - w \in W\tag{1.4.1}
 </h4>
 <div class="para logical" id="def-coset-quotient-space-2-1">
 <div class="para">
-<span class="process-math">\(V\)</span>를 체 <span class="process-math">\(F\)</span> 위에서 정의된 벡터공간이라 하고, <span class="process-math">\(W\)</span>를 <span class="process-math">\(V\)</span>의 부분공간이라 하자. 임의의 <span class="process-math">\(v \in V\)</span>에 대하여 <span class="process-math">\(v\)</span>를 포함하는 <span class="process-math">\(W\)</span>의 <dfn class="terminology">잉여류</dfn>를 다음과 같이 정의한다:<aside class="aside aside-like" id="def-coset-quotient-space-2-1-10"><div class="para" id="def-coset-quotient-space-2-1-10-1">잉여류:coset</div></aside>
+<span class="process-math">\(V\)</span>를 체 <span class="process-math">\(\mathbb{F}\)</span> 위에서 정의된 벡터공간이라 하고, <span class="process-math">\(W\)</span>를 <span class="process-math">\(V\)</span>의 부분공간이라 하자. 임의의 <span class="process-math">\(v \in V\)</span>에 대하여 <span class="process-math">\(v\)</span>를 포함하는 <span class="process-math">\(W\)</span>의 <dfn class="terminology">잉여류</dfn>를 다음과 같이 정의한다:<aside class="aside aside-like" id="def-coset-quotient-space-2-1-10"><div class="para" id="def-coset-quotient-space-2-1-10-1">잉여류:coset</div></aside>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -449,7 +449,7 @@ v + W = \{ v + w \mid w \in W \}
 <div class="displaymath process-math" id="prop-quotient-space-operations-2-1-3">
 \begin{align*}
 (v_1 + W) + (v_2 + W) \amp = (v_1 + v_2) + W\\
-c(v + W) \amp = cv + W \quad \text{(단, $c \in F$)}
+c(v + W) \amp = cv + W \quad \text{(단, $c \in \mathbb{F}$)}
 \end{align*}
 </div>
 </div></article><details id="prop-quotient-space-operations-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="prop-quotient-space-operations-3-1">
@@ -493,14 +493,12 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 </div>
 <div class="para" id="thm-quotient-space-dimension-3-4">
 <em class="emphasis">선형독립</em>: <span class="process-math">\(\sum_{j=1}^{n-k} c_j (v_j + W) = 0_{V/W} = W\)</span> 라 가정합시다. 이는 <span class="process-math">\(\left(\sum_{j=1}^{n-k} c_j v_j\right) + W = W\)</span> 임을 의미하며, 따라서 <span class="process-math">\(\sum_{j=1}^{n-k} c_j v_j \in W\)</span> 입니다.</div>
-<div class="para" id="thm-quotient-space-dimension-3-5"><details id="thm-quotient-space-dimension-3-5-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
-<span class="type">예시</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="thm-quotient-space-dimension-3-5-1-1">즉, <span class="process-math">\(\sum_{j=1}^{n-k} c_j v_j = \sum_{i=1}^k d_i w_i\)</span>를 만족하는 스칼라 <span class="process-math">\(d_i\)</span>가 존재합니다. 이 식을 정리하면 <span class="process-math">\(\sum_{j=1}^{n-k} c_j v_j - \sum_{i=1}^k d_i w_i = 0\)</span> 이 되는데, 확장된 기저의 선형 독립성에 의해 모든 <span class="process-math">\(c_j = 0\)</span> 입니다.</div></article></details></div>
+<div class="para" id="thm-quotient-space-dimension-3-5">즉, <span class="process-math">\(\sum_{j=1}^{n-k} c_j v_j = \sum_{i=1}^k d_i w_i\)</span>를 만족하는 스칼라 <span class="process-math">\(d_i\)</span>가 존재합니다. 이 식을 정리하면 <span class="process-math">\(\sum_{j=1}^{n-k} c_j v_j - \sum_{i=1}^k d_i w_i = 0\)</span> 이 되는데, 확장된 기저의 선형 독립성에 의해 모든 <span class="process-math">\(c_j = 0\)</span> 입니다.</div>
 <div class="para" id="thm-quotient-space-dimension-3-6">따라서 <span class="process-math">\(B\)</span>는 <span class="process-math">\(V/W\)</span>의 기저이며, 그 크기는 <span class="process-math">\(n - k\)</span> 입니다.</div></article></details><details id="ex-quotient-space-dimension" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">예시</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">몫공간의 차원 계산.</span>
+<span class="type">예시</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span><span class="space"> </span><span class="title">몫공간의 차원 계산.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-quotient-space-dimension-2">
 <span class="process-math">\(\mathbb{R}^3\)</span>에서 평면 <span class="process-math">\(W = \{ (x, y, z) \mid x+y+z=0 \}\)</span>를 생각해 봅시다. <span class="process-math">\(\dim(\mathbb{R}^3) = 3\)</span>이고 <span class="process-math">\(\dim(W) = 2\)</span>이므로, 몫공간 <span class="process-math">\(\mathbb{R}^3/W\)</span>의 차원은 <span class="process-math">\(3 - 2 = 1\)</span>입니다. 이상의 대수적 관찰을 직관적으로 표현하자면 3차원 공간을 특정 평면의 방향으로 압축하여 1차원 직선을 얻었다고 할 수 있습니다.</div></article></details><article class="theorem theorem-like" id="thm-rank-nullity"><h4 class="heading">
-<span class="type">정리</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">선형변환의 기본정리.</span>
+<span class="type">정리</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">선형변환의 기본정리.</span>
 </h4>
 <div class="para logical" id="thm-rank-nullity-2-1">
 <div class="para">
@@ -521,7 +519,7 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <span class="type">소절</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">코커널</span>
 </h3>
 <article class="definition definition-like" id="def-cokernel"><h4 class="heading">
-<span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">코커널.</span>
+<span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">코커널.</span>
 </h4>
 <div class="para logical" id="def-cokernel-3-1">
 <div class="para">
@@ -547,11 +545,11 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">닮음과 동치관계.</span>
 </h4>
 <article class="definition definition-like" id="def-matrix-similarity"><h5 class="heading">
-<span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">행렬의 닮음.</span>
+<span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">행렬의 닮음.</span>
 </h5>
 <div class="para" id="def-matrix-similarity-3-1">
 <span class="process-math">\(n \times n\)</span> 행렬의 공간 <span class="process-math">\(M_{n \times n}(\mathbb{F})\)</span>에서, 어떤 가역행렬 <span class="process-math">\(P\)</span>가 존재하여 <span class="process-math">\(B = P^{-1}AP\)</span>를 만족할 때 <span class="process-math">\(A \sim B\)</span>라 정의한다. 이를 <dfn class="terminology">닮음</dfn>이라 한다.<aside class="aside aside-like" id="def-matrix-similarity-3-1-8"><div class="para" id="def-matrix-similarity-3-1-8-1">닮음:similarity</div></aside>
-</div></article><div class="para" id="exercise-matrix-similarity-3">정의 <a href="01-04-quotients-cokernel.html#def-matrix-similarity" class="xref" data-knowl="./knowl/xref/def-matrix-similarity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.4.12: 행렬의 닮음">정의 1.4.12</a>의 행렬의 닮음 관계가 동치관계임을 증명하시오.</div></article><article class="exercise exercise-like" id="exercise-intersection-subspace-equivalence"><h4 class="heading">
+</div></article><div class="para" id="exercise-matrix-similarity-3">정의 <a href="01-04-quotients-cokernel.html#def-matrix-similarity" class="xref" data-knowl="./knowl/xref/def-matrix-similarity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.4.11: 행렬의 닮음">정의 1.4.11</a>의 행렬의 닮음 관계가 동치관계임을 증명하시오.</div></article><article class="exercise exercise-like" id="exercise-intersection-subspace-equivalence"><h4 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">부분공간의 교집합 위의 동치관계.</span>
 </h4>
 <div class="para" id="exercise-intersection-subspace-equivalence-2">벡터공간 <span class="process-math">\(V\)</span> 내의 두 부분공간 <span class="process-math">\(W_1, W_2\)</span>가 주어졌다. <span class="process-math">\(V\)</span> 상의 관계를 <span class="process-math">\(v_1 \sim v_2 \iff v_1 - v_2 \in W_1 \cap W_2\)</span>로 정의할 때, 이것이 동치관계임을 증명하시오.</div></article><article class="exercise exercise-like" id="exercise-polynomial-derivative-equivalence"><h4 class="heading">
@@ -579,11 +577,11 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title">행렬의 동치와 계수.</span>
 </h4>
 <div class="para" id="exercise-matrix-equivalence-rank-2">
-<span class="process-math">\(M_{m \times n}(F)\)</span>에서 두 행렬 <span class="process-math">\(A, B\)</span>에 대해, 가역행렬인 <span class="process-math">\(P \in M_{m \times m}(F)\)</span>와 <span class="process-math">\(Q \in M_{n \times n}(F)\)</span>가 존재하여 <span class="process-math">\(A = PBQ\)</span>를 만족할 때 <span class="process-math">\(A \sim B\)</span>라 정의하자. 이 관계가 동치관계임을 증명하고, 두 행렬이 이 관계 하에서 동치일 필요충분조건은 두 행렬의 계수가 같음임을 증명하시오. (즉, 랭크는 이 동치관계의 완전한 불변량입니다.)</div></article><article class="exercise exercise-like" id="exercise-induced-map-quotient-space"><h4 class="heading">
+<span class="process-math">\(M_{m \times n}(\mathbb{F})\)</span>에서 두 행렬 <span class="process-math">\(A, B\)</span>에 대해, 가역행렬인 <span class="process-math">\(P \in M_{m \times m}(\mathbb{F})\)</span>와 <span class="process-math">\(Q \in M_{n \times n}(\mathbb{F})\)</span>가 존재하여 <span class="process-math">\(A = PBQ\)</span>를 만족할 때 <span class="process-math">\(A \sim B\)</span>라 정의하자. 이 관계가 동치관계임을 증명하고, 두 행렬이 이 관계 하에서 동치일 필요충분조건은 두 행렬의 계수가 같음임을 증명하시오. (즉, 랭크는 이 동치관계의 완전한 불변량입니다.)</div></article><article class="exercise exercise-like" id="exercise-induced-map-quotient-space"><h4 class="heading">
 <span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title">불변 부분공간과 유도된 사상.</span>
 </h4>
 <article class="definition definition-like" id="def-invariant-subspace"><h5 class="heading">
-<span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.13</span><span class="period">.</span>
+<span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span>
 </h5>
 <div class="para" id="def-invariant-subspace-1-1">
 <span class="process-math">\(\mathbb{F}\)</span>상의 벡터공간 <span class="process-math">\(V\)</span>에 선형변환 <span class="process-math">\(T \colon V \to V\)</span>에 대하여, 어떤 부분공간 <span class="process-math">\(W\)</span>에 대하여 임의의 <span class="process-math">\(v \in W\)</span>가 <span class="process-math">\(T(v) \in W\)</span>를 만족하면,<details class="ptx-footnote" aria-live="polite" id="def-invariant-subspace-1-1-7"><summary class="ptx-footnote__number" title="Footnote 1.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="def-invariant-subspace-1-1-7"><div class="para" id="def-invariant-subspace-1-1-7-1">간단히 <span class="process-math">\(T(W)\subset W\)</span>라고도 씁니다.</div></div></details> 이때 <span class="process-math">\(W\)</span>를 <dfn class="terminology"><span class="process-math">\(T\)</span>-불변 부분공간</dfn>이라고 합니다. <aside class="aside aside-like" id="def-invariant-subspace-1-1-11"><div class="para" id="def-invariant-subspace-1-1-11-1">불변 부분공간:invariant subspace</div></aside>
