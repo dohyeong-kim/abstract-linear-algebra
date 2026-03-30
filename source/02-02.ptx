@@ -17,11 +17,11 @@
       이때, 사상 <m>\bar{T}</m>는 동형사상이다.</p>
     </statement>
     <proof>
-      <p>사상 <m>\bar{T}</m>가 동형사상임을 보이기 위해 잘 정의됨, 선형성, 전사성, 단사성을 차례로 확인한다.</p>
-      <p><em>잘 정의됨 및 선형성:</em> <m>v_1 + \ker(T) = v_2 + \ker(T)</m> 이면 <m>v_1 - v_2 \in \ker(T)</m> 이다. 따라서 <m>T(v_1 - v_2) = 0_W</m> 이고, 선형성에 의해 <m>T(v_1) = T(v_2)</m> 이므로 <m>\bar{T}(v_1 + \ker(T)) = \bar{T}(v_2 + \ker(T))</m> 이다. 사상의 선형성은 <m>T</m>의 선형성으로부터 자연스럽게 유도된다.</p>
-      <p><em>전사:</em> 임의의 <m>w \in \text{im}(T)</m> 에 대하여, <m>T(v) = w</m> 를 만족하는 <m>v \in V</m> 가 존재한다. <m>\bar{T}</m>의 정의에 의해 <m>\bar{T}(v + \ker(T)) = T(v) = w</m> 이므로 전사이다.</p>
-      <p><em>단사:</em> <m>\bar{T}(v + \ker(T)) = 0_W</m> 라 가정하자. 이는 <m>T(v) = 0_W</m> 를 의미하므로 <m>v \in \ker(T)</m> 이다. 따라서 <m>v + \ker(T) = 0_V + \ker(T)</m> 가 되어 <m>\ker(\bar{T})</m>는 자명한 몫공간의 영벡터뿐이다. 따라서 단사이다.</p>
-      <p>역변환을 갖는 전단사 선형변환이므로 <m>\bar{T}</m>는 동형사상이다.</p>
+      <p>사상 <m>\bar{T}</m>가 동형사상임을 보이기 위해 잘 정의됨, 선형성, 전사성, 단사성을 차례로 확인합니다.</p>
+      <p><em>잘 정의됨 및 선형성:</em> <m>v_1 + \ker(T) = v_2 + \ker(T)</m> 이면 <m>v_1 - v_2 \in \ker(T)</m> 입니다. 따라서 <m>T(v_1 - v_2) = 0_W</m> 이고, 선형성에 의해 <m>T(v_1) = T(v_2)</m> 이므로 <m>\bar{T}(v_1 + \ker(T)) = \bar{T}(v_2 + \ker(T))</m> 입니다. 사상의 선형성은 <m>T</m>의 선형성으로부터 자연스럽게 유도됩니다.</p>
+      <p><em>전사:</em> 임의의 <m>w \in \text{im}(T)</m> 에 대하여, <m>T(v) = w</m> 를 만족하는 <m>v \in V</m> 가 존재합니다. <m>\bar{T}</m>의 정의에 의해 <m>\bar{T}(v + \ker(T)) = T(v) = w</m> 이므로 전사입니다.</p>
+      <p><em>단사:</em> <m>\bar{T}(v + \ker(T)) = 0_W</m> 라고 가정합시다. 이는 <m>T(v) = 0_W</m> 를 의미하므로 <m>v \in \ker(T)</m> 입니다. 따라서 <m>v + \ker(T) = 0_V + \ker(T)</m> 가 되어 <m>\ker(\bar{T})</m>는 자명한 몫공간의 영벡터뿐입니다. 따라서 단사입니다.</p>
+      <p>역변환을 갖는 전단사 선형변환이므로 <m>\bar{T}</m>는 동형사상입니다.</p>
     </proof>
   </theorem>
   
@@ -29,7 +29,7 @@
     <title>제1동형정리 적용례</title>  
     
     <statement>
-      <p>선형변환 <m>T: \mathbb{F}^3 \to \mathbb{F}^2</m> 가 <m>T(x,y,z) = (x,y)</m> 로 주어졌다고 하자. <m>\ker(T) = \{(0,0,z) \mid z \in \mathbb{F}\}</m> (z축)이며, <m>\text{im}(T) = \mathbb{F}^2</m> 이다. 제1동형정리에 의해, 사상 <m>\bar{T}: \mathbb{F}^3 / (\text{z축}) \to \mathbb{F}^2</m> 인 <m>\bar{T}((x,y,z) + \text{z축}) = (x,y)</m> 는 동형사상이다.</p>
+      <p>선형변환 <m>T: \mathbb{F}^3 \to \mathbb{F}^2</m> 가 <m>T(x,y,z) = (x,y)</m> 로 주어졌다고 합시다. <m>\ker(T) = \{(0,0,z) \mid z \in \mathbb{F}\}</m> (z축)이며, <m>\text{im}(T) = \mathbb{F}^2</m> 입니다. 제1동형정리에 의해, 사상 <m>\bar{T}: \mathbb{F}^3 / (\text{z축}) \to \mathbb{F}^2</m> 인 <m>\bar{T}((x,y,z) + \text{z축}) = (x,y)</m> 는 동형사상입니다.</p>
     </statement>
   </example>
 </subsection>
@@ -47,17 +47,17 @@
       이때, 사상 <m>\Phi</m>는 동형사상이다.</p>
     </statement>
     <proof>
-      <p>선형변환 <m>S: U \to (U+W)/W</m> 를 <m>S(u) = u + W</m> 로 정의하자. 이 사상은 몫공간으로의 자연스러운 투영사상을 <m>U</m>에 제한한 것이므로 선형이다.</p>
-      <p><em>전사:</em> 몫공간 <m>(U+W)/W</m> 의 임의의 원소는 어떤 <m>u \in U, w \in W</m> 에 대하여 <m>(u+w) + W</m> 형태이다. 잉여류의 덧셈 성질에 의해 <m>(u+w) + W = u + (w+W) = u + W = S(u)</m> 이다. 따라서 <m>S</m>는 전사이다.</p>
-      <p><em>커널:</em> <m>u \in \ker(S)</m> 일 필요충분조건은 <m>S(u) = u + W = W</m> 인 것이며, 이는 <m>u \in W</m> 임을 의미한다. 동시에 <m>S</m>의 정의역이 <m>U</m>이므로 <m>u \in U</m> 이어야 한다. 따라서 <m>\ker(S) = U \cap W</m> 이다.</p>
-      <p>이제 선형변환 <m>S</m>에 대하여 제1동형정리 <xref ref="thm-first-isomorphism"/>를 적용한다. 사상 <m>\bar{S}: U / \ker(S) \to \text{im}(S)</m> 가 <m>\bar{S}(u + \ker(S)) = S(u)</m> 로 정의될 때 이는 동형사상이다. 여기서 <m>\ker(S) = U \cap W</m> 이고 <m>\text{im}(S) = (U+W)/W</m> 이며, <m>\bar{S}(u + (U \cap W)) = u + W</m> 이다. 이는 정확히 정리에서 정의한 사상 <m>\Phi</m> 와 일치하므로, <m>\Phi</m>는 동형사상이다.</p>
+      <p>선형변환 <m>S: U \to (U+W)/W</m> 를 <m>S(u) = u + W</m> 로 정의합시다. 이 사상은 몫공간으로의 자연스러운 투영사상을 <m>U</m>에 제한한 것이므로 선형입니다.</p>
+      <p><em>전사:</em> 몫공간 <m>(U+W)/W</m> 의 임의의 원소는 어떤 <m>u \in U, w \in W</m> 에 대하여 <m>(u+w) + W</m> 형태입니다. 잉여류의 덧셈 성질에 의해 <m>(u+w) + W = u + (w+W) = u + W = S(u)</m> 입니다. 따라서 <m>S</m>는 전사입니다.</p>
+      <p><em>커널:</em> <m>u \in \ker(S)</m> 일 필요충분조건은 <m>S(u) = u + W = W</m> 인 것이며, 이는 <m>u \in W</m> 임을 의미합니다. 동시에 <m>S</m>의 정의역이 <m>U</m>이므로 <m>u \in U</m> 이어야 합니다. 따라서 <m>\ker(S) = U \cap W</m> 입니다.</p>
+      <p>이제 선형변환 <m>S</m>에 대하여 제1동형정리 <xref ref="thm-first-isomorphism"/>를 적용합니다. 사상 <m>\bar{S}: U / \ker(S) \to \text{im}(S)</m> 가 <m>\bar{S}(u + \ker(S)) = S(u)</m> 로 정의될 때 이는 동형사상입니다. 여기서 <m>\ker(S) = U \cap W</m> 이고 <m>\text{im}(S) = (U+W)/W</m> 이며, <m>\bar{S}(u + (U \cap W)) = u + W</m> 입니다. 이는 정확히 정리에서 정의한 사상 <m>\Phi</m> 와 일치하므로, <m>\Phi</m>는 동형사상입니다.</p>
     </proof>
   </theorem>
   
   <example xml:id="ex-second-isomorphism">
     <title>제2동형정리 적용례</title>
     <statement>
-      <p><m>\mathbb{F}^3</m> 에서 <m>U</m>를 <m>xy</m>-평면(<m>z=0</m>), <m>W</m>를 <m>yz</m>-평면(<m>x=0</m>)이라 하자. <m>U+W = \mathbb{F}^3</m> 이고 <m>U \cap W</m> 는 y축이다. 제2동형정리에 의해, <m>xy</m>-평면의 원소 <m>(x,y,0)</m>에 대하여 사상 <m>\Phi((x,y,0) + \text{y축}) = (x,y,0) + \text{yz-평면}</m> 은 동형사상이다.</p>
+      <p><m>\mathbb{F}^3</m> 에서 <m>U</m>를 <m>xy</m>-평면(<m>z=0</m>), <m>W</m>를 <m>yz</m>-평면(<m>x=0</m>)이라 합시다. <m>U+W = \mathbb{F}^3</m> 이고 <m>U \cap W</m> 는 y축입니다. 제2동형정리에 의해, <m>xy</m>-평면의 원소 <m>(x,y,0)</m>에 대하여 사상 <m>\Phi((x,y,0) + \text{y축}) = (x,y,0) + \text{yz-평면}</m> 은 동형사상입니다.</p>
     </statement>
   </example>
 </subsection>
@@ -75,18 +75,18 @@
       이때, 사상 <m>\Psi</m>는 동형사상이다.</p>
     </statement>
     <proof>
-      <p>선형변환 <m>S: V/U \to V/W</m> 를 <m>S(v+U) = v+W</m> 로 정의하자.</p>
-      <p><em>잘 정의됨 및 선형성:</em> <m>v_1 + U = v_2 + U</m> 이면 <m>v_1 - v_2 \in U</m> 이다. 가정에서 <m>U \subseteq W</m> 이므로 <m>v_1 - v_2 \in W</m> 가 되어 <m>v_1 + W = v_2 + W</m> 이다. 따라서 사상 <m>S</m>는 대표원 선택에 무관하게 잘 정의되며 선형이다.</p>
-      <p><em>전사:</em> 공역 <m>V/W</m> 의 임의의 원소 <m>v+W</m> 에 대하여, 정의역 <m>V/U</m> 내에 <m>v+U</m> 가 존재하여 <m>S(v+U) = v+W</m> 를 만족하므로 <m>S</m>는 전사이다.</p>
-      <p><em>커널:</em> <m>v+U \in \ker(S)</m> 이려면 <m>S(v+U) = v+W = W</m> 이어야 하며, 이는 <m>v \in W</m> 임을 의미한다. 따라서 <m>v+U</m> 는 부분공간 <m>W</m>의 원소들에 의한 <m>U</m>의 잉여류들이므로 <m>\ker(S) = W/U</m> 이다.</p>
-      <p>선형변환 <m>S</m>에 대하여 제1동형정리 <xref ref="thm-first-isomorphism"/>를 적용한다. 유도된 사상 <m>\bar{S}: (V/U) / \ker(S) \to \text{im}(S)</m> 가 <m>\bar{S}((v+U) + \ker(S)) = S(v+U)</m> 로 정의될 때 이는 동형사상이다. 이 사상 <m>\bar{S}</m> 는 정리에서 정의한 사상 <m>\Psi</m> 와 일치하므로, <m>\Psi</m>는 동형사상이다.</p>
+      <p>선형변환 <m>S: V/U \to V/W</m> 를 <m>S(v+U) = v+W</m> 로 정의합시다.</p>
+      <p><em>잘 정의됨 및 선형성:</em> <m>v_1 + U = v_2 + U</m> 이면 <m>v_1 - v_2 \in U</m> 입니다. 가정에서 <m>U \subseteq W</m> 이므로 <m>v_1 - v_2 \in W</m> 가 되어 <m>v_1 + W = v_2 + W</m> 입니다. 따라서 사상 <m>S</m>는 대표원 선택에 무관하게 잘 정의되며 선형입니다.</p>
+      <p><em>전사:</em> 공역 <m>V/W</m> 의 임의의 원소 <m>v+W</m> 에 대하여, 정의역 <m>V/U</m> 내에 <m>v+U</m> 가 존재하여 <m>S(v+U) = v+W</m> 를 만족하므로 <m>S</m>는 전사입니다.</p>
+      <p><em>커널:</em> <m>v+U \in \ker(S)</m> 이려면 <m>S(v+U) = v+W = W</m> 이어야 하며, 이는 <m>v \in W</m> 임을 의미합니다. 따라서 <m>v+U</m> 는 부분공간 <m>W</m>의 원소들에 의한 <m>U</m>의 잉여류들이므로 <m>\ker(S) = W/U</m> 입니다.</p>
+      <p>선형변환 <m>S</m>에 대하여 제1동형정리 <xref ref="thm-first-isomorphism"/>를 적용합니다. 유도된 사상 <m>\bar{S}: (V/U) / \ker(S) \to \text{im}(S)</m>가 <m>\bar{S}((v+U) + \ker(S)) = S(v+U)</m>로 정의될 때 이는 동형사상입니다. 이 사상 <m>\bar{S}</m>는 정리에서 정의한 사상 <m>\Psi</m>와 일치하므로, <m>\Psi</m>는 동형사상입니다.</p>
     </proof>
   </theorem>
   
   <example xml:id="ex-third-isomorphism">
     <title>제3동형정리 적용례</title>
     <statement>
-      <p><m>V = \mathbb{F}^3</m>, <m>W</m>를 <m>xy</m>-평면, <m>U</m>를 x축이라고 하자. 몫공간 <m>(V/U)/(W/U)</m> 의 원소인 어떤 잉여류 <m>((x,y,z)+\text{x축}) + (xy\text{-평면}/\text{x축})</m> 에 대하여, 이를 단순한 잉여류 <m>(x,y,z) + xy\text{-평면}</m> 으로 보내는 사상 <m>\Psi</m> 는 동형사상이다.</p>
+      <p><m>V = \mathbb{F}^3</m>, <m>W</m>를 <m>xy</m>-평면, <m>U</m>를 x축이라고 하겠습니다. 몫공간 <m>(V/U)/(W/U)</m> 의 원소인 어떤 잉여류 <m>((x,y,z)+\text{x축}) + (xy\text{-평면}/\text{x축})</m> 에 대하여, 이를 단순한 잉여류 <m>(x,y,z) + xy\text{-평면}</m> 으로 보내는 사상 <m>\Psi</m> 는 동형사상입니다.</p>
     </statement>
   </example>
 </subsection>
@@ -147,7 +147,7 @@
 
   <definition xml:id="def-nilpotent-operator">
     <title>멱영 연산자</title>
-    <p>선형 연산자 <m>N: V \to V</m>가 <m>N^k = 0</m> 인 양의 정수 <m>k</m>를 가질 때, <m>N</m>을 <em>멱영 연산자</em> 라고 한다.
+    <p>선형 연산자 <m>N: V \to V</m>가 <m>N^k = 0</m> 인 양의 정수 <m>k</m>를 가질 때, <m>N</m>을 <em>멱영 연산자</em> 라고 합니다.
     <aside><p>멱영:nilpotent</p></aside>
     </p>
   </definition>
