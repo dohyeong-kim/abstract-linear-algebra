@@ -96,14 +96,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.19';
+eBookConfig.runestone_version = '7.12.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.d2d4c56cb9826035.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a4a209ed3a55c515.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
@@ -529,7 +529,23 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 \text{coker}(T) = W / \text{im}(T)
 \end{equation*}
 </div>
-</div></article></section><section class="exercises" id="exercises-01-04"><h3 class="heading hide-type">
+</div></article><div class="para logical" id="subsec-cokernel-3">
+<div class="para">
+<span class="process-math">\(W/\operatorname{im}(T)\)</span>는 자연스럽게 <span class="process-math">\(W\)</span>에 정의된 함수의 공역이 되는데, 그 방법은 바로 <span class="process-math">\(v \in W\)</span>를 <span class="process-math">\(v+W\)</span>로 보내는 것입니다. 또한, 해당 함수는 선형변환이 됨을 확인할 수 있습니다. 더 나아가, 합성</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ker-compose-to-zero.html ./knowl/xref/eq-coker-compose-to-zero.html" id="eq-coker-compose-to-zero">
+\begin{equation}
+V \xrightarrow{T} W \to \operatorname{coker}(T)\tag{1.4.2}
+\end{equation}
+</div>
+<div class="para">은 영변환입니다. 이는 커널의 성질과 비교해 볼 수 있습니다. 커널의 경우 합성</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ker-compose-to-zero.html ./knowl/xref/eq-coker-compose-to-zero.html" id="eq-ker-compose-to-zero">
+\begin{equation}
+\ker(T) \to V \xrightarrow{T} W\tag{1.4.3}
+\end{equation}
+</div>
+<div class="para">이 영변환이 됩니다. <a href="01-04-quotients-cokernel.html#eq-ker-compose-to-zero" class="xref" data-knowl="./knowl/xref/eq-ker-compose-to-zero.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.3">(1.4.3)</a>와 <a href="01-04-quotients-cokernel.html#eq-coker-compose-to-zero" class="xref" data-knowl="./knowl/xref/eq-coker-compose-to-zero.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.4.2">(1.4.2)</a>를 짝지어 하나를 커널 다른 하나를 코커널이라고 부릅니다.<details class="ptx-footnote" aria-live="polite" id="subsec-cokernel-3-9"><summary class="ptx-footnote__number" title="Footnote 1.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-cokernel-3-9"><div class="para" id="subsec-cokernel-3-9-1">코(co)는 영어 접두사로 “함께” 또는 “반대”를 의미합니다. 여기서는 “’반대’”의 의미로 사용됩니다.</div></div></details>
+</div>
+</div></section><section class="exercises" id="exercises-01-04"><h3 class="heading hide-type">
 <span class="type">연습문제</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="space"> </span><span class="title">연습문제</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-partition-equivalence"><h4 class="heading">
@@ -584,7 +600,7 @@ x + W = \left( \sum_{i=1}^k a_i w_i + \sum_{j=1}^{n-k} b_j v_j \right) + W = \su
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span>
 </h5>
 <div class="para" id="def-invariant-subspace-1-1">
-<span class="process-math">\(\mathbb{F}\)</span>상의 벡터공간 <span class="process-math">\(V\)</span>에 선형변환 <span class="process-math">\(T \colon V \to V\)</span>에 대하여, 어떤 부분공간 <span class="process-math">\(W\)</span>에 대하여 임의의 <span class="process-math">\(v \in W\)</span>가 <span class="process-math">\(T(v) \in W\)</span>를 만족하면,<details class="ptx-footnote" aria-live="polite" id="def-invariant-subspace-1-1-7"><summary class="ptx-footnote__number" title="Footnote 1.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="def-invariant-subspace-1-1-7"><div class="para" id="def-invariant-subspace-1-1-7-1">간단히 <span class="process-math">\(T(W)\subset W\)</span>라고도 씁니다.</div></div></details> 이때 <span class="process-math">\(W\)</span>를 <dfn class="terminology"><span class="process-math">\(T\)</span>-불변 부분공간</dfn>이라고 합니다. <aside class="aside aside-like" id="def-invariant-subspace-1-1-11"><div class="para" id="def-invariant-subspace-1-1-11-1">불변 부분공간:invariant subspace</div></aside>
+<span class="process-math">\(\mathbb{F}\)</span>상의 벡터공간 <span class="process-math">\(V\)</span>에 선형변환 <span class="process-math">\(T \colon V \to V\)</span>에 대하여, 어떤 부분공간 <span class="process-math">\(W\)</span>에 대하여 임의의 <span class="process-math">\(v \in W\)</span>가 <span class="process-math">\(T(v) \in W\)</span>를 만족하면,<details class="ptx-footnote" aria-live="polite" id="def-invariant-subspace-1-1-7"><summary class="ptx-footnote__number" title="Footnote 1.4.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="def-invariant-subspace-1-1-7"><div class="para" id="def-invariant-subspace-1-1-7-1">간단히 <span class="process-math">\(T(W)\subset W\)</span>라고도 씁니다.</div></div></details> 이때 <span class="process-math">\(W\)</span>를 <dfn class="terminology"><span class="process-math">\(T\)</span>-불변 부분공간</dfn>이라고 합니다. <aside class="aside aside-like" id="def-invariant-subspace-1-1-11"><div class="para" id="def-invariant-subspace-1-1-11-1">불변 부분공간:invariant subspace</div></aside>
 </div></article><div class="para" id="exercise-induced-map-quotient-space-3">체 <span class="process-math">\(\mathbb{F}\)</span> 상의 벡터공간 <span class="process-math">\(V\)</span>와 선형 연산자 <span class="process-math">\(T\colon V\to V\)</span>가 주어졌다. <span class="process-math">\(T\)</span>-불변 부분공간 <span class="process-math">\(W\subset V\)</span>에 대하여, 사상 <span class="process-math">\(\bar{T}: V/W \to V/W\)</span>를 <span class="process-math">\(\bar{T}(v+W) = T(v)+W\)</span>로 정의하면 이 사상이 잘 정의된 선형변환임을 증명하시오.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="01-03-linear-transformation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="02-isomorphisms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
