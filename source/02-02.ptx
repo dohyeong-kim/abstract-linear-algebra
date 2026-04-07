@@ -20,7 +20,7 @@
       <p>사상 <m>\bar{T}</m>가 동형사상임을 보이기 위해 잘 정의됨, 선형성, 전사성, 단사성을 차례로 확인합니다.</p>
       <p><em>잘 정의됨 및 선형성:</em> <m>v_1 + \ker(T) = v_2 + \ker(T)</m> 이면 <m>v_1 - v_2 \in \ker(T)</m> 입니다. 따라서 <m>T(v_1 - v_2) = 0_W</m> 이고, 선형성에 의해 <m>T(v_1) = T(v_2)</m> 이므로 <m>\bar{T}(v_1 + \ker(T)) = \bar{T}(v_2 + \ker(T))</m> 입니다. 사상의 선형성은 <m>T</m>의 선형성으로부터 자연스럽게 유도됩니다.</p>
       <p><em>전사:</em> 임의의 <m>w \in \text{im}(T)</m> 에 대하여, <m>T(v) = w</m> 를 만족하는 <m>v \in V</m> 가 존재합니다. <m>\bar{T}</m>의 정의에 의해 <m>\bar{T}(v + \ker(T)) = T(v) = w</m> 이므로 전사입니다.</p>
-      <p><em>단사:</em> <m>\bar{T}(v + \ker(T)) = 0_W</m> 라고 가정합시다. 이는 <m>T(v) = 0_W</m> 를 의미하므로 <m>v \in \ker(T)</m> 입니다. 따라서 <m>v + \ker(T) = 0_V + \ker(T)</m> 가 되어 <m>\ker(\bar{T})</m>는 자명한 몫공간의 영벡터뿐입니다. 따라서 단사입니다.</p>
+      <p><em>단사:</em> <m>\bar{T}(v + \ker(T)) = 0_W</m> 라고 가정합시다. 이는 <m>T(v) = 0_W</m> 를 의미하므로 <m>v \in \ker(T)</m> 입니다. 따라서 <m>v + \ker(T) = 0_V + \ker(T)</m> 가 되어 <m>\ker(\bar{T})</m>는 몫공간 <m>V/\ker(T)</m>의 영벡터입니다. 따라서, <xref ref="prop-kernel-and-injectivity"/>에 의하여 <m>\bar{T}</m>는 단사입니다.</p>
       <p>역변환을 갖는 전단사 선형변환이므로 <m>\bar{T}</m>는 동형사상입니다.</p>
     </proof>
   </theorem>
