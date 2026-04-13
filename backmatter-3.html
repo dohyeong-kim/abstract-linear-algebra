@@ -96,14 +96,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.2';
+eBookConfig.runestone_version = '7.13.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.56158f4758afd49f.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.46363294e9238f09.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
@@ -280,8 +280,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#subsection-projection" class="internal"><span class="codenumber">2.3.1</span> <span class="title">사영</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#subsection-direct-product" class="internal"><span class="codenumber">2.3.2</span> <span class="title">직곱</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#subsection-dual-space" class="internal"><span class="codenumber">2.3.3</span> <span class="title">쌍대공간</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#02-03-product-projection-dual-5" class="internal"><span class="codenumber">2.3.4</span> <span class="title">연습문제</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#subsec-general-direct-product" class="internal"><span class="codenumber">2.3.3</span> <span class="title">임의의 집합으로 매개된 직곱</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#subsection-dual-space" class="internal"><span class="codenumber">2.3.4</span> <span class="title">쌍대공간</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="02-03-product-projection-dual.html#02-03-product-projection-dual-6" class="internal"><span class="codenumber">2.3.5</span> <span class="title">연습문제</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -466,7 +467,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="indexitem">몫공간<span class="indexknowl">, <a href="01-04-quotients-cokernel.html#subsec-quotients-3" class="xref" data-knowl="./knowl/index/subsec-quotients-3.html" data-reveal-label="Reveal" data-close-label="Close" title="문단">문단</a> <a href="01-04-quotients-cokernel.html#def-coset-quotient-space" class="xref" data-knowl="./knowl/index/def-coset-quotient-space.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.4.2: 잉여류와 몫공간">정의</a></span>
 </div>
 </div>
-<div class="indexletter" id="indexletter-범"><div class="indexitem">범함수<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-space" class="xref" data-knowl="./knowl/index/def-dual-space.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.8: 쌍대공간">정의</a></span>
+<div class="indexletter" id="indexletter-범"><div class="indexitem">범함수<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-space" class="xref" data-knowl="./knowl/index/def-dual-space.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.10: 쌍대공간">정의</a></span>
 </div></div>
 <div class="indexletter" id="indexletter-벡">
 <div class="indexitem">벡터공간</div>
@@ -504,7 +505,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="indexitem">선형종속<span class="indexknowl">, <a href="01-02-basis.html#def-linear-independence" class="xref" data-knowl="./knowl/index/def-linear-independence.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.2.1: 선형독립">정의</a></span>
 </div>
 </div>
-<div class="indexletter" id="indexletter-소"><div class="indexitem">소멸자<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-annihilator" class="xref" data-knowl="./knowl/index/def-annihilator.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.9: 소멸자">정의</a></span>
+<div class="indexletter" id="indexletter-소"><div class="indexitem">소멸자<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-annihilator" class="xref" data-knowl="./knowl/index/def-annihilator.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.11: 소멸자">정의</a></span>
 </div></div>
 <div class="indexletter" id="indexletter-수">
 <div class="indexitem">수반행렬</div>
@@ -520,11 +521,11 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <div class="indexletter" id="indexletter-쌍">
-<div class="indexitem">쌍대공간<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-space" class="xref" data-knowl="./knowl/index/def-dual-space.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.8: 쌍대공간">정의</a></span>
+<div class="indexitem">쌍대공간<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-space" class="xref" data-knowl="./knowl/index/def-dual-space.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.10: 쌍대공간">정의</a></span>
 </div>
-<div class="indexitem">쌍대기저<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-basis" class="xref" data-knowl="./knowl/index/def-dual-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.16: 쌍대기저">정의</a></span>
+<div class="indexitem">쌍대기저<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-basis" class="xref" data-knowl="./knowl/index/def-dual-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.18: 쌍대기저">정의</a></span>
 </div>
-<div class="indexitem">쌍대사상<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-map" class="xref" data-knowl="./knowl/index/def-dual-map.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.12: 쌍대사상">정의</a></span>
+<div class="indexitem">쌍대사상<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-dual-map" class="xref" data-knowl="./knowl/index/def-dual-map.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.14: 쌍대사상">정의</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-역">
@@ -557,7 +558,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="indexletter" id="indexletter-중"><div class="indexitem">중심화기<span class="indexknowl">, <a href="01-01-vector-spaces.html#def-centralizer" class="xref" data-knowl="./knowl/index/def-centralizer.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.1.18: 중심화기">정의</a></span>
 </div></div>
 <div class="indexletter" id="indexletter-직">
-<div class="indexitem">직곱<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-direct-product" class="xref" data-knowl="./knowl/index/def-direct-product.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.5: 직곱">정의</a></span>
+<div class="indexitem">직곱<span class="indexknowl">, <a href="02-03-product-projection-dual.html#def-direct-product" class="xref" data-knowl="./knowl/index/def-direct-product.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.3.6: 직곱">정의</a></span>
+</div>
+<div class="subindexitem">임의의 집합으로 매개된<span class="indexknowl">, <a href="02-03-product-projection-dual.html#subsec-general-direct-product-2" class="xref" data-knowl="./knowl/index/subsec-general-direct-product-2.html" data-reveal-label="Reveal" data-close-label="Close" title="문단">문단</a></span>
 </div>
 <div class="indexitem">직합<span class="indexknowl">, <a href="02-01-isomorphisms.html#def-direct-sum" class="xref" data-knowl="./knowl/index/def-direct-sum.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.1.6: 직합">정의</a> <a href="02-01-isomorphisms.html#def-direct-sum-infinite" class="xref" data-knowl="./knowl/index/def-direct-sum-infinite.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 2.1.11: 직합 (일반적인 경우)">정의</a></span>
 </div>
