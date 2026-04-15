@@ -96,7 +96,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.3';
+eBookConfig.runestone_version = '7.13.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -529,10 +529,24 @@ V = \bigoplus_{i \in I} V_i
 <div class="para" id="thm-dual-basis-theorem-3-6">이다. <span class="process-math">\(h\)</span>와 <span class="process-math">\(g\)</span>가 기저 <span class="process-math">\(\mathcal{B}\)</span>의 모든 원소에서 같은 값을 가지므로 <span class="process-math">\(h = g\)</span>이다. 즉, <span class="process-math">\(g\)</span>는 <span class="process-math">\(\mathcal{B}^*\)</span>의 선형결합으로 표현되므로 <span class="process-math">\(\mathcal{B}^*\)</span>는 <span class="process-math">\(V^*\)</span>의 기저이다.</div></article></details><details id="ex-dual-basis-example-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">2.3.21</span><span class="period">.</span><span class="space"> </span><span class="title">다항식 공간의 쌍대기저.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-dual-basis-example-2-2-1">
-<span class="process-math">\(V = \mathbb{F}[x]_{\le 1}\)</span>이고 기저가 <span class="process-math">\(\mathcal{B} = \{1, x+1\}\)</span>이라 하자. 쌍대기저 <span class="process-math">\(\{f_1, f_2\}\)</span>를 구하려면, <span class="process-math">\(f_1(1)=1, f_1(x+1)=0\)</span> 및 <span class="process-math">\(f_2(1)=0, f_2(x+1)=1\)</span>을 만족해야 한다. 임의의 다항식 <span class="process-math">\(p(x) = ax+b\)</span> (<span class="process-math">\(a, b \in \mathbb{F}\)</span>)에 대하여, <span class="process-math">\(p(x) = (b-a) \cdot 1 + a \cdot (x+1)\)</span>로 표현할 수 있으므로 <span class="process-math">\(f_1(p) = -a+b\text{,}\)</span> <span class="process-math">\(f_2(p) = a\)</span>로 주어짐을 확인할 수 있으며, 이 두 범함수는 <span class="process-math">\(\mathbb{F}[x]_{\le 1} ^*\)</span>의 기저가 된다.</div></article></details><details id="ex-dual-map-example-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">예시</span><span class="space"> </span><span class="codenumber">2.3.22</span><span class="period">.</span><span class="space"> </span><span class="title">쌍대사상의 구체적 계산.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-dual-map-example-3-2-1">
-<span class="process-math">\(V = \mathbb{F}^2, W = \mathbb{F}^2\)</span>이고 <span class="process-math">\(T(x, y) = (x+y, x)\)</span>라 하자. 쌍대사상 <span class="process-math">\(T^*: W^* \to V^*\)</span>를 구체적으로 계산해보자.</div></article></details></section><section class="exercises" id="02-03-product-projection-dual-6"><h3 class="heading hide-type">
+<span class="process-math">\(V = \mathbb{F}[x]_{\le 1}\)</span>이고 기저가 <span class="process-math">\(\mathcal{B} = \{1, x+1\}\)</span>이라 하자. 쌍대기저 <span class="process-math">\(\{f_1, f_2\}\)</span>를 구하려면, <span class="process-math">\(f_1(1)=1, f_1(x+1)=0\)</span> 및 <span class="process-math">\(f_2(1)=0, f_2(x+1)=1\)</span>을 만족해야 한다. 임의의 다항식 <span class="process-math">\(p(x) = ax+b\)</span> (<span class="process-math">\(a, b \in \mathbb{F}\)</span>)에 대하여, <span class="process-math">\(p(x) = (b-a) \cdot 1 + a \cdot (x+1)\)</span>로 표현할 수 있으므로 <span class="process-math">\(f_1(p) = -a+b\text{,}\)</span> <span class="process-math">\(f_2(p) = a\)</span>로 주어짐을 확인할 수 있으며, 이 두 범함수는 <span class="process-math">\(\mathbb{F}[x]_{\le 1} ^*\)</span>의 기저가 된다.</div></article></details><details id="ex-dual-map-example-3" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">예제</span><span class="space"> </span><span class="codenumber">2.3.22</span><span class="period">.</span><span class="space"> </span><span class="title">쌍대사상의 구체적 계산.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="ex-dual-map-example-3-2-1">
+<span class="process-math">\(V = \mathbb{F}^2, W = \mathbb{F}^2\)</span>이고 <span class="process-math">\(T(x, y) = (x+y, x)\)</span>라 하자. 쌍대사상 <span class="process-math">\(T^*: W^* \to V^*\)</span>를 구체적으로 계산해보자.</div>
+<div class="solutions"><details id="ex-dual-map-example-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ex-dual-map-example-3-3-1">
+<div class="para">표준기저에 대응되는 쌍대기저를 사용합시다. 즉, <span class="process-math">\(V^*=W^*\)</span>의 기저로 <span class="process-math">\(\{g_1, g_2\}\)</span>를 택합니다. 여기서 <span class="process-math">\(g_1(u, v) = u\)</span>이고 <span class="process-math">\(g_2(u, v) = v\)</span>입니다. 이제 <span class="process-math">\(T^*(g_1)\)</span>과 <span class="process-math">\(T^*(g_2)\)</span>를 계산해봅시다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T^*(g_1)(x, y) = g_1(T(x, y)) = g_1(x+y, x) = x+y
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T^*(g_2)(x, y) = g_2(T(x, y)) = g_2(x+y, x) = x
+\end{equation*}
+</div>
+<div class="para">이므로 <span class="process-math">\(T^*(g_1) = (x, y) \mapsto x+y\)</span>이고 <span class="process-math">\(T^*(g_2) = (x, y) \mapsto x\)</span>입니다. 쌍대기저를 사용하면 <span class="process-math">\(T^*(g_1)=g_1+g_2\text{,}\)</span> <span class="process-math">\(T^*(g_2)=g_1\)</span>로 표현할 수 있습니다.</div>
+</div></div></details></div></article></details></section><section class="exercises" id="02-03-product-projection-dual-6"><h3 class="heading hide-type">
 <span class="type">연습문제</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="space"> </span><span class="title">연습문제</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-direct-sum-direct-product-isomorphism"><h4 class="heading">
