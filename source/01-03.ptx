@@ -34,6 +34,13 @@
       <idx><h>선형변환</h><h>정의</h></idx>
       </statement>
     </definition>
+    <remark xml:id="rmk-linearity">
+      <title>선형 대 <m>\mathbb{F}</m>-선형</title>
+      <p>
+        스칼라체 <m>\mathbb{F}</m>를 특정해야할 필요가 있을 때에는 선형 대신 <m>\mathbb{F}</m>-선형이라고 부르기도 합니다.
+      </p>
+      <idx><h><m>\mathbb{F}</m>-선형</h></idx>
+    </remark>
     <p>
       덧셈과 스칼라곱셈으로부터 얻어지는 선형결합 또한 보존될 것이라 예상할 수 있습니다.
     </p>
@@ -332,7 +339,7 @@
     <exercise xml:id="exercise-complex-operator-property">
       <title>복소 선형 연산자의 성질</title>
       <statement>
-      <p><m>V</m>를 복소수 체 <m>\mathbb{C}</m> 위의 벡터 공간이라 하고, 선형 연산자 <m>T: V \to V</m>가 <m>T(iv) = -iT(v)</m> (단, <m>i</m>는 허수단위)를 만족한다고 하자. <m>T</m>의 이미지가 <m>\ker(T)</m>에 포함될 수 있는가?</p>
+      <p><m>V</m>를 복소수 체 <m>\mathbb{C}</m> 위의 벡터 공간이라 하자. <m>\mathbb{R}</m>-선형 연산자 <m>T: V \to V</m>가 <m>T(iv) = -iT(v)</m> (단, <m>i</m>는 허수단위)를 만족한다고 하자. <m>T</m>의 이미지가 <m>\ker(T)</m>에 포함될 수 있는가?</p>
       </statement>
     </exercise>    
     <exercise xml:id="exercise-image-intersection-subspaces">
