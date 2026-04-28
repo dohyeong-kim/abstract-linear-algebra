@@ -304,9 +304,11 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#03-02-multilinear" class="internal"><span class="codenumber">3.2.1</span> <span class="title">다중선형함수와 교대형식</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#03-02-determinant" class="internal"><span class="codenumber">3.2.2</span> <span class="title">행렬식의 정의와 특성화</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#03-02-charoly" class="internal"><span class="codenumber">3.2.3</span> <span class="title">특성다항식</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#03-02-diagonalization" class="internal"><span class="codenumber">3.2.4</span> <span class="title">특성다항식을 이용한 대각화 필요조건</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="03-02-char.html#03-02-char-7" class="internal"><span class="codenumber">3.2.5</span> <span class="title">연습문제</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#subsec-det-of-operator" class="internal"><span class="codenumber">3.2.3</span> <span class="title">선형연산자의 행렬식</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#subsec-universality-of-determinant" class="internal"><span class="codenumber">3.2.4</span> <span class="title">다항식으로서의 행렬식과 그 보편성</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#03-02-charoly" class="internal"><span class="codenumber">3.2.5</span> <span class="title">특성다항식</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="03-02-char.html#03-02-diagonalization" class="internal"><span class="codenumber">3.2.6</span> <span class="title">특성다항식을 이용한 대각화 필요조건</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="03-02-char.html#03-02-char-9" class="internal"><span class="codenumber">3.2.7</span> <span class="title">연습문제</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -427,7 +429,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="subindexitem">표준기저<span class="indexknowl">, <a href="01-02-basis.html#ex-basis-for-Fn" class="xref" data-knowl="./knowl/index/ex-basis-for-Fn.html" data-reveal-label="Reveal" data-close-label="Close" title="예시 1.2.3: \mathbb{F}^n의 기저">예시</a></span>
 </div>
-<div class="indexitem">기하적 중복도<span class="indexknowl">, <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.16: 대수적 중복도와 기하적 중복도">정의</a></span>
+<div class="indexitem">기하적 중복도<span class="indexknowl">, <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.19: 대수적 중복도와 기하적 중복도">정의</a></span>
 </div>
 <div class="indexitem">기함수<span class="indexknowl">, <a href="01-01-vector-spaces.html#def-odd-function" class="xref" data-knowl="./knowl/index/def-odd-function.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.1.17: 기함수">정의</a></span>
 </div>
@@ -444,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="subindexitem">행렬의 ~<span class="indexknowl">, <a href="03-01-eigen.html#def-diagonalizable-matrix" class="xref" data-knowl="./knowl/index/def-diagonalizable-matrix.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.1.14: 행렬의 대각화">정의</a></span>
 </div>
-<div class="indexitem">대수적 중복도<span class="indexknowl">, <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.16: 대수적 중복도와 기하적 중복도">정의</a></span>
+<div class="indexitem">대수적 중복도<span class="indexknowl">, <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.19: 대수적 중복도와 기하적 중복도">정의</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-동">
@@ -569,7 +571,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <div class="indexletter" id="indexletter-중">
-<div class="indexitem">중복도<span class="indexknowl">, <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.16: 대수적 중복도와 기하적 중복도">정의</a> <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.16: 대수적 중복도와 기하적 중복도">정의</a> <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.16: 대수적 중복도와 기하적 중복도">정의</a></span>
+<div class="indexitem">중복도<span class="indexknowl">, <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.19: 대수적 중복도와 기하적 중복도">정의</a> <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.19: 대수적 중복도와 기하적 중복도">정의</a> <a href="03-02-char.html#def-multiplicity" class="xref" data-knowl="./knowl/index/def-multiplicity.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.19: 대수적 중복도와 기하적 중복도">정의</a></span>
 </div>
 <div class="indexitem">중심화기<span class="indexknowl">, <a href="01-01-vector-spaces.html#def-centralizer" class="xref" data-knowl="./knowl/index/def-centralizer.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 1.1.18: 중심화기">정의</a></span>
 </div>
@@ -615,6 +617,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="subindexitem">~의 교대성<span class="indexknowl">, <a href="03-02-char.html#thm-det-existence" class="xref" data-knowl="./knowl/index/thm-det-existence.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 3.2.7: 행렬식의 존재성과 유일성">정리</a></span>
 </div>
 <div class="subindexitem">~의 다중선형성<span class="indexknowl">, <a href="03-02-char.html#thm-det-existence" class="xref" data-knowl="./knowl/index/thm-det-existence.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 3.2.7: 행렬식의 존재성과 유일성">정리</a></span>
+</div>
+<div class="subindexitem">~의 선형연산자<span class="indexknowl">, <a href="03-02-char.html#def-det-of-operator" class="xref" data-knowl="./knowl/index/def-det-of-operator.html" data-reveal-label="Reveal" data-close-label="Close" title="정의 3.2.12: 선형연산자의 행렬식">정의</a></span>
 </div>
 <div class="subindexitem">~의 정규화<span class="indexknowl">, <a href="03-02-char.html#thm-det-existence" class="xref" data-knowl="./knowl/index/thm-det-existence.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 3.2.7: 행렬식의 존재성과 유일성">정리</a></span>
 </div>
