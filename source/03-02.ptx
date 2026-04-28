@@ -225,7 +225,7 @@
 
     <exercise xml:id="ex-03-02-zero-eigenvalue">
       <title>비가역성과 영 고윳값</title>
-      <p>행렬 <m>A</m>가 비가역일 필요충분조건은 스칼라 0이 <m>A</m>의 고윳값이 되는 것임을 특성다항식의 상수항 성질을 이용하여 증명하시오.</p>
+      <p>행렬 <m>A</m>가 비가역일 필요충분조건은 스칼라 0이 <m>A</m>의 고윳값이 되는 것임을 증명하시오.</p>
     </exercise>
 
     <exercise xml:id="ex-03-02-multiplicity-range">
