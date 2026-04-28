@@ -128,7 +128,7 @@
         <xref ref="thm-first-isomorphism">동형정리</xref>에 의해, <m>S</m>가 커널에 포함되므로 선형변환 <m>\tilde{B}: F/S \to Z</m>가 유일하게 유도된다. 이 유도된 사상은 <m>\tilde{B}(v \otimes w) = \tilde{B}((v, w) + S) = \bar{B}(v, w) = B(v, w)</m>를 완벽하게 만족한다.
         </p>
         <p>
-        결과적으로 <m>\tilde{B} \circ \otimes = B</m>를 만족하는 유일한 선형변환 <m>\tilde{B}</m>를 항상 찾을 수 있으므로, 우리가 구성한 몫공간 <m>F/S</m>는 텐서곱의 보편성질을 충족하며 그 존재성이 증명되었다. <m>\blacksquare</m>
+        결과적으로 <m>\tilde{B} \circ \otimes = B</m>를 만족하는 유일한 선형변환 <m>\tilde{B}</m>를 항상 찾을 수 있으므로, 우리가 구성한 몫공간 <m>F/S</m>는 텐서곱의 보편성질을 충족하며 그 존재성이 증명되었다.
         </p>
       </proof>
       </theorem>
@@ -159,7 +159,7 @@
       </statement>
       <proof>
         <p>
-        형식적인 기호 <m>v_i \otimes w_j</m>들을 기저로 가지는 <m>nm</m> 차원 벡터공간 <m>T</m>를 구성하고, <m>v = \sum a_i v_i</m>와 <m>w = \sum b_j w_j</m>에 대하여 사상 <m>\otimes: V \times W \to T</m>를 <m>v \otimes w = \sum_{i,j} a_i b_j (v_i \otimes w_j)</m>로 정의한다. 임의의 쌍선형변환 <m>B</m>가 주어졌을 때 <m>\tilde{B}(v_i \otimes w_j) = B(v_i, w_j)</m>로 선형변환을 유일하게 정의할 수 있으며, 이 구조가 보편성질을 완벽하게 만족함을 대수적으로 쉽게 확인할 수 있다. <m>\blacksquare</m>
+        형식적인 기호 <m>v_i \otimes w_j</m>들을 기저로 가지는 <m>nm</m> 차원 벡터공간 <m>T</m>를 구성하고, <m>v = \sum a_i v_i</m>와 <m>w = \sum b_j w_j</m>에 대하여 사상 <m>\otimes: V \times W \to T</m>를 <m>v \otimes w = \sum_{i,j} a_i b_j (v_i \otimes w_j)</m>로 정의한다. 임의의 쌍선형변환 <m>B</m>가 주어졌을 때 <m>\tilde{B}(v_i \otimes w_j) = B(v_i, w_j)</m>로 선형변환을 유일하게 정의할 수 있으며, 이 구조가 보편성질을 완벽하게 만족함을 대수적으로 쉽게 확인할 수 있다.
         </p>
       </proof>
       </theorem>
@@ -202,7 +202,7 @@
         이는 정확히 기저 벡터 <m>v_i</m>를 <m>w_j</m>로 보내고 나머지 기저 벡터들은 영벡터로 보내는 기본적인 행렬 단위 사상들에 해당하며, 이 사상들은 <m>\mathcal{L}(V, W)</m>의 기저를 이룬다.
         </p>
         <p>
-        선형변환 <m>\tilde{B}</m>가 기저를 기저로 맵핑하므로, <m>\tilde{B}</m>는 동형사상이다. <m>\blacksquare</m>
+        선형변환 <m>\tilde{B}</m>가 기저를 기저로 맵핑하므로, <m>\tilde{B}</m>는 동형사상이다.
         </p>
       </proof>
       </theorem>

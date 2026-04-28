@@ -30,7 +30,7 @@
       <proof>
       <p>임의의 치환은 서로소인 순환들의 곱으로 유일하게 분해된다. 임의의 길이 <m>k</m>인 순환 <m>(a_1 \ a_2 \ \dots \ a_k)</m>는 다음과 같이 <m>k-1</m>개의 호환의 곱으로 분해될 수 있다.
       <md><mrow>(a_1 \ a_2 \ \dots \ a_k) = (a_1 \ a_k)(a_1 \ a_{k-1})\dots(a_1 \ a_2)</mrow></md>
-      모든 치환은 순환들의 곱이므로, 결과적으로 유한 개의 호환들의 곱으로 표현된다. <m>\blacksquare</m></p>
+      모든 치환은 순환들의 곱이므로, 결과적으로 유한 개의 호환들의 곱으로 표현된다.</p>
       </proof>
       </proposition>
 
@@ -56,7 +56,7 @@
       <md><mrow>\text{sgn}(\sigma) = \prod_{1 \le i &lt; j \le n} \frac{\sigma(j) - \sigma(i)}{j - i}</mrow></md></p>
       </statement>
       <proof>
-      <p>위 식의 우변에서 분자와 분모는 부호만 다를 뿐 정확히 같은 절댓값의 항들을 가진다. <m>i &lt; j</m>인 쌍에 대하여 <m>\sigma(i) &lt; \sigma(j)</m>이면 분자의 해당 항은 양수이고, <m>\sigma(i) &gt; \sigma(j)</m>이면 반전이므로 음수이다. 따라서 음수 항의 개수는 정확히 반전의 개수 <m>N(\sigma)</m>와 일치하므로, 전체 곱의 결과는 <m>(-1)^{N(\sigma)}</m>가 된다. <m>\blacksquare</m></p>
+      <p>위 식의 우변에서 분자와 분모는 부호만 다를 뿐 정확히 같은 절댓값의 항들을 가진다. <m>i &lt; j</m>인 쌍에 대하여 <m>\sigma(i) &lt; \sigma(j)</m>이면 분자의 해당 항은 양수이고, <m>\sigma(i) &gt; \sigma(j)</m>이면 반전이므로 음수이다. 따라서 음수 항의 개수는 정확히 반전의 개수 <m>N(\sigma)</m>와 일치하므로, 전체 곱의 결과는 <m>(-1)^{N(\sigma)}</m>가 된다.</p>
       </proof>
       </lemma>
 
@@ -72,7 +72,7 @@
       <proof>
       <p>보조정리 <xref ref="lem-sign-polynomial"/>의 표현을 사용한다.
       <md><mrow>\text{sgn}(\sigma \tau) = \prod_{i &lt; j} \frac{\sigma(\tau(j)) - \sigma(\tau(i))}{j - i} = \prod_{i &lt; j} \left( \frac{\sigma(\tau(j)) - \sigma(\tau(i))}{\tau(j) - \tau(i)} \cdot \frac{\tau(j) - \tau(i)}{j - i} \right)</mrow></md>
-      우변의 두 번째 인자들의 곱은 정의에 의해 <m>\text{sgn}(\tau)</m>이다. 첫 번째 인자들의 곱을 살펴보면, 쌍 <m>\{\tau(i), \tau(j)\}</m>는 1부터 <m>n</m>까지의 서로 다른 두 정수의 모든 가능한 쌍을 정확히 한 번씩 순회한다. <m>\tau(i) &lt; \tau(j)</m>이든 <m>\tau(i) &gt; \tau(j)</m>이든 분수식의 값은 변하지 않으므로, 이 곱은 결국 <m>\prod_{x &lt; y} \frac{\sigma(y) - \sigma(x)}{y - x}</m>와 같으며 이는 <m>\text{sgn}(\sigma)</m>이다. 따라서 <m>\text{sgn}(\sigma \tau) = \text{sgn}(\sigma)\text{sgn}(\tau)</m>이다. <m>\blacksquare</m></p>
+      우변의 두 번째 인자들의 곱은 정의에 의해 <m>\text{sgn}(\tau)</m>이다. 첫 번째 인자들의 곱을 살펴보면, 쌍 <m>\{\tau(i), \tau(j)\}</m>는 1부터 <m>n</m>까지의 서로 다른 두 정수의 모든 가능한 쌍을 정확히 한 번씩 순회한다. <m>\tau(i) &lt; \tau(j)</m>이든 <m>\tau(i) &gt; \tau(j)</m>이든 분수식의 값은 변하지 않으므로, 이 곱은 결국 <m>\prod_{x &lt; y} \frac{\sigma(y) - \sigma(x)}{y - x}</m>와 같으며 이는 <m>\text{sgn}(\sigma)</m>이다. 따라서 <m>\text{sgn}(\sigma \tau) = \text{sgn}(\sigma)\text{sgn}(\tau)</m>이다.</p>
       </proof>
       </theorem>
 

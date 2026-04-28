@@ -90,7 +90,7 @@
         <me>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_1, \dots, e_n)</me>
         정규화 조건에 의해 <m>D(e_1, \dots, e_n) = 1</m>이므로, <m>D(A)</m>의 값은 행렬 <m>A</m>의 성분들에 의해 유일하게 결정된다.</p>
 
-        <p><q>존재성</q>: 위 전개 과정에서 유도된 식 <m>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>으로 함수를 정의하면, 이 함수가 다중선형성, 교대성, 정규화를 모두 만족함을 대수적으로 검증할 수 있다. <m>\blacksquare</m></p>
+        <p><q>존재성</q>: 위 전개 과정에서 유도된 식 <m>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>으로 함수를 정의하면, 이 함수가 다중선형성, 교대성, 정규화를 모두 만족함을 대수적으로 검증할 수 있다.</p>
       </proof>
     </theorem>
 
@@ -117,7 +117,7 @@
       <proof>
         <p>행렬 <m>B</m>가 가역이 아니라고 가정하자. 그러면 <m>AB</m> 역시 가역이 아니므로 두 행렬의 열벡터들은 모두 선형종속이다. 선형종속인 열벡터들의 다중선형 교대형식 값은 항시 0이므로 <m>\det(AB) = 0</m>이고 <m>\det(B) = 0</m>이다. 따라서 <m>0 = 0</m>으로 등식이 성립한다.</p>
 
-        <p>행렬 <m>B</m>가 가역이라 가정하자(<m>\det(B) \neq 0</m>). 새로운 함수 <m>f: M_{n \times n}(\mathbb{F}) \to \mathbb{F}</m>를 <m>f(A) = \frac{\det(AB)}{\det(B)}</m>로 정의하자. 함수 <m>f</m>가 인접한 열이 같은 행렬에서 0을 반환하고 각 열에 대해 다중선형성을 만족함은 행렬곱의 성질과 행렬식의 선형성으로부터 즉각적으로 유도된다. 또한 <m>f(I) = \frac{\det(B)}{\det(B)} = 1</m>이므로 정규화 조건도 만족한다. 정리<xref ref="thm-det-existence"/>의 행렬식의 유일성에 의해 <m>f(A) = \det(A)</m>가 되어야만 한다. 따라서 <m>\det(AB) = \det(A)\det(B)</m>이다. <m>\blacksquare</m></p>
+        <p>행렬 <m>B</m>가 가역이라 가정하자(<m>\det(B) \neq 0</m>). 새로운 함수 <m>f: M_{n \times n}(\mathbb{F}) \to \mathbb{F}</m>를 <m>f(A) = \frac{\det(AB)}{\det(B)}</m>로 정의하자. 함수 <m>f</m>가 인접한 열이 같은 행렬에서 0을 반환하고 각 열에 대해 다중선형성을 만족함은 행렬곱의 성질과 행렬식의 선형성으로부터 즉각적으로 유도된다. 또한 <m>f(I) = \frac{\det(B)}{\det(B)} = 1</m>이므로 정규화 조건도 만족한다. 정리<xref ref="thm-det-existence"/>의 행렬식의 유일성에 의해 <m>f(A) = \det(A)</m>가 되어야만 한다. 따라서 <m>\det(AB) = \det(A)\det(B)</m>이다.</p>
       </proof>
     </proposition>
 
@@ -150,7 +150,7 @@
         <p>스칼라 <m>\lambda \in \mathbb{F}</m>가 선형변환 <m>T</m>의 고윳값이 될 필요충분조건은 특성다항식의 근, 즉 <m>p_T(\lambda) = 0</m>이 되는 것이다.</p>
       </statement>
       <proof>
-        <p><m>\lambda</m>가 고윳값일 필요충분조건은 <m>T(v) = \lambda v</m>를 만족하는 영이 아닌 벡터 <m>v</m>가 존재하는 것이다. 이는 식 <m>(\lambda I - T)(v) = 0</m>과 동치이며, 변환 <m>\lambda I - T</m>가 단사가 아님을 의미한다. 유한차원 공간에서 선형변환이 단사가 아닌 것은 그 행렬표현 <m>\lambda I - A</m>가 비가역인 것과 동치이며, 행렬이 비가역일 필요충분조건은 그 행렬식이 0인 것이다. 따라서 <m>\det(\lambda I - A) = p_T(\lambda) = 0</m>이다. <m>\blacksquare</m></p>
+        <p><m>\lambda</m>가 고윳값일 필요충분조건은 <m>T(v) = \lambda v</m>를 만족하는 영이 아닌 벡터 <m>v</m>가 존재하는 것이다. 이는 식 <m>(\lambda I - T)(v) = 0</m>과 동치이며, 변환 <m>\lambda I - T</m>가 단사가 아님을 의미한다. 유한차원 공간에서 선형변환이 단사가 아닌 것은 그 행렬표현 <m>\lambda I - A</m>가 비가역인 것과 동치이며, 행렬이 비가역일 필요충분조건은 그 행렬식이 0인 것이다. 따라서 <m>\det(\lambda I - A) = p_T(\lambda) = 0</m>이다.</p>
       </proof>
     </theorem>
 
@@ -185,7 +185,7 @@
         <me>[T]_\beta = \begin{pmatrix} \lambda_0 I_k &amp; B \\ 0 &amp; C \end{pmatrix}</me>
         특성다항식은 기저 선택과 무관하므로 위 블록 행렬을 이용해 계산할 수 있다.
         <me>p_T(x) = \det\begin{pmatrix} (x-\lambda_0)I_k &amp; -B \\ 0 &amp; xI_{n-k} - C \end{pmatrix} = \det((x-\lambda_0)I_k) \det(xI_{n-k} - C) = (x-\lambda_0)^k p_C(x)</me>
-        다항식 <m>p_T(x)</m>가 적어도 인자 <m>(x-\lambda_0)^k</m>를 포함하므로, 대수적 중복도는 최소한 <m>k</m> 이상이다. <m>\blacksquare</m></p>
+        다항식 <m>p_T(x)</m>가 적어도 인자 <m>(x-\lambda_0)^k</m>를 포함하므로, 대수적 중복도는 최소한 <m>k</m> 이상이다.</p>
       </proof>
     </proposition>
 
@@ -199,7 +199,7 @@
 
         <p><m>A</m>의 특성다항식을 계산하면 <m>p_T(x) = \det(xI - A) = (x-\lambda_1)\dots(x-\lambda_n)</m>이다. 이는 특성다항식이 일차식의 곱으로 완전히 분해됨을 증명한다.</p>
 
-        <p>동일한 고윳값 <m>\lambda</m>가 대각성분에 나타나는 횟수를 <m>m</m>이라 하면 이는 명백히 대수적 중복도이다. 행렬 <m>A</m>가 대각행렬이므로 변환 <m>\lambda I - T</m>의 행렬표현은 대각성분 중 <m>m</m>개가 0이고 나머지는 0이 아닌 대각행렬이 된다. 따라서 이 변환의 핵(고유공간 <m>E_\lambda</m>)의 차원은 정확히 <m>m</m>이 되어 기하적 중복도와 대수적 중복도가 일치한다. <m>\blacksquare</m></p>
+        <p>동일한 고윳값 <m>\lambda</m>가 대각성분에 나타나는 횟수를 <m>m</m>이라 하면 이는 명백히 대수적 중복도이다. 행렬 <m>A</m>가 대각행렬이므로 변환 <m>\lambda I - T</m>의 행렬표현은 대각성분 중 <m>m</m>개가 0이고 나머지는 0이 아닌 대각행렬이 된다. 따라서 이 변환의 핵(고유공간 <m>E_\lambda</m>)의 차원은 정확히 <m>m</m>이 되어 기하적 중복도와 대수적 중복도가 일치한다.</p>
       </proof>
     </theorem>
 
