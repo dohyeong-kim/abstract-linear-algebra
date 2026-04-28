@@ -378,6 +378,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="99-05-poly.html#subsec-poly-division-algorithm" class="internal"><span class="codenumber">A.5.1</span> <span class="title">다항식의 나눗셈 알고리즘</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="99-05-poly.html#subsec-poly-minimal-degree" class="internal"><span class="codenumber">A.5.2</span> <span class="title">최소 차수 다항식의 인수 성질</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="99-05-poly.html#subsec-poly-matrix-evaluation" class="internal"><span class="codenumber">A.5.3</span> <span class="title">행렬 평가 사상</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="99-05-poly.html#subsec-lagrange-interpolation" class="internal"><span class="codenumber">A.5.4</span> <span class="title">라그랑주 보간법</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -410,8 +411,7 @@ f(x) = q(x)g(x) + r(x)
 </div>
 <div class="para">이때 <span class="process-math">\(r(x)\)</span>는 영다항식이거나 <span class="process-math">\(r(x)\)</span>의 차수가 <span class="process-math">\(g(x)\)</span>의 차수보다 작다.</div>
 </div></article><details id="thm-poly-division-algorithm-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-poly-division-algorithm-3-1">존재성은 <span class="process-math">\(f(x)\)</span>의 차수에 대한 수학적 귀납법으로 증명합니다. <span class="process-math">\(f(x)\)</span>가 영다항식이거나 그 차수가 <span class="process-math">\(g(x)\)</span>의 차수보다 작을 경우, <span class="process-math">\(q(x) = 0\text{,}\)</span> <span class="process-math">\(r(x) = f(x)\)</span>로 두면 자명하게 성립합니다. <span class="process-math">\(f(x)\)</span>의 차수가 <span class="process-math">\(g(x)\)</span>의 차수보다 크거나 같다고 가정하고, <span class="process-math">\(f(x) = a_n x^n + \dots\text{,}\)</span> <span class="process-math">\(g(x) = b_m x^m + \dots\)</span> (<span class="process-math">\(n \ge m\text{,}\)</span> <span class="process-math">\(a_n, b_m \neq 0\)</span>)라 하겠습니다. 새로운 다항식 <span class="process-math">\(h(x) = f(x) - \frac{a_n}{b_m}x^{n-m}g(x)\)</span>를 구성하면, 최고차항이 상쇄되어 <span class="process-math">\(h(x)\)</span>의 차수는 <span class="process-math">\(f(x)\)</span>의 차수보다 작아집니다. 귀납법의 가정에 의해 <span class="process-math">\(h(x) = q_1(x)g(x) + r(x)\)</span>를 만족하는 <span class="process-math">\(q_1(x), r(x)\)</span>가 존재하므로, <span class="process-math">\(f(x) = \left(q_1(x) + \frac{a_n}{b_m}x^{n-m}\right)g(x) + r(x)\)</span>가 되어 존재성이 증명됩니다.</div>
-<div class="para" id="thm-poly-division-algorithm-3-2">유일성을 위해 <span class="process-math">\(f(x) = q_1(x)g(x) + r_1(x) = q_2(x)g(x) + r_2(x)\)</span>라 가정합시다. 항을 이항하면 <span class="process-math">\((q_1(x) - q_2(x))g(x) = r_2(x) - r_1(x)\)</span>가 성립합니다. 만약 <span class="process-math">\(q_1(x) \neq q_2(x)\)</span>라면 좌변의 차수는 최소한 <span class="process-math">\(g(x)\)</span>의 차수 이상이지만, 우변의 차수는 두 나머지 다항식의 차수가 모두 <span class="process-math">\(g(x)\)</span>보다 작으므로 <span class="process-math">\(g(x)\)</span>의 차수보다 작아 모순이 발생합니다. 따라서 <span class="process-math">\(q_1(x) = q_2(x)\)</span>이어야 하며, 이로부터 <span class="process-math">\(r_1(x) = r_2(x)\)</span>가 도출됩니다. <span class="process-math">\(\blacksquare\)</span>
-</div></article></details><details id="ex-poly-division-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="thm-poly-division-algorithm-3-2">유일성을 위해 <span class="process-math">\(f(x) = q_1(x)g(x) + r_1(x) = q_2(x)g(x) + r_2(x)\)</span>라 가정합시다. 항을 이항하면 <span class="process-math">\((q_1(x) - q_2(x))g(x) = r_2(x) - r_1(x)\)</span>가 성립합니다. 만약 <span class="process-math">\(q_1(x) \neq q_2(x)\)</span>라면 좌변의 차수는 최소한 <span class="process-math">\(g(x)\)</span>의 차수 이상이지만, 우변의 차수는 두 나머지 다항식의 차수가 모두 <span class="process-math">\(g(x)\)</span>보다 작으므로 <span class="process-math">\(g(x)\)</span>의 차수보다 작아 모순이 발생합니다. 따라서 <span class="process-math">\(q_1(x) = q_2(x)\)</span>이어야 하며, 이로부터 <span class="process-math">\(r_1(x) = r_2(x)\)</span>가 도출됩니다.</div></article></details><details id="ex-poly-division-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">A.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">다항식 나눗셈의 예.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-poly-division-example-2">다항식 <span class="process-math">\(f(x) = x^3 - 2x^2 + x - 1\)</span>을 <span class="process-math">\(g(x) = x^2 + 1\)</span>로 나누는 상황을 생각합시다. 직접 나눗셈을 수행하면 <span class="process-math">\(x^3 - 2x^2 + x - 1 = (x - 2)(x^2 + 1) + 1\)</span>이 됩니다. 여기서 몫은 <span class="process-math">\(q(x) = x - 2\text{,}\)</span> 나머지는 <span class="process-math">\(r(x) = 1\)</span>이며, 나머지 1의 차수는 0이므로 나누는 식 <span class="process-math">\(x^2+1\)</span>의 차수인 2보다 작아 알고리즘의 조건을 만족합니다.</div></article></details></section><section class="subsection" id="subsec-poly-minimal-degree"><h3 class="heading hide-type">
 <span class="type">소절</span><span class="space"> </span><span class="codenumber">A.5.2</span><span class="space"> </span><span class="title">최소 차수 다항식의 인수 성질</span>
@@ -420,8 +420,7 @@ f(x) = q(x)g(x) + r(x)
 <span class="type">정리</span><span class="space"> </span><span class="codenumber">A.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">최소 차수 다항식의 인수 성질.</span>
 </h4>
 <div class="para" id="thm-poly-minimal-degree-theorem-2-1">체 <span class="process-math">\(\mathbb{F}\)</span> 상의 다항식들을 모은 집합 <span class="process-math">\(S\)</span>가 다음 두 조건을 만족한다고 하자. 첫째, <span class="process-math">\(S\)</span>의 임의의 두 원소의 덧셈과 뺄셈의 결과는 다시 <span class="process-math">\(S\)</span>에 속한다. 둘째, <span class="process-math">\(S\)</span>의 임의의 원소에 체 <span class="process-math">\(\mathbb{F}\)</span> 상의 임의의 다항식을 곱한 결과는 다시 <span class="process-math">\(S\)</span>에 속한다.</div> <div class="para" id="thm-poly-minimal-degree-theorem-2-2">이때 <span class="process-math">\(S\)</span>가 영다항식만으로 이루어진 집합이 아니라면, <span class="process-math">\(S\)</span>에 속한 영이 아닌 다항식 중 차수가 가장 낮은 다항식을 <span class="process-math">\(d(x)\)</span>라 할 때, <span class="process-math">\(S\)</span>에 속한 모든 다항식은 <span class="process-math">\(d(x)\)</span>를 인수로 가진다.</div></article><details id="thm-poly-minimal-degree-theorem-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-poly-minimal-degree-theorem-3-1">집합 <span class="process-math">\(S\)</span>의 임의의 다항식 <span class="process-math">\(f(x)\)</span>를 <span class="process-math">\(d(x)\)</span>로 나누면, 나눗셈 알고리즘에 의해 <span class="process-math">\(f(x) = q(x)d(x) + r(x)\)</span>를 만족하는 <span class="process-math">\(q(x), r(x)\)</span>가 유일하게 존재합니다. 가정의 두 번째 조건에 의해 <span class="process-math">\(q(x)d(x)\)</span>는 다시 <span class="process-math">\(S\)</span>에 속하며, 첫 번째 조건에 의해 <span class="process-math">\(r(x) = f(x) - q(x)d(x)\)</span> 역시 <span class="process-math">\(S\)</span>에 속해야 합니다.</div>
-<div class="para" id="thm-poly-minimal-degree-theorem-3-2">만약 <span class="process-math">\(r(x)\)</span>가 영다항식이 아니라면 나눗셈 알고리즘의 성질상 <span class="process-math">\(r(x)\)</span>의 차수는 반드시 <span class="process-math">\(d(x)\)</span>의 차수보다 작아야 합니다. 그러나 이는 <span class="process-math">\(d(x)\)</span>가 집합 <span class="process-math">\(S\)</span> 내부에서 영이 아닌 다항식 중 차수가 가장 낮다는 가정에 정면으로 모순됩니다. 따라서 나머지는 반드시 영다항식이어야 하며, 이는 곧 <span class="process-math">\(f(x) = q(x)d(x)\)</span>가 성립함을 의미하므로 <span class="process-math">\(d(x)\)</span>는 <span class="process-math">\(f(x)\)</span>의 인수입니다. <span class="process-math">\(\blacksquare\)</span>
-</div></article></details><details id="ex-poly-minimal-degree-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="thm-poly-minimal-degree-theorem-3-2">만약 <span class="process-math">\(r(x)\)</span>가 영다항식이 아니라면 나눗셈 알고리즘의 성질상 <span class="process-math">\(r(x)\)</span>의 차수는 반드시 <span class="process-math">\(d(x)\)</span>의 차수보다 작아야 합니다. 그러나 이는 <span class="process-math">\(d(x)\)</span>가 집합 <span class="process-math">\(S\)</span> 내부에서 영이 아닌 다항식 중 차수가 가장 낮다는 가정에 정면으로 모순됩니다. 따라서 나머지는 반드시 영다항식이어야 하며, 이는 곧 <span class="process-math">\(f(x) = q(x)d(x)\)</span>가 성립함을 의미하므로 <span class="process-math">\(d(x)\)</span>는 <span class="process-math">\(f(x)\)</span>의 인수입니다.</div></article></details><details id="ex-poly-minimal-degree-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">A.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">공통근을 가지는 다항식의 집합.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-poly-minimal-degree-example-2">서로 다른 실수 <span class="process-math">\(a,b\)</span>에 대하여 <span class="process-math">\(f(a)=0\)</span>이고 <span class="process-math">\(f(b)=0\)</span>을 만족하는 모든 다항식의 집합 <span class="process-math">\(S\)</span>를 생각합니다. 임의의 다항식 <span class="process-math">\(h(x)\)</span>를 곱하거나 두 다항식을 더해도 그 근은 보존되므로 집합 <span class="process-math">\(S\)</span>는 정리 2의 두 조건을 모두 만족합니다. 인수정리에 의해 이 집합의 모든 다항식은 <span class="process-math">\((x-a)(x-b)\)</span>를 인수로 가져야 하며, 이 다항식이 바로 집합 <span class="process-math">\(S\)</span> 안에서 차수가 가장 낮은 다항식입니다.</div></article></details></section><section class="subsection" id="subsec-poly-matrix-evaluation"><h3 class="heading hide-type">
 <span class="type">소절</span><span class="space"> </span><span class="codenumber">A.5.3</span><span class="space"> </span><span class="title">행렬 평가 사상</span>
@@ -431,7 +430,58 @@ f(x) = q(x)g(x) + r(x)
 </h4>
 <div class="para" id="def-poly-matrix-evaluation-2">다항식 <span class="process-math">\(f(x) = a_m x^m + \dots + a_1 x + a_0\)</span>에 정사각행렬 <span class="process-math">\(A\)</span>를 대입하는 평가 사상은 <span class="process-math">\(f(A) = a_m A^m + \dots + a_1 A + a_0 I\)</span>로 정의됩니다. 이 사상은 다항식의 덧셈과 곱셈 구조를 행렬의 덧셈과 곱셈 구조로 고스란히 보존합니다. 특히 임의의 행렬 <span class="process-math">\(A\)</span>의 거듭제곱들은 서로 교환법칙을 만족하므로, 다항식의 곱 <span class="process-math">\(f(x)g(x) = g(x)f(x)\)</span>에 행렬을 대입한 결과 역시 <span class="process-math">\(f(A)g(A) = g(A)f(A)\)</span>로 일치합니다.</div></article><details id="ex-poly-matrix-evaluation-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">예시</span><span class="space"> </span><span class="codenumber">A.5.6</span><span class="period">.</span><span class="space"> </span><span class="title">행렬 평가 사상의 예.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-poly-matrix-evaluation-example-2">다항식 <span class="process-math">\(f(x) = x^2 - 1\)</span>을 두 일차식의 곱 <span class="process-math">\(g(x)h(x) = (x-1)(x+1)\)</span>로 인수분해할 수 있습니다. 여기에 행렬 <span class="process-math">\(A = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\)</span>를 대입해 봅시다. <span class="process-math">\(f(A) = A^2 - I = I - I = 0\)</span>입니다. 한편 <span class="process-math">\(g(A)h(A) = (A-I)(A+I) = \begin{pmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{pmatrix} \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{pmatrix} = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}\)</span>이 되어 두 결과가 완벽하게 일치합니다.</div></article></details></section></section></div>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-poly-matrix-evaluation-example-2">다항식 <span class="process-math">\(f(x) = x^2 - 1\)</span>을 두 일차식의 곱 <span class="process-math">\(g(x)h(x) = (x-1)(x+1)\)</span>로 인수분해할 수 있습니다. 여기에 행렬 <span class="process-math">\(A = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\)</span>를 대입해 봅시다. <span class="process-math">\(f(A) = A^2 - I = I - I = 0\)</span>입니다. 한편 <span class="process-math">\(g(A)h(A) = (A-I)(A+I) = \begin{pmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{pmatrix} \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{pmatrix} = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}\)</span>이 되어 두 결과가 완벽하게 일치합니다.</div></article></details></section><section class="subsection" id="subsec-lagrange-interpolation"><h3 class="heading hide-type">
+<span class="type">소절</span><span class="space"> </span><span class="codenumber">A.5.4</span><span class="space"> </span><span class="title">라그랑주 보간법</span>
+</h3>
+<article class="theorem theorem-like" id="thm-lagrange-interpolation"><h4 class="heading">
+<span class="type">정리</span><span class="space"> </span><span class="codenumber">A.5.7</span><span class="period">.</span><span class="space"> </span><span class="title">라그랑주 보간법.</span>
+</h4>
+<div class="para" id="thm-lagrange-interpolation-2-1">체 <span class="process-math">\(\mathbb{F}\)</span>의 서로 다른 원소 <span class="process-math">\(a_1, a_2, \dots, a_n\)</span>과 임의의 원소 <span class="process-math">\(b_1, b_2, \dots, b_n\)</span>가 주어졌을 때, 다항식 <span class="process-math">\(f(x)\)</span>가 존재하여 모든 <span class="process-math">\(i = 1, 2, \dots, n\)</span>에 대하여 <span class="process-math">\(f(a_i) = b_i\)</span>를 만족한다. 또한 이러한 다항식은 유일하며, 그 차수는 최대 <span class="process-math">\(n-1\)</span>이다.</div></article><details id="thm-lagrange-interpolation-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="thm-lagrange-interpolation-3-1">
+<div class="para">존재성은 라그랑주 보간 다항식의 명시적 구성을 통해 증명할 수 있습니다. 각 <span class="process-math">\(i\)</span>에 대하여 다음과 같은 다항식을 정의합니다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L_i(x) = \prod_{\substack{1 \le j \le n \\ j \neq i}} \frac{x - a_j}{a_i - a_j}
+\end{equation*}
+</div>
+<div class="para">이때 각 <span class="process-math">\(L_i(x)\)</span>는 차수가 최대 <span class="process-math">\(n-1\)</span>인 다항식이며, 특히 <span class="process-math">\(L_i(a_j) = \delta_{ij}\)</span>(크로네커 델타)인 성질을 가집니다. 이제</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \sum_{i=1}^{n} b_i L_i(x)
+\end{equation*}
+</div>
+<div class="para">라고 정의하면, 모든 <span class="process-math">\(j\)</span>에 대하여</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(a_j) = \sum_{i=1}^{n} b_i L_i(a_j) = b_j
+\end{equation*}
+</div>
+<div class="para">가 되어 존재성이 증명됩니다.</div>
+</div>
+<div class="para" id="thm-lagrange-interpolation-3-2">유일성을 증명해 봅시다. 만약 <span class="process-math">\(f(x)\)</span>와 <span class="process-math">\(g(x)\)</span>가 모두 주어진 조건을 만족하는 다항식이라면, <span class="process-math">\(h(x) = f(x) - g(x)\)</span>는 모든 <span class="process-math">\(a_i\)</span>에서 영이 됩니다. 따라서, <span class="process-math">\((x-a_1)\cdots (x-a_n) \mid h(x)\)</span>를 얻습니다. 그러나 <span class="process-math">\(h(x)\)</span>의 차수는 최대 <span class="process-math">\(n-1\)</span>이므로, 이는 <span class="process-math">\(h(x)\)</span>가 영다항식임을 의미합니다. 따라서 <span class="process-math">\(f(x) = g(x)\)</span>가 되어 유일성이 증명됩니다.</div></article></details><details id="ex-lagrange-interpolation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">예시</span><span class="space"> </span><span class="codenumber">A.5.8</span><span class="period">.</span><span class="space"> </span><span class="title">라그랑주 보간법의 예.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="ex-lagrange-interpolation-2">
+<div class="para">체 <span class="process-math">\(\mathbb{R}\)</span>에서 세 점 <span class="process-math">\((1, 2)\text{,}\)</span> <span class="process-math">\((2, 3)\text{,}\)</span> <span class="process-math">\((3, 5)\)</span>를 생각해 봅시다. 이 점들을 모두 지나는 다항식은 유일하며, 라그랑주 보간법을 적용하여 구할 수 있습니다. 각 <span class="process-math">\(L_i(x)\)</span>는 다음과 같이 계산됩니다.</div>
+<div class="displaymath process-math" id="ex-lagrange-interpolation-2-6">
+\begin{align*}
+L_1(x)\amp = \frac{(x-2)(x-3)}{(1-2)(1-3)} = \frac{(x-2)(x-3)}{2}\\
+L_2(x)\amp = \frac{(x-1)(x-3)}{(2-1)(2-3)} = -\frac{(x-1)(x-3)}{1} = -(x-1)(x-3)\\
+L_3(x)\amp = \frac{(x-1)(x-2)}{(3-1)(3-2)} = \frac{(x-1)(x-2)}{2}
+\end{align*}
+</div>
+<div class="para">따라서, 보간 다항식은</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = 2L_1(x) + 3L_2(x) + 5L_3(x)
+\end{equation*}
+</div>
+<div class="para">가 됩니다. 이를 전개하면</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = 0.5 x^2 - 0.5 x + 2
+\end{equation*}
+</div>
+<div class="para">가 되어, 이 다항식이 세 점을 모두 지나는 것을 확인할 수 있습니다.</div>
+</div></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="99-04-perm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="99-06-linearsystem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
