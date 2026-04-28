@@ -97,7 +97,7 @@
     <definition xml:id="def-determinant">
       <title>행렬식</title>
       <statement>
-        <p>정리<xref ref="thm-det-existence"/>에서 특성화된 유일한 함수 <m>D(A)</m>를 행렬 <m>A</m>의 행렬식이라 하고, <m>\det(A)</m>로 표기한다.</p>
+        <p>정리<xref ref="thm-det-existence"/>에서 특정된 유일한 함수 <m>D(A)</m>를 행렬 <m>A</m>의 행렬식이라 하고, <m>\det(A)</m>로 표기합니다.</p>
       </statement>
     </definition>
 
@@ -146,13 +146,32 @@
         <p>선형연산자 <m>T</m>의 행렬표현에 무관하게 행렬식의 값은 일정하다. 즉, 선형연산자에 대한 행렬식은 잘 정의된다.</p>
       </statement>
       <proof>
-        <p><m>T</m>의 두 행렬표현 <m>A,A'</m>이 서로 가역인 행렬 <m>P</m>에 의해 서로 닮았다고 하자. 그러면 두 행렬표현의 관계는 다음과 같이 표현된다.
+        <p><m>T</m>의 두 행렬표현 <m>A,A'</m>이 서로 가역인 행렬 <m>P</m>에 의해 서로 닮았다고 합시다. 그러면 두 행렬표현의 관계는 다음과 같이 표현됩니다.
         <me>A' = P^{-1} A P</me>
         행렬식의 곱셈 성질에 의해
         <me>\det(A') = \det(P^{-1} A P) = \det(P^{-1}) \det(A) \det(P) = \det(A)</me>
-        따라서 두 행렬표현에서 계산된 행렬식은 같다.</p>
+        를 얻습니다. 따라서 두 행렬표현에서 계산된 행렬식은 같습니다.</p>
       </proof>
     </proposition>
+  </subsection>
+
+  <subsection xml:id="subsec-universality-of-determinant">
+    <title>다항식으로서의 행렬식과 그 보편성</title>
+    <p>
+      <m>n \times n</m> 행렬 <m>A</m>의 성분을 <m>(a_{ij})_{1 \le i,j \le n }</m>이라 합시다. 행렬식 표현
+      <me>\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) a_{\sigma(1) 1} \dots a_{\sigma(n) n}</me>
+      을 생각합시다. 위 식의 행렬 성분 <m>a_{ij}</m>는 스칼라로 체 <m>\mathbb{F}</m>의 원소이지만, 잠시 이를 새로운 변수 <m>t_{ij}</m>로 생각해 봅시다. 그 결과로 얻은 표현
+      <md>
+        <mrow>
+        \sum_{\sigma \in S_n} \text{sgn}(\sigma) t_{\sigma(1) 1} \dots t_{\sigma(n) n}
+        </mrow>
+      </md>
+      는 다변수 다항식으로 그 계수는 <em>정수</em>입니다. 이 단일 정수계수 다항식은 모든 체에 대하여 행렬식을 표현해 줍니다. 이를 행렬식의 보편성이라 합니다.
+    </p>
+    <p>
+      행렬식의 보편성에 의하여 행렬의 성분에 변수가 포함되어 있더라도 행렬식의 정의와 성질이 여전히 유효함을 확인할 수 있습니다. 예를 들어, 스칼라 <m>a,b,c</m>와 변수 <m>x</m>에 대하여 행렬 <m>A = \begin{pmatrix} a &amp; b \\ x &amp; c \end{pmatrix}</m>의 행렬식은 <m>\det(A) = ac - bx \in \mathbb{F}[x]</m>입니다. 
+    </p>
+
   </subsection>
 
   <subsection xml:id="03-02-charoly">
@@ -164,7 +183,17 @@
         <p>유한차원 벡터공간 <m>V</m> 상의 선형변환 <m>T</m>와 그 행렬표현 <m>A \in M_{n \times n}(\mathbb{F})</m>를 생각하자. 새로운 변수 <m>x</m>에 대하여 다항식환 <m>\mathbb{F}[x]</m>의 원소로 정의되는 다항식 <m>p_T(x) = \det(xI - A)</m>를 변환 <m>T</m> (또는 행렬 <m>A</m>)의 특성다항식이라고 한다.</p>
       </statement>
     </definition>
-
+    <remark xml:id="rmk-charpoly">
+      <title>특성다항식이 잘 정의되는 이유</title>
+      <p>
+        선형변환 <m>T</m>두 행렬표현 <m>A,A'</m>은 적당한 가역행렬 <m>P</m>에 대하여 <m>A' = P^{-1} A P</m>을 만족합니다. <m>A</m>와 <m>A'</m>을 이용해 특성다항식을 표현해보면 각각
+        <m>\det (xI-A)</m>와 <m>\det(xI-P^{-1}AP)</m>가 됩니다.
+        행렬식의 곱셈 성질에 의하여
+        <m>\det(xI-P^{-1}AP) = \det(P^{-1}) \det(xI-A) \det(P) = \det(xI-A)</m>
+        가 성립합니다. 따라서 특성다항식은 행렬표현에 무관하게 잘 정의됩니다.
+      </p>
+      
+    </remark>
     <example xml:id="ex-charpoly-calc">
       <title>특성다항식의 계산</title>
       <p><m>A = \begin{pmatrix} 2 &amp; 1 \\ 0 &amp; 3 \end{pmatrix}</m>의 특성다항식을 구하자.</p>
