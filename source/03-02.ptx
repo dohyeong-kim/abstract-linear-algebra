@@ -123,8 +123,36 @@
 
     <example xml:id="ex-det-inverse">
       <title>가역행렬의 행렬식</title>
-      <p><m>\det(I) = \det(A A^{-1}) = \det(A)\det(A^{-1}) = 1</m>이므로, 가역행렬 <m>A</m>에 대하여 <m>\det(A^{-1}) = \frac{1}{\det(A)}</m>가 성립함을 직관적으로 확인할 수 있다.</p>
+      <p><m>\det(I) = \det(A A^{-1}) = \det(A)\det(A^{-1}) = 1</m>이므로, 가역행렬 <m>A</m>에 대하여 <m>\det(A^{-1}) = \frac{1}{\det(A)}</m>가 성립함을 직관적으로 확인할 수 있습니다.</p>
     </example>
+  </subsection>
+
+  <subsection xml:id="subsec-det-of-operator">
+    <title>선형연산자의 행렬식</title>
+    <p>
+      <m>n \times n</m>정사각행렬 <m>A</m>는 표준공간 <m>\mathbb{F}^n</m>에 정의된 선형연산자입니다. 사실, 유한차원 벡터공간 <m>V</m> 상의 선형연산자 <m>T: V \to V</m>에 대하여 행렬식을 정의할 수 있습니.
+    </p>
+    <definition xml:id="def-det-of-operator">
+      <title>선형연산자의 행렬식</title>
+      <statement>
+        <p>
+          유한차원 벡터공간 <m>V</m>에 정의된 선형연산자 <m>T</m>에 대하여 <term>행렬식</term><idx><h>행렬식</h><h>~의 선형연산자</h></idx>는 <m>T</m>의 임의의 행렬표현 <m>A \in M_{n \times n}(\mathbb{F})</m>에 대한 행렬식 <m>\det(A)</m>으로 정의합니다.
+        </p>
+      </statement>
+    </definition>
+    <proposition xml:id="prop-det-operator-well-defined">
+      <title>선형연산자의 행렬식의 정의의 타당성</title>
+      <statement>
+        <p>선형연산자 <m>T</m>의 행렬표현에 무관하게 행렬식의 값은 일정하다. 즉, 선형연산자에 대한 행렬식은 잘 정의된다.</p>
+      </statement>
+      <proof>
+        <p><m>T</m>의 두 행렬표현 <m>A,A'</m>이 서로 가역인 행렬 <m>P</m>에 의해 서로 닮았다고 하자. 그러면 두 행렬표현의 관계는 다음과 같이 표현된다.
+        <me>A' = P^{-1} A P</me>
+        행렬식의 곱셈 성질에 의해
+        <me>\det(A') = \det(P^{-1} A P) = \det(P^{-1}) \det(A) \det(P) = \det(A)</me>
+        따라서 두 행렬표현에서 계산된 행렬식은 같다.</p>
+      </proof>
+    </proposition>
   </subsection>
 
   <subsection xml:id="03-02-charoly">
