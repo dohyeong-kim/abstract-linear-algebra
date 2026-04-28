@@ -319,6 +319,13 @@
     </statement>
   </exercise>
 
+  <exercise xml:id="exercise-invariant-subspace-and-block-diagonalization">
+    <title>불변공간과 블록 삼각화</title>
+    <statement>
+      <p>유한차원 벡터공간 <m>V</m>에 주어진 작용소 <m>T: V \to V</m>가 부분공간 <m>W\subset V</m>를 불변공간으로 가질 때, <m>T</m>의 행렬표현이 적절한 기저 선택에 따라 블록 상삼각행렬 형태로 표현될 수 있음을 증명하시오. 단, 대각블록은 정사각이며 그 크기는 <m>\dim W</m>와 <m>\dim V - \dim W</m>이다. </p>
+    </statement>
+  </exercise>
+
   <exercise xml:id="exercise-shift-operator-eigenvalues">
     <title>좌측 이동 작용소의 고윳값</title>
     <statement>
