@@ -29,13 +29,13 @@
 D(A) = \sum_{i_1=1}^n \dots \sum_{i_n=1}^n A_{i_1 1} \dots A_{i_n n} D(e_{i_1}, \dots, e_{i_n})
 \end{equation*}
 </div>
-<div class="para">교대성(및 반대칭성)에 의해 인덱스 <span class="process-math">\(i_1, \dots, i_n\)</span> 중 중복되는 것이 하나라도 있으면 <span class="process-math">\(D(e_{i_1}, \dots, e_{i_n}) = 0\)</span>이다. 따라서 중복이 없는 경우, 즉 인덱스가 <span class="process-math">\(1, \dots, n\)</span>의 순열 <span class="process-math">\(\sigma\)</span>를 이루는 경우만 남는다.</div>
+<div class="para">교대성(및 반대칭성)에 의해 인덱스 <span class="process-math">\(i_1, \dots, i_n\)</span> 중 중복되는 것이 하나라도 있으면 <span class="process-math">\(D(e_{i_1}, \dots, e_{i_n}) = 0\)</span>이다. 따라서 중복이 없는 경우, 즉 인덱스가 <span class="process-math">\(1, \dots, n\)</span>의 치환 <span class="process-math">\(\sigma\)</span>를 이루는 경우만 남는다.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 D(A) = \sum_{\sigma \in S_n} A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_{\sigma(1)}, \dots, e_{\sigma(n)})
 \end{equation*}
 </div>
-<div class="para">반대칭성을 적용하여 순열 <span class="process-math">\(\sigma\)</span>를 항등순열로 되돌리려면 부호 함수 <span class="process-math">\(\text{sgn}(\sigma)\)</span>가 곱해진다.</div>
+<div class="para">반대칭성을 적용하여 치환 <span class="process-math">\(\sigma\)</span>를 항등치환으로 되돌리려면 부호 함수 <span class="process-math">\(\text{sgn}(\sigma)\)</span>가 곱해진다.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_1, \dots, e_n)
