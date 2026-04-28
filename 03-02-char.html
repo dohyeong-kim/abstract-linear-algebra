@@ -642,7 +642,19 @@ p_T(x) = \det\begin{pmatrix} (x-\lambda_0)I_k &amp; -B \\ 0 &amp; xI_{n-k} - C \
 <span class="process-math">\(n \times n\)</span> 블록 상삼각행렬 <span class="process-math">\(M = \begin{pmatrix} A &amp; B \\ 0 &amp; C \end{pmatrix}\)</span> (단, <span class="process-math">\(A, C\)</span>는 각각 정사각행렬)이 주어졌을 때, <span class="process-math">\(M\)</span>의 특성다항식이 <span class="process-math">\(p_M(x) = p_A(x)p_C(x)\)</span>가 됨을 정리 <a href="03-02-char.html#thm-det-existence" class="xref" data-knowl="./knowl/xref/thm-det-existence.html" data-reveal-label="Reveal" data-close-label="Close" title="정리 3.2.7: 행렬식의 존재성과 유일성">정리 3.2.7</a>의 존재성 부분을 바탕으로 엄밀하게 증명하시오.</div></article><article class="exercise exercise-like" id="ex-03-02-rotation-matrix-complex"><h4 class="heading">
 <span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title">회전변환의 특성다항식과 확장체.</span>
 </h4>
-<div class="para" id="ex-03-02-rotation-matrix-complex-2">체 <span class="process-math">\(\mathbb{F} = \mathbb{R}\)</span> 위에서 <span class="process-math">\(A = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix}\)</span>의 특성다항식을 구하시오. 이 특성다항식이 <span class="process-math">\(\mathbb{R}\)</span> 위에서 일차식으로 분해되지 않음을 보이고, 만약 체를 <span class="process-math">\(\mathbb{F} = \mathbb{C}\)</span>로 확장한다면 기하적 중복도와 대수적 중복도가 어떻게 변화하는지 논증하여 대각화 가능성을 비교 분석하시오.</div></article></section></section></div>
+<div class="para" id="ex-03-02-rotation-matrix-complex-2">체 <span class="process-math">\(\mathbb{F} = \mathbb{R}\)</span> 위에서 <span class="process-math">\(A = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix}\)</span>의 특성다항식을 구하시오. 이 특성다항식이 <span class="process-math">\(\mathbb{R}\)</span> 위에서 일차식으로 분해되지 않음을 보이고, 만약 체를 <span class="process-math">\(\mathbb{F} = \mathbb{C}\)</span>로 확장한다면 기하적 중복도와 대수적 중복도가 어떻게 변화하는지 논증하여 대각화 가능성을 비교 분석하시오.</div></article><article class="exercise exercise-like" id="ex-03-02-multiplicativity-absolute-determinant"><h4 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title">행렬식과 곱셈.</span>
+</h4>
+<div class="para logical" id="ex-03-02-multiplicativity-absolute-determinant-2">
+<div class="para">주어진 양의 정수 <span class="process-math">\(n\)</span>에 대하여 두 벌의 변수 <span class="process-math">\(t_{ij}\)</span>와 <span class="process-math">\(s_{ij}\)</span>를 생각하자. (단, <span class="process-math">\(i,j=1,\cdots,n\)</span>) <span class="process-math">\(A=(t_{ij})_{1\le i, j \le n }\)</span>와 <span class="process-math">\(B=(s_{ij})_{1\le i, j \le n }\)</span>에 대하여 정수계수 다변수 다항식 간의 항등식</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\det(AB) = \det(A)\det(B)
+\end{equation*}
+</div>
+<div class="para">가 성립함을 증명하시오.</div>
+</div>
+<details id="ex-03-02-multiplicativity-absolute-determinant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">단서</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-03-02-multiplicativity-absolute-determinant-3-1">블록행렬 <span class="process-math">\(\begin{pmatrix}A \amp 0 \\ -I \amp B\end{pmatrix}\)</span>의 행렬식이 <span class="process-math">\(\det(A)\det(B)\)</span>임을 보이고 또 두 행렬 <span class="process-math">\(\begin{pmatrix}A \amp 0 \\ -I \amp B\end{pmatrix}\)</span>와 <span class="process-math">\(\begin{pmatrix}I \amp A B \\ -I \amp 0\end{pmatrix}\)</span>행렬식이 동일함을 보일 수 있습니다.</div></div></details></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="03-01-eigen.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="03-03-cayley.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
