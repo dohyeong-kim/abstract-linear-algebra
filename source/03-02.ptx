@@ -84,9 +84,9 @@
       <proof>
         <p><q>유일성</q>: 함수 <m>D</m>가 위 세 성질을 만족한다고 가정하자. 행렬 <m>A</m>의 <m>j</m>번째 열벡터를 <m>v_j</m>라 하고, 이를 표준기저들의 선형결합 <m>v_j = \sum_{i=1}^n A_{ij} e_i</m>로 표현하자. 다중선형성을 반복 적용하면 <m>D(A) = D(v_1, \dots, v_n)</m>는 다음과 같이 전개된다.
         <me>D(A) = \sum_{i_1=1}^n \dots \sum_{i_n=1}^n A_{i_1 1} \dots A_{i_n n} D(e_{i_1}, \dots, e_{i_n})</me>
-        교대성(및 반대칭성)에 의해 인덱스 <m>i_1, \dots, i_n</m> 중 중복되는 것이 하나라도 있으면 <m>D(e_{i_1}, \dots, e_{i_n}) = 0</m>이다. 따라서 중복이 없는 경우, 즉 인덱스가 <m>1, \dots, n</m>의 순열 <m>\sigma</m>를 이루는 경우만 남는다.
+        교대성(및 반대칭성)에 의해 인덱스 <m>i_1, \dots, i_n</m> 중 중복되는 것이 하나라도 있으면 <m>D(e_{i_1}, \dots, e_{i_n}) = 0</m>이다. 따라서 중복이 없는 경우, 즉 인덱스가 <m>1, \dots, n</m>의 치환 <m>\sigma</m>를 이루는 경우만 남는다.
         <me>D(A) = \sum_{\sigma \in S_n} A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_{\sigma(1)}, \dots, e_{\sigma(n)})</me>
-        반대칭성을 적용하여 순열 <m>\sigma</m>를 항등순열로 되돌리려면 부호 함수 <m>\text{sgn}(\sigma)</m>가 곱해진다.
+        반대칭성을 적용하여 치환 <m>\sigma</m>를 항등치환으로 되돌리려면 부호 함수 <m>\text{sgn}(\sigma)</m>가 곱해진다.
         <me>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_1, \dots, e_n)</me>
         정규화 조건에 의해 <m>D(e_1, \dots, e_n) = 1</m>이므로, <m>D(A)</m>의 값은 행렬 <m>A</m>의 성분들에 의해 유일하게 결정된다.</p>
 
@@ -165,9 +165,17 @@
 
     <definition xml:id="def-multiplicity">
       <title>대수적 중복도와 기하적 중복도</title>
+      <idx><h>중복도</h></idx>
+      <idx><h>중복도</h><idx><h>기하적 중복도</h></idx></idx>
+      <idx><h>중복도</h><idx><h>대수적 중복도</h></idx></idx>
       <statement>
-        <p>선형변환 <m>T</m>의 고윳값 <m>\lambda</m>에 대하여, 다항식 <m>p_T(x)</m>가 인수로 가지는 <m>(x-\lambda)</m>의 최대 거듭제곱 횟수 <m>m</m>을 <m>\lambda</m>의 대수적 중복도라 한다. 한편, <m>\lambda</m>에 대응하는 고유공간 <m>E_\lambda</m>의 차원 <m>\dim(E_\lambda)</m>를 <m>\lambda</m>의 기하적 중복도라 한다.</p>
+        <p>선형변환 <m>T</m>의 고윳값 <m>\lambda</m>에 대하여, 다항식 <m>p_T(x)</m>가 인수로 가지는 <m>(x-\lambda)</m>의 최대 거듭제곱 횟수 <m>m</m>을 <m>\lambda</m>의 <term>대수적 중복도</term>라 한다. 한편, <m>\lambda</m>에 대응하는 고유공간 <m>E_\lambda</m>의 차원 <m>\dim(E_\lambda)</m>를 <m>\lambda</m>의 <term>기하적 중복도</term>라 한다.</p>
       </statement>
+      <aside>
+        <p>중복도:multiplicity</p>
+        <p>대수적 중복도:algebraic multiplicity</p>
+        <p>기하적 중복도:geometric multiplicity</p>
+      </aside>
     </definition>
 
     <example xml:id="ex-multiplicity">

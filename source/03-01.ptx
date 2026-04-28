@@ -149,9 +149,16 @@
   <example xml:id="ex-diagonalizable-matrix">
     <title>대칭 행렬의 대각화</title>
     <statement>
-      <p><m>A = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}</m>라 합시다. 만약 <m>Q = \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}</m>를 선택하면, <m>Q^{-1} = \frac{1}{-2}\begin{pmatrix} -1 &amp; -1 \\ -1 &amp; 1 \end{pmatrix} = \begin{pmatrix} 1/2 &amp; 1/2 \\ 1/2 &amp; -1/2 \end{pmatrix}</m>입니다. 직접 계산해보면 <m>Q^{-1}A Q = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}</m>이 되어 대각행렬이 됩니다. 따라서 <m>A</m>는 대각화 가능한 행렬입니다.</p>
+      <p><m>\mathbb F</m>의 표수가 <m>2</m>가 아니라고 가정합시다. 즉, <m>2^{-1} \in \mathbb F</m>입니다. <m>A = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}</m>라 합시다. 만약 <m>Q = \begin{pmatrix} 1 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}</m>를 선택하면, <m>Q^{-1} = \frac{1}{-2}\begin{pmatrix} -1 &amp; -1 \\ -1 &amp; 1 \end{pmatrix} = \begin{pmatrix} 1/2 &amp; 1/2 \\ 1/2 &amp; -1/2 \end{pmatrix}</m>입니다. 직접 계산해보면 <m>Q^{-1}A Q = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}</m>이 되어 대각행렬이 됩니다. 따라서 <m>A</m>는 대각화 가능한 행렬입니다.</p>
     </statement>
   </example>
+  <question xml:id="qstn-nondiagonalizabme-2-by-2">
+    <statement>
+      <p>
+        <m>\mathbb F=\mathbb Z/2\mathbb Z</m>에 대하여 행렬 <m>A=  \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}</m>을 생각합시다. 이 행렬은 대각화할 수 없습니다. 왜 그럴까요?
+      </p>
+    </statement>
+  </question>
   <example xml:id="ex-diagonalizable-infinite">
     <title>무한차원 공간에서의 대각화</title>
     <statement>
