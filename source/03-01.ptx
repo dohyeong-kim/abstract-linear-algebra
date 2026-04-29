@@ -108,7 +108,7 @@
   <example xml:id="ex-independent-eigenvectors">
     <title>반사 변환의 고유벡터</title>
     <statement>
-      <p><m>\mathbb{F}^2</m> 위에서 <m>T(x,y) = (y, x)</m>로 정의된 선형변환을 생각합시다. 체의 표수가 2가 아니라고 가정합니다. <m>T(v) = \lambda v</m>를 풀면 <m>x = \lambda^2 x</m>가 되어 고윳값은 <m>1</m>과 <m>-1</m>입니다. <m>\lambda=1</m>에 대한 고유벡터는 <m>(1, 1)</m>, <m>\lambda=-1</m>에 대한 고유벡터는 <m>(1, -1)</m>입니다. <xref ref="thm-eigenvector-independence"/>에 의해 <m>\{(1,1), (1,-1)\}</m>은 서로 다른 고윳값에 대응하므로 선형독립임을 알 수 있습니다.</p>
+      <p> 체의 표수가 2가 아니라고 가정합시다. <m>\mathbb{F}^2</m> 위에서 <m>T(x,y) = (y, x)</m>로 정의된 선형변환을 생각합시다. <m>T(v) = \lambda v</m>를 풀면 <m>x = \lambda^2 x</m>가 되어 고윳값은 <m>1</m>과 <m>-1</m>입니다. 표수가 <m>2</m>가 아니므로 <m>1 \not = -1</m>이어서 이 둘은 서로 다른 스칼라입니다. <m>\lambda=1</m>에 대한 고유벡터는 <m>(1, 1)</m>, <m>\lambda=-1</m>에 대한 고유벡터는 <m>(1, -1)</m>입니다. <xref ref="thm-eigenvector-independence"/>에 의해 <m>\{(1,1), (1,-1)\}</m>은 서로 다른 고윳값에 대응하므로 선형독립임을 알 수 있습니다.</p>
     </statement>
   </example>
 </subsection>
