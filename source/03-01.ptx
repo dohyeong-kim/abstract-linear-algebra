@@ -132,6 +132,44 @@
     </p>    
   </remark>
 
+  <proposition xml:id="prop-direct-sum-and-diagonalization">
+    <title>직합과 대각화</title>    
+    <statement>
+      <p>
+        선형변환 <m>T \colon V \to V</m>의 서로다른 고윳값을 <m>(\lambda_i)_{i \in I}</m>라 하자. 다음 세 조건은 동치이다.
+      </p>
+      <p>
+        <ol>
+          <li xml:id="item-diagonalizable">
+            <p>
+              <m>T</m>는 대각화 가능하다.
+            </p>
+          </li>
+          <li xml:id="item-direct-sum">
+            <p>
+              <m>V = \bigoplus_{i \in I} E_{\lambda_i}</m>이다.
+            </p>
+          </li>
+          <li xml:id="item-sum">
+            <p>
+              <m>V = \sum_{i \in I} E_{\lambda_i}</m>이다.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        먼저 <xref ref="item-direct-sum"/>와 <xref ref="item-sum"/>의 동치성을 보이겠습니다. <xref ref="item-direct-sum"/>로부터 <xref ref="item-sum"/>이 얻어짐은 자명합니다. 반대로, <xref ref="item-sum"/>가 성립한다면 <xref ref="thm-eigenvector-independence"/>로부터 <xref ref="item-direct-sum"/>을 얻습니다.
+      </p>
+      <p>
+        다음으로 <xref ref="item-diagonalizable"/>으로부터 <xref ref="item-sum"/>이 얻을 수 있는데, 그 이유는 기저는 주어진 공간을 스팬하기 때문입니다.
+      </p>
+      <p>
+        마지막으로 <xref ref="item-direct-sum"/>으로부터 <xref ref="item-diagonalizable"/>이 얻어짐을 보이겠습니다. <xref ref="item-direct-sum"/>이 성립할 때, 각 <m>E_{\lambda_i}</m>의 기저 <m>\mathcal B_i</m>를 택합시다. <m>\mathcal B = \cup_{i \in I} \mathcal B_i</m>를 택하면 <m>\mathcal B</m>는 <xref ref="thm-eigenvector-independence"/>에 의하여 고유벡터로 구성된 <m>V</m>의 기저가 됩니다. 따라서 <m>T</m>는 대각화 가능합니다. 
+      </p>
+    </proof>
+  </proposition>
   <example xml:id="ex-diagonalizable-identity">
     <title>항등변환의 대각화</title>
     <statement>
@@ -153,6 +191,7 @@
     </statement>
   </example>
   <question xml:id="qstn-nondiagonalizabme-2-by-2">
+    <title>대각화 불가능성 탐구</title>    
     <statement>
       <p>
         <m>\mathbb F=\mathbb Z/2\mathbb Z</m>에 대하여 행렬 <m>A=  \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}</m>을 생각합시다. 이 행렬은 대각화할 수 없습니다. 왜 그럴까요?
