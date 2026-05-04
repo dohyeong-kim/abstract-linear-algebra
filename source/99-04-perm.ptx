@@ -4,7 +4,11 @@
   <title>치환 </title>
 
     <subsection xml:id="99-04-perm-transposition">
-      <title>치환과 호환</title>
+      <title>치환과 호환</title>\
+      <idx><h>치환</h></idx>
+      <idx><h>호환</h></idx>
+      <aside>치환:permulation</aside>
+      <aside>호환:transposition</aside>
 
       <definition xml:id="def-permutation-symmetric-group">
       <statement>
@@ -52,7 +56,7 @@
 
       <lemma xml:id="lem-sign-polynomial">
       <statement>
-      <p>치환의 부호는 다음 다항식의 비로도 표현된다.
+      <p>치환의 부호는 다음 몫으로도 표현된다.
       <md><mrow>\text{sgn}(\sigma) = \prod_{1 \le i &lt; j \le n} \frac{\sigma(j) - \sigma(i)}{j - i}</mrow></md></p>
       </statement>
       <proof>
