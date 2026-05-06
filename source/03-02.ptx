@@ -82,22 +82,23 @@
         </ul>
       </statement>
       <proof>
-        <p><q>유일성</q>: 함수 <m>D</m>가 위 세 성질을 만족한다고 가정하자. 행렬 <m>A</m>의 <m>j</m>번째 열벡터를 <m>v_j</m>라 하고, 이를 표준기저들의 선형결합 <m>v_j = \sum_{i=1}^n A_{ij} e_i</m>로 표현하자. 다중선형성을 반복 적용하면 <m>D(A) = D(v_1, \dots, v_n)</m>는 다음과 같이 전개된다.
+        <p><q>유일성</q>: 함수 <m>D</m>가 위 세 성질을 만족한다고 합시다. 행렬 <m>A</m>의 <m>j</m>번째 열벡터를 <m>v_j</m>라 하고, 이를 표준기저들의 선형결합 <m>v_j = \sum_{i=1}^n A_{ij} e_i</m>로 표현합시다. 다중선형성을 반복 적용하면 <m>D(A) = D(v_1, \dots, v_n)</m>는 다음과 같이 전개됩니다.
         <me>D(A) = \sum_{i_1=1}^n \dots \sum_{i_n=1}^n A_{i_1 1} \dots A_{i_n n} D(e_{i_1}, \dots, e_{i_n})</me>
-        교대성(및 반대칭성)에 의해 인덱스 <m>i_1, \dots, i_n</m> 중 중복되는 것이 하나라도 있으면 <m>D(e_{i_1}, \dots, e_{i_n}) = 0</m>이다. 따라서 중복이 없는 경우, 즉 인덱스가 <m>1, \dots, n</m>의 치환 <m>\sigma</m>를 이루는 경우만 남는다.
+        교대성(및 반대칭성)에 의해 인덱스 <m>i_1, \dots, i_n</m> 중 중복되는 것이 하나라도 있으면 <m>D(e_{i_1}, \dots, e_{i_n}) = 0</m>입니다. 따라서 중복이 없는 경우, 즉 인덱스가 <m>1, \dots, n</m>의 치환 <m>\sigma</m>를 이루는 경우만 남습니다.
         <me>D(A) = \sum_{\sigma \in S_n} A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_{\sigma(1)}, \dots, e_{\sigma(n)})</me>
-        반대칭성을 적용하여 치환 <m>\sigma</m>를 항등치환으로 되돌리려면 부호 함수 <m>\text{sgn}(\sigma)</m>가 곱해진다.
+        반대칭성을 적용하여 치환 <m>\sigma</m>를 항등치환으로 되돌리려면 부호 함수 <m>\text{sgn}(\sigma)</m>가 곱해집니다.
         <me>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n} D(e_1, \dots, e_n)</me>
-        정규화 조건에 의해 <m>D(e_1, \dots, e_n) = 1</m>이므로, <m>D(A)</m>의 값은 행렬 <m>A</m>의 성분들에 의해 유일하게 결정된다.</p>
+        정규화 조건에 의해 <m>D(e_1, \dots, e_n) = 1</m>이므로, <m>D(A)</m>의 값은 행렬 <m>A</m>의 성분들에 의해 유일하게 결정됩니다.</p>
 
-        <p><q>존재성</q>: 위 전개 과정에서 유도된 식 <m>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>으로 함수를 정의하면, 이 함수가 다중선형성, 교대성, 정규화를 모두 만족함을 대수적으로 검증할 수 있다.</p>
+        <p><q>존재성</q>: 위 전개 과정에서 유도된 식 <m>D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>으로 함수를 정의하면, 이 함수가 다중선형성, 교대성, 정규화를 모두 만족함을 대수적으로 검증할 수 있습니다.</p>
       </proof>
     </theorem>
+
 
     <definition xml:id="def-determinant">
       <title>행렬식</title>
       <statement>
-        <p>정리<xref ref="thm-det-existence"/>에서 특정된 유일한 함수 <m>D(A)</m>를 행렬 <m>A</m>의 행렬식이라 하고, <m>\det(A)</m>로 표기합니다.</p>
+        <p><xref ref="thm-det-existence"/>에서 특정된 유일한 함수 <m>D(A)</m>를 행렬 <m>A</m>의 행렬식이라 하고, <m>\det(A)</m>로 표기합니다.</p>
       </statement>
     </definition>
 
@@ -109,15 +110,89 @@
       <p>교대성에 의해 <m>\det(e_1, e_1) = \det(e_2, e_2) = 0</m>이고, 반대칭성에 의해 <m>\det(e_2, e_1) = -\det(e_1, e_2)</m>이다. 정규화에 의해 <m>\det(e_1, e_2) = 1</m>이므로, <m>\det(A) = ad - bc</m>이다.</p>
     </example>
 
+    <proposition xml:id="prop-det-row-operation">
+      <title>행렬식과 행 연산</title>
+      <statement>
+        <p>행렬 <m>A\in M_{n \times n}(\mathbb{F})</m>에 대하여, 다음이 성립한다.</p>
+        <ul>
+          <li><p>행렬의 두 열을 교환하면 행렬식의 부호가 바뀐다.</p></li>
+          <li><p>행렬의 한 열에 스칼라를 곱하면 행렬식도 같은 스칼라로 곱해진다.</p></li>
+          <li><p>한 행에 다른 열의 스칼라배를 더해도 행렬식은 변하지 않는다.</p></li>
+        </ul>
+      </statement>
+      <proof>
+        <p>
+          첫째 조건은 <xref ref="lem-antisymmetry"/>으로부터 얻습니다. 둘째 조건은 다중선형성에서 얻습니다. 셋째 조건은 다중선형성과 앞선 두 조건을 조합하여 얻을 수 있습니다. 연습문제: 정말 그런지 확인하십시오.
+        </p>
+      </proof>
+    </proposition>
+
+    <definition xml:id="def-transpose">
+      <title>전치</title>
+      <statement>
+        <p>
+          행렬 <m>A</m>성분이 <m>A_{ij}</m>일 때, 새로운 행렬 <m>B</m>를 <me>B_{ij} = A_{ji}</me>로 정의합시다. 그러면 <m>B</m>를 <m>A</m>의 <term>전치행렬</term><idx><h>전치행렬</h></idx>이라 하고 <m>A^{\operatorname{T}}</m>로 나타냅니다.
+        </p>
+        <aside>
+          <p>전치:transpose</p>
+        </aside>
+        <p>
+          <m>A</m>가 <m>m \times n </m>행렬이면 <m>A^{\operatorname{T}}</m>는 <m>n \times n</m>행렬입니다.
+        </p>
+      </statement>
+    </definition>
+    <proposition xml:id="prop-det-transpose">
+      <title>행렬식과 전치</title>      
+      <statement>
+        <p>
+          정사각행렬 <m>A</m>에 대하여 <m>\det (A) = \det(A^{\operatorname{T}})</m>이다.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          항등식
+          <md>
+            <mrow>\sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n} = \amp \sum_{\sigma' \in S_n} \text{sgn}(\sigma') A_{1\sigma'(1) } \dots A_{n\sigma'(n) }</mrow>
+          </md>
+          을 보이면 충분합니다. 좌변과 우변의 항을 다음과 같이 짝지어 항별로 같음을 보이겠습니다. 좌변의 항 <m>\text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</m>에 대하여, 우변의 항 <m>\text{sgn}(\sigma^{-1}) A_{1\sigma^{-1}(1) } \dots A_{n\sigma^{-1}(n) }</m>를 대응시킵니다. 치환의 부호 함수는 역치환에 대하여 부호가 바뀌지 않으므로, 짝지어진 항들은 서로 같습니다. 따라서 전체 합도 같습니다.
+        </p>
+      </proof>
+    </proposition>
+
     <proposition xml:id="prop-det-multiplicative">
       <title>행렬식의 곱셈 성질</title>
       <statement>
         <p>두 행렬 <m>A, B \in M_{n \times n}(\mathbb{F})</m>에 대하여, <m>\det(AB) = \det(A)\det(B)</m>가 성립한다.</p>
       </statement>
       <proof>
-        <p>행렬 <m>B</m>가 가역이 아니라고 가정하자. 그러면 <m>AB</m> 역시 가역이 아니므로 두 행렬의 열벡터들은 모두 선형종속이다. 선형종속인 열벡터들의 다중선형 교대형식 값은 항시 0이므로 <m>\det(AB) = 0</m>이고 <m>\det(B) = 0</m>이다. 따라서 <m>0 = 0</m>으로 등식이 성립한다.</p>
-
-        <p>행렬 <m>B</m>가 가역이라 가정하자(<m>\det(B) \neq 0</m>). 새로운 함수 <m>f: M_{n \times n}(\mathbb{F}) \to \mathbb{F}</m>를 <m>f(A) = \frac{\det(AB)}{\det(B)}</m>로 정의하자. 함수 <m>f</m>가 인접한 열이 같은 행렬에서 0을 반환하고 각 열에 대해 다중선형성을 만족함은 행렬곱의 성질과 행렬식의 선형성으로부터 즉각적으로 유도된다. 또한 <m>f(I) = \frac{\det(B)}{\det(B)} = 1</m>이므로 정규화 조건도 만족한다. 정리<xref ref="thm-det-existence"/>의 행렬식의 유일성에 의해 <m>f(A) = \det(A)</m>가 되어야만 한다. 따라서 <m>\det(AB) = \det(A)\det(B)</m>이다.</p>
+        <p>
+          두 배 큰 행렬
+          <me>
+            Q=\begin{pmatrix}
+            A\amp 0 \\ -I \amp B
+            \end{pmatrix}
+          </me>
+          를 생각합시다. 
+        </p>
+        <p>
+          <m>Q</m>에 열연산을 반복적으로 적용해
+          <me>
+            Q' = \begin{pmatrix}
+            A \amp AB \\  -I \amp 0
+            \end{pmatrix}
+          </me>
+          를 얻습니다. 필요한 열연산 전체는 우측에
+          <me>
+            \begin{pmatrix}
+            I \amp B \\ 0 \amp I
+            \end{pmatrix}
+          </me>
+          를 곱하는 것과 같습니다. 위 블록행렬을 곱하는 것은 열연산 <m>n^2</m>번에 해당하여, 행렬식에는 영향이 없습니다. 따라서,
+          <me>
+            \det Q = \det Q'
+          </me>
+          입니다. 한편, <m>\det Q = \det A \det B</m>인 것과, <m>\det Q' = \det(AB) \det (I)</m>을 행렬식의 표현으로부터 알 수 있습니다. <m>\det (I)=1</m>이므로 원하던 것 <m>\det (AB)=\det(A)\det(B)</m>를 얻습니다.
+        </p>
       </proof>
     </proposition>
 
@@ -126,11 +201,69 @@
       <p><m>\det(I) = \det(A A^{-1}) = \det(A)\det(A^{-1}) = 1</m>이므로, 가역행렬 <m>A</m>에 대하여 <m>\det(A^{-1}) = \frac{1}{\det(A)}</m>가 성립함을 직관적으로 확인할 수 있습니다.</p>
     </example>
   </subsection>
+  
+  <subsection xml:id="subsec-universality-of-determinant">
+    <title>다항식으로서의 행렬식과 그 보편성</title>
+    <p>
+      <m>n \times n</m> 행렬 <m>A</m>의 성분을 <m>(A_{ij})_{1 \le i,j \le n }</m>이라 합시다. 행렬식 표현
+      <me>\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(n) n}</me>
+      을 생각합시다. 위 식의 행렬 성분 <m>A_{ij}</m>는 스칼라로 체 <m>\mathbb{F}</m>의 원소이지만, 잠시 이를 새로운 변수 <m>t_{ij}</m>로 생각해 봅시다. 그 결과로 얻은 표현
+      <md>
+        <mrow>
+          \sum_{\sigma \in S_n} \text{sgn}(\sigma) t_{\sigma(1) 1} \dots t_{\sigma(n) n}
+        </mrow>
+      </md>
+      는 다변수 다항식으로 그 계수는 <em>정수</em>입니다. 이 단일 정수계수 다항식은 모든 체에 대하여 행렬식을 표현해 줍니다. 이를 행렬식의 보편성이라 합니다.
+    </p>
+    <p>
+      행렬식의 보편성에 의하여 행렬의 성분에 변수가 포함되어 있더라도 행렬식의 정의와 성질이 여전히 유효함을 확인할 수 있습니다. 예를 들어, 스칼라 <m>a,b,c</m>와 변수 <m>x</m>에 대하여 행렬 <m>A = \begin{pmatrix} a &amp; b \\ x &amp; c \end{pmatrix}</m>의 행렬식은 <m>\det(A) = ac - bx \in \mathbb{F}[x]</m>입니다. 
+    </p>  
+    <p>
+      앞에서 살펴본 행렬식의 성질들은 보편성을 가집니다. 즉, 다중선형성, 교대성, 곱셈 성질은 행렬의 성분이 변수인 경우에도 여전히 유효합니다.
+      <fn>곱셈에 관해서는 연습문제 <xref ref="ex-03-02-multiplicativity-absolute-determinant"/>를 참조하십시오.</fn>
+    </p>
+    <theorem xml:id="thm-properties-det-universal">
+      <title>행렬식의 성질 - 변수가 성분인 경우</title>
+      <statement>
+        <p>
+          <m>n \times n</m>행렬 <m>A</m>의 성분을 서로 독립인 변수 <m>t_{ij}</m>라 하자. (단, <m>i,j=1,2,\cdots,n</m>.) 이 때, 정수 계수 다변수 다항식 <m>\det(A) \in \mathbb{Z}[t_{11}, t_{12}, \dots, t_{nn}]</m>은 다음 성질들을 만족한다.
+        </p>
+        <ol>
+          <li>
+            <p>
+                각 <m>i</m>와 추가 변수 <m>x</m>에 대하여, <m>A</m>의 <m>i</m>번째 열에 <m>x</m>를 곱해 행렬식을 취하면 그 결과는 <m>x\det(A)</m>이다.
+            </p>
+          </li>
+          <li>
+            <p>
+                각 <m>i\not = j</m>와 추가 변수 <m>x</m>에 대하여, <m>A</m>의 <m>i</m>번째 열에 <m>x</m>를 곱해 <m>A</m>의 <m>j</m>번째 열에 더한 그 결과는 <m>\det(A)</m>이다.
+            </p>
+          </li>
+          <li>
+            <p>
+                각 <m>i&lt;n</m>에 <m>i</m>열 변수와 <m>i+1</m>열 변수가 <m>t_{ij}=t_{(i+1)j}</m>관계를 만족하면 행렬식은 0이다.
+            </p>
+          </li>
+          <li>
+            <p>
+                각 <m>i\not = j</m>에 대하여 <m>i</m>열과 <m>j</m> 열을 맞바꾸어 행렬식을 취하면 <m>-\det(A)</m>이다.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <proof>
+        <p>
+          스칼라 성분 행렬에 대한 정의를 반복하여 증명할 수 있습니다. 
+        </p>
+      </proof>
+    </theorem>
+    
+  </subsection>
 
   <subsection xml:id="subsec-det-of-operator">
     <title>선형연산자의 행렬식</title>
     <p>
-      <m>n \times n</m>정사각행렬 <m>A</m>는 표준공간 <m>\mathbb{F}^n</m>에 정의된 선형연산자입니다. 사실, 유한차원 벡터공간 <m>V</m> 상의 선형연산자 <m>T: V \to V</m>에 대하여 행렬식을 정의할 수 있습니.
+      <m>n \times n</m>정사각행렬 <m>A</m>는 표준공간 <m>\mathbb{F}^n</m>에 정의된 선형연산자입니다. 사실, 유한차원 벡터공간 <m>V</m> 상의 선형연산자 <m>T: V \to V</m>에 대하여 행렬식을 정의할 수 있습니다.
     </p>
     <definition xml:id="def-det-of-operator">
       <title>선형연산자의 행렬식</title>
@@ -140,6 +273,7 @@
         </p>
       </statement>
     </definition>
+
     <proposition xml:id="prop-det-operator-well-defined">
       <title>선형연산자의 행렬식의 정의의 타당성</title>
       <statement>
@@ -153,25 +287,50 @@
         를 얻습니다. 따라서 두 행렬표현에서 계산된 행렬식은 같습니다.</p>
       </proof>
     </proposition>
-  </subsection>
-
-  <subsection xml:id="subsec-universality-of-determinant">
-    <title>다항식으로서의 행렬식과 그 보편성</title>
     <p>
-      <m>n \times n</m> 행렬 <m>A</m>의 성분을 <m>(a_{ij})_{1 \le i,j \le n }</m>이라 합시다. 행렬식 표현
-      <me>\det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) a_{\sigma(1) 1} \dots a_{\sigma(n) n}</me>
-      을 생각합시다. 위 식의 행렬 성분 <m>a_{ij}</m>는 스칼라로 체 <m>\mathbb{F}</m>의 원소이지만, 잠시 이를 새로운 변수 <m>t_{ij}</m>로 생각해 봅시다. 그 결과로 얻은 표현
-      <md>
-        <mrow>
-        \sum_{\sigma \in S_n} \text{sgn}(\sigma) t_{\sigma(1) 1} \dots t_{\sigma(n) n}
-        </mrow>
-      </md>
-      는 다변수 다항식으로 그 계수는 <em>정수</em>입니다. 이 단일 정수계수 다항식은 모든 체에 대하여 행렬식을 표현해 줍니다. 이를 행렬식의 보편성이라 합니다.
+      행렬식이 영이 되는지 여부는 가역성을 결정합니다.
+      <proposition xml:id="prop-nonsingular-operator">
+        <title>행렬식과 가역성</title>
+        <statement>
+          <p>
+            유한차원 벡터공간 <m>V</m>에 정의된 선형연산자 <m>T</m>에 대하여 다음 조건들은 동치입니다.
+          </p>
+          <ol>
+            <li>
+              <p>
+                <m>T</m>는 동형사상이다. (즉, 가역이다.)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\det(T) \not = 0</m>이다.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>T</m>는 전사이다.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>T</m>는 단사이다.
+              </p>
+            </li>
+          </ol>
+        </statement>
+        <proof>
+          <p>
+            <m>V</m>가 유한차원 벡터공간이므로, 선형연산자 <m>T</m>가 단사이면 전사이고, 전사이면 단사입니다. 따라서 조건 3과 4는 동치입니다. 또한, 동형사상은 단사이면서 전사인 선형변환으로 특징지어지므로, 조건 1, 3, 4가 모두 동치임을 알 수 있습니다. 네 조건이 모두 동치임을 보이기 위하여 조건 1이 조건 2를 함의하고, 그 다음 조건 2가 조건 4를 함의함을 보이겠습니다.
+          </p>
+          <p>
+            <q>조건 1 <m>\Rightarrow</m> 조건 2</q>: <m>T</m>가 가역이므로, <m>T^{-1}</m>가 존재합니다. 그러면 <m>\det(T) \det(T^{-1}) = \det(I) = 1</m>이므로, <m>\det(T)</m>는 영이 될 수 없습니다.
+          </p>
+          <p>
+            <q>조건 2 <m>\Rightarrow</m> 조건 4</q>: 대우를 보입시다. 조건 4가 위배된다면 <m>Av=0</m>인 영이 아닌 벡터 <m>v</m>가 존재합니다. <m>v</m>를 첫 벡터로 포함하는 순서기저를 선택하여 <m>T</m>의 행렬표현을 얻으면, 첫 번째 열이 영벡터가 됩니다. 그러면 행렬식이 0이 되어 조건 2가 위배됩니다.
+          </p>
+        </proof>
+      </proposition>
     </p>
-    <p>
-      행렬식의 보편성에 의하여 행렬의 성분에 변수가 포함되어 있더라도 행렬식의 정의와 성질이 여전히 유효함을 확인할 수 있습니다. 예를 들어, 스칼라 <m>a,b,c</m>와 변수 <m>x</m>에 대하여 행렬 <m>A = \begin{pmatrix} a &amp; b \\ x &amp; c \end{pmatrix}</m>의 행렬식은 <m>\det(A) = ac - bx \in \mathbb{F}[x]</m>입니다. 
-    </p>
-
   </subsection>
 
   <subsection xml:id="03-02-charoly">
@@ -207,13 +366,13 @@
         <p>스칼라 <m>\lambda \in \mathbb{F}</m>가 선형변환 <m>T</m>의 고윳값이 될 필요충분조건은 특성다항식의 근, 즉 <m>p_T(\lambda) = 0</m>이 되는 것이다.</p>
       </statement>
       <proof>
-        <p><m>\lambda</m>가 고윳값일 필요충분조건은 <m>T(v) = \lambda v</m>를 만족하는 영이 아닌 벡터 <m>v</m>가 존재하는 것이다. 이는 식 <m>(\lambda I - T)(v) = 0</m>과 동치이며, 변환 <m>\lambda I - T</m>가 단사가 아님을 의미한다. 유한차원 공간에서 선형변환이 단사가 아닌 것은 그 행렬표현 <m>\lambda I - A</m>가 비가역인 것과 동치이며, 행렬이 비가역일 필요충분조건은 그 행렬식이 0인 것이다. 따라서 <m>\det(\lambda I - A) = p_T(\lambda) = 0</m>이다.</p>
+        <p><m>\lambda</m>가 고윳값일 필요충분조건은 <m>T(v) = \lambda v</m>를 만족하는 영이 아닌 벡터 <m>v</m>가 존재합니다. 이는 식 <m>(\lambda I - T)(v) = 0</m>과 동치이며, 변환 <m>\lambda I - T</m>가 단사가 아님을 의미합니다. 유한차원 공간에서 선형변환이 단사가 아닌 것은 그 행렬표현 <m>\lambda I - A</m>가 비가역인 것과 동치이며, 행렬이 비가역일 필요충분조건은 그 행렬식이 0인 것입니다. 따라서 <m>\det(\lambda I - A) = p_T(\lambda) = 0</m>입니다.</p>
       </proof>
     </theorem>
 
     <example xml:id="ex-eigenvalue">
       <title>특성다항식의 근과 고윳값</title>
-      <p><xref ref="ex-charpoly-calc"/>의 행렬 <m>A</m>에서 특성다항식 <m>p_A(x) = (x-2)(x-3)</m>의 근은 2와 3이다. 정리<xref ref="thm-eigenvalue-root"/>에 따라 행렬 <m>A</m>의 고윳값은 오직 2와 3뿐이다.</p>
+      <p><xref ref="ex-charpoly-calc"/>의 행렬 <m>A</m>에서 특성다항식 <m>p_A(x) = (x-2)(x-3)</m>의 근은 2와 3이다. <xref ref="thm-eigenvalue-root"/>에 따라 행렬 <m>A</m>의 고윳값은 오직 2와 3뿐이다.</p>
     </example>
   </subsection>
 
@@ -260,17 +419,17 @@
         <p>유한차원 벡터공간 <m>V</m> 상의 선형변환 <m>T</m>가 대각화 가능하면, 특성다항식 <m>p_T(x)</m>는 <m>\mathbb{F}</m> 위에서 일차식의 곱으로 완전히 분해되고, 각각의 고윳값에 대하여 기하적 중복도와 대수적 중복도가 정확히 일치한다.</p>
       </statement>
       <proof>
-        <p><m>T</m>가 대각화 가능하므로, 고유벡터들로만 구성된 <m>V</m>의 기저 <m>\beta</m>가 존재한다. 기저 <m>\beta</m>에 대한 <m>T</m>의 행렬표현 <m>A = [T]_\beta</m>는 대각행렬이며, 대각성분들은 고윳값 <m>\lambda_1, \dots, \lambda_n</m>이다.</p>
+        <p><m>T</m>가 대각화 가능하므로, 고유벡터들로만 구성된 <m>V</m>의 기저 <m>\beta</m>가 존재합니다. 기저 <m>\beta</m>에 대한 <m>T</m>의 행렬표현 <m>A = [T]_\beta</m>는 대각행렬이며, 대각성분들은 고윳값 <m>\lambda_1, \dots, \lambda_n</m>입니다.</p>
 
-        <p><m>A</m>의 특성다항식을 계산하면 <m>p_T(x) = \det(xI - A) = (x-\lambda_1)\dots(x-\lambda_n)</m>이다. 이는 특성다항식이 일차식의 곱으로 완전히 분해됨을 증명한다.</p>
+        <p><m>A</m>의 특성다항식을 계산하면 <m>p_T(x) = \det(xI - A) = (x-\lambda_1)\dots(x-\lambda_n)</m>입니다. 이는 특성다항식이 일차식의 곱으로 완전히 분해됨을 증명합니다.</p>
 
-        <p>동일한 고윳값 <m>\lambda</m>가 대각성분에 나타나는 횟수를 <m>m</m>이라 하면 이는 명백히 대수적 중복도이다. 행렬 <m>A</m>가 대각행렬이므로 변환 <m>\lambda I - T</m>의 행렬표현은 대각성분 중 <m>m</m>개가 0이고 나머지는 0이 아닌 대각행렬이 된다. 따라서 이 변환의 핵(고유공간 <m>E_\lambda</m>)의 차원은 정확히 <m>m</m>이 되어 기하적 중복도와 대수적 중복도가 일치한다.</p>
+        <p>동일한 고윳값 <m>\lambda</m>가 대각성분에 나타나는 횟수를 <m>m</m>이라 하면 이는 명백히 대수적 중복도입니다. 행렬 <m>A</m>가 대각행렬이므로 변환 <m>\lambda I - T</m>의 행렬표현은 대각성분 중 <m>m</m>개가 0이고 나머지는 0이 아닌 대각행렬이 됩니다. 따라서 이 변환의 핵(고유공간 <m>E_\lambda</m>)의 차원은 정확히 <m>m</m>이 되어 기하적 중복도와 대수적 중복도가 일치합니다.</p>
       </proof>
     </theorem>
 
     <example xml:id="ex-non-diagonalizable">
       <title>대각화 불가능한 행렬</title>
-      <p>명제<xref ref="prop-multiplicity-inequality"/>의 예제에서 본 행렬 <m>A = \begin{pmatrix} 2 &amp; 1 \\ 0 &amp; 2 \end{pmatrix}</m>는 고윳값 2에 대해 대수적 중복도는 2이지만 기하적 중복도는 1이었다. 두 중복도가 일치하지 않으므로 정리<xref ref="thm-diagonalization-condition"/>의 대각화 필요조건을 위반하며, 따라서 이 행렬은 대각화 불가능하다.</p>
+      <p><xref ref="prop-multiplicity-inequality"/>의 예제에서 본 행렬 <m>A = \begin{pmatrix} 2 &amp; 1 \\ 0 &amp; 2 \end{pmatrix}</m>는 고윳값 2에 대해 대수적 중복도는 2이지만 기하적 중복도는 1입니다. 두 중복도가 일치하지 않으므로 <xref ref="thm-diagonalization-condition"/>의 대각화 필요조건을 위반하며, 따라서 이 행렬은 대각화 불가능합니다.</p>
     </example>
   </subsection>
 
@@ -278,6 +437,13 @@
     <exercise xml:id="ex-03-02-bilinear-proof">
       <title>이중선형성 보이기</title>
       <p>체 <m>\mathbb{F}</m> 상의 벡터공간 <m>V_1 = \mathbb{F}^m</m>, <m>V_2 = \mathbb{F}^n</m>과 행렬 공간 <m>W = M_{m \times n}(\mathbb{F})</m>에 대하여, 함수 <m>f: V_1 \times V_2 \to W</m>를 <m>f(u, v) = u v^T</m> (단, <m>u, v</m>는 열벡터)로 정의하자. <m>f</m>가 일반화된 다중선형함수(이중선형함수)의 정의를 만족함을 증명하시오.</p>
+    </exercise>
+
+    <exercise xml:id="ex-03-02-row-operation-determinant">
+      <title>행렬식과 행 연산</title>
+      <statement>
+        <p><xref ref="prop-det-row-operation"/>를 엄밀히 증명하시오.</p>
+      </statement>
     </exercise>
 
     <exercise xml:id="ex-03-02-zero-eigenvalue">
@@ -292,7 +458,7 @@
 
     <exercise xml:id="ex-03-02-derivative-diagonalization">
       <title>미분연산자의 대각화 가능성</title>
-      <p>다항식 공간 <m>V = \mathbb{F}[x]_{\le 2}</m>에서 미분연산자 <m>D(p(x)) = p'(x)</m>의 기저 <m>\{1, x, x^2\}</m>에 대한 특성다항식을 구하고, 정리 <xref ref="thm-diagonalization-condition"/>을 바탕으로 <m>D</m>가 대각화 가능한지 판별하시오.</p>
+      <p>다항식 공간 <m>V = \mathbb{F}[x]_{\le 2}</m>에서 미분연산자 <m>D(p(x)) = p'(x)</m>의 기저 <m>\{1, x, x^2\}</m>에 대한 특성다항식을 구하고, <xref ref="thm-diagonalization-condition"/>을 바탕으로 <m>D</m>가 대각화 가능한지 판별하시오.</p>
     </exercise>
 
     <exercise xml:id="ex-03-02-triangular-determinant">
@@ -317,7 +483,7 @@
 
     <exercise xml:id="ex-03-02-block-triangular-charoly">
       <title>블록 상삼각행렬의 특성다항식</title>
-      <p><m>n \times n</m> 블록 상삼각행렬 <m>M = \begin{pmatrix} A &amp; B \\ 0 &amp; C \end{pmatrix}</m> (단, <m>A, C</m>는 각각 정사각행렬)이 주어졌을 때, <m>M</m>의 특성다항식이 <m>p_M(x) = p_A(x)p_C(x)</m>가 됨을 정리 <xref ref="thm-det-existence"/>의 존재성 부분을 바탕으로 엄밀하게 증명하시오.</p>
+      <p><m>n \times n</m> 블록 상삼각행렬 <m>M = \begin{pmatrix} A &amp; B \\ 0 &amp; C \end{pmatrix}</m> (단, <m>A, C</m>는 각각 정사각행렬)이 주어졌을 때, <m>M</m>의 특성다항식이 <m>p_M(x) = p_A(x)p_C(x)</m>가 됨을 <xref ref="thm-det-existence"/>의 존재성 부분을 바탕으로 엄밀하게 증명하시오.</p>
     </exercise>
 
     <exercise xml:id="ex-03-02-rotation-matrix-complex">
