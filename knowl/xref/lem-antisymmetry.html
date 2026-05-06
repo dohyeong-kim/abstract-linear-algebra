@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="lemma theorem-like"><h4 class="heading">
+<span class="type">보조정리</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">교대형식의 반대칭성.</span>
+</h4>
+<div class="para">
+<span class="process-math">\(D\)</span>가 교대형식이면, 임의의 두 인접한 인수의 자리를 바꿀 때 함수의 부호가 반대로 바뀐다. 즉, <span class="process-math">\(D(\dots, v_i, v_{i+1}, \dots) = -D(\dots, v_{i+1}, v_i, \dots)\)</span>가 성립한다.</div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">
+<span class="process-math">\(D\)</span>가 교대형식이고 다중선형임을 합시다. <span class="process-math">\(i\)</span>번째와 <span class="process-math">\(i+1\)</span>번째 인수에 벡터 <span class="process-math">\(v_i + v_{i+1}\)</span>을 대입합시다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 = D(\dots, v_i + v_{i+1}, v_i + v_{i+1}, \dots)
+\end{equation*}
+</div>
+<div class="para">다중선형성에 의해 우변을 전개하면 다음과 같습니다.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 = D(\dots, v_i, v_i, \dots) + D(\dots, v_i, v_{i+1}, \dots) + D(\dots, v_{i+1}, v_i, \dots) + D(\dots, v_{i+1}, v_{i+1}, \dots)
+\end{equation*}
+</div>
+<div class="para">교대형식의 정의에 의해 첫 번째 항과 네 번째 항은 0입니다. 따라서</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 = D(\dots, v_i, v_{i+1}, \dots) + D(\dots, v_{i+1}, v_i, \dots)
+\end{equation*}
+</div>
+<div class="para">이므로 <span class="process-math">\(D(\dots, v_i, v_{i+1}, \dots) = -D(\dots, v_{i+1}, v_i, \dots)\)</span>가 성립합니다.</div>
+</div></article></details><span class="incontext"><a class="internal" href="03-02-char.html#lem-antisymmetry">in-context</a></span>
+</body>
+</html>
