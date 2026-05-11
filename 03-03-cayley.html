@@ -96,15 +96,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
@@ -478,7 +478,7 @@ x_1 + 3x_2 &amp;= 5
 <span class="process-math">\(x_2\)</span>를 구하기 위해 두 번째 열을 <span class="process-math">\(b\)</span>로 바꾼 행렬 <span class="process-math">\(A_2 = \begin{pmatrix} 2 &amp; 5 \\ 1 &amp; 5 \end{pmatrix}\)</span>를 구성하면, <span class="process-math">\(\det(A_2) = 10 - 5 = 5\)</span>이다. 따라서 <span class="process-math">\(x_2 = 5/5 = 1\)</span>이다.</div></article></details></section><section class="subsection" id="03-03-01-cayley-hamilton"><h3 class="heading hide-type">
 <span class="type">소절</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="space"> </span><span class="title">케일리-해밀턴 정리</span>
 </h3>
-<div class="para" id="03-03-01-cayley-hamilton-2">모든 정사각행렬은 특정한 다항식 방정식의 해가 되며, 그 다항식은 바로 자기 자신의 특성다항식입니다. 증명 과정에서 특성다항식의 <span class="process-math">\(x\)</span>에 행렬 <span class="process-math">\(A\)</span>를 단순히 대입하는 행위는 대수적으로 정의되지 않음에 유의해야 합니다.</div>
+<div class="para" id="03-03-01-cayley-hamilton-2">모든 정사각행렬은 특정한 다항식 방정식의 해가 되며, 그 다항식은 바로 자기 자신의 특성다항식입니다. 증명 과정에서 특성다항식의 <span class="process-math">\(x\)</span>에 행렬 <span class="process-math">\(A\)</span>를 대입하는 행위는 스칼라를 대입하는 것과 다르며 이를 유의해야 합니다.</div>
 <article class="theorem theorem-like" id="thm-cayley-hamilton"><h4 class="heading">
 <span class="type">정리</span><span class="space"> </span><span class="codenumber">3.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">케일리-해밀턴 정리.</span>
 </h4>
@@ -489,6 +489,7 @@ x_1 + 3x_2 &amp;= 5
 p_A(A) = 0
 \end{equation*}
 </div>
+<div class="para">이다.</div>
 </div></article><details id="thm-cayley-hamilton-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="thm-cayley-hamilton-4-1">
 <div class="para">다항식을 성분으로 가지는 행렬 <span class="process-math">\(xI - A\)</span>를 합시다. 행렬식의 전개와 크라메르 공식에서 유도되는 수반행렬 항등식은 다항식 성분 위에서도 그대로 성립하므로 다음 등식을 세울 수 있습니다.</div>
 <div class="displaymath process-math">

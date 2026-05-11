@@ -96,15 +96,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <style>
 #01-vector-space-2-2-2 { counter-set: 01-vector-space-2-2-2 0; }
 #01-vector-space-2-2-2 > li::marker { content: ""counter(01-vector-space-2-2-2,decimal)"."; }
@@ -505,14 +505,14 @@ D(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) A_{\sigma(1) 1} \dots A_{\sigma(
 <span class="process-math">\(A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\)</span>의 행렬식을 계산하자. 열벡터 <span class="process-math">\(v_1 = a e_1 + c e_2, v_2 = b e_1 + d e_2\)</span>이다.</div>
 <div class="para" id="ex-2x2-det-3"><span class="process-math">\(\det(A) = \det(a e_1 + c e_2, b e_1 + d e_2)\)</span></div>
 <div class="para" id="ex-2x2-det-4"><span class="process-math">\(= ab \det(e_1, e_1) + ad \det(e_1, e_2) + cb \det(e_2, e_1) + cd \det(e_2, e_2)\)</span></div>
-<div class="para" id="ex-2x2-det-5">교대성에 의해 <span class="process-math">\(\det(e_1, e_1) = \det(e_2, e_2) = 0\)</span>이고, 반대칭성에 의해 <span class="process-math">\(\det(e_2, e_1) = -\det(e_1, e_2)\)</span>이다. 정규화에 의해 <span class="process-math">\(\det(e_1, e_2) = 1\)</span>이므로, <span class="process-math">\(\det(A) = ad - bc\)</span>이다.</div></article></details><article class="proposition theorem-like" id="prop-det-row-operation"><h4 class="heading">
-<span class="type">명제</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">행렬식과 행 연산.</span>
+<div class="para" id="ex-2x2-det-5">교대성에 의해 <span class="process-math">\(\det(e_1, e_1) = \det(e_2, e_2) = 0\)</span>이고, 반대칭성에 의해 <span class="process-math">\(\det(e_2, e_1) = -\det(e_1, e_2)\)</span>이다. 정규화에 의해 <span class="process-math">\(\det(e_1, e_2) = 1\)</span>이므로, <span class="process-math">\(\det(A) = ad - bc\)</span>이다.</div></article></details><article class="proposition theorem-like" id="prop-det-column-operation"><h4 class="heading">
+<span class="type">명제</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">행렬식과 열 연산.</span>
 </h4>
-<div class="para" id="prop-det-row-operation-2-1">행렬 <span class="process-math">\(A\in M_{n \times n}(\mathbb{F})\)</span>에 대하여, 다음이 성립한다.</div> <ul class="disc" id="prop-det-row-operation-2-2">
-<li id="prop-det-row-operation-2-2-1"><div class="para" id="prop-det-row-operation-2-2-1-1">행렬의 두 열을 교환하면 행렬식의 부호가 바뀐다.</div></li>
-<li id="prop-det-row-operation-2-2-2"><div class="para" id="prop-det-row-operation-2-2-2-1">행렬의 한 열에 스칼라를 곱하면 행렬식도 같은 스칼라로 곱해진다.</div></li>
-<li id="prop-det-row-operation-2-2-3"><div class="para" id="prop-det-row-operation-2-2-3-1">한 행에 다른 열의 스칼라배를 더해도 행렬식은 변하지 않는다.</div></li>
-</ul></article><details id="prop-det-row-operation-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="prop-det-row-operation-3-1">첫째 조건은 <a href="03-02-char.html#lem-antisymmetry" class="xref" data-knowl="./knowl/xref/lem-antisymmetry.html" data-reveal-label="Reveal" data-close-label="Close" title="보조정리 3.2.5: 교대형식의 반대칭성">보조정리 3.2.5</a>으로부터 얻습니다. 둘째 조건은 다중선형성에서 얻습니다. 셋째 조건은 다중선형성과 앞선 두 조건을 조합하여 얻을 수 있습니다. 연습문제: 정말 그런지 확인하십시오.</div></article></details><article class="definition definition-like" id="def-transpose"><h4 class="heading">
+<div class="para" id="prop-det-column-operation-2-1">행렬 <span class="process-math">\(A\in M_{n \times n}(\mathbb{F})\)</span>에 대하여, 다음이 성립한다.</div> <ul class="disc" id="prop-det-column-operation-2-2">
+<li id="prop-det-column-operation-2-2-1"><div class="para" id="prop-det-column-operation-2-2-1-1">행렬의 두 열을 교환하면 행렬식의 부호가 바뀐다.</div></li>
+<li id="prop-det-column-operation-2-2-2"><div class="para" id="prop-det-column-operation-2-2-2-1">행렬의 한 열에 스칼라를 곱하면 행렬식도 같은 스칼라로 곱해진다.</div></li>
+<li id="prop-det-column-operation-2-2-3"><div class="para" id="prop-det-column-operation-2-2-3-1">한 열에 다른 열의 스칼라배를 더해도 행렬식은 변하지 않는다.</div></li>
+</ul></article><details id="prop-det-column-operation-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">증명<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="prop-det-column-operation-3-1">첫째 조건은 <a href="03-02-char.html#lem-antisymmetry" class="xref" data-knowl="./knowl/xref/lem-antisymmetry.html" data-reveal-label="Reveal" data-close-label="Close" title="보조정리 3.2.5: 교대형식의 반대칭성">보조정리 3.2.5</a>으로부터 얻습니다. 둘째 조건은 다중선형성에서 얻습니다. 셋째 조건은 다중선형성과 앞선 두 조건을 조합하여 얻을 수 있습니다. 연습문제: 정말 그런지 확인하십시오.</div></article></details><article class="definition definition-like" id="def-transpose"><h4 class="heading">
 <span class="type">정의</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">전치.</span>
 </h4>
 <div class="para logical" id="def-transpose-2-1">
@@ -721,7 +721,7 @@ p_T(x) = \det\begin{pmatrix} (x-\lambda_0)I_k &amp; -B \\ 0 &amp; xI_{n-k} - C \
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">행렬식과 행 연산.</span>
 </h4>
 <div class="para" id="ex-03-02-row-operation-determinant-2-1">
-<a href="03-02-char.html#prop-det-row-operation" class="xref" data-knowl="./knowl/xref/prop-det-row-operation.html" data-reveal-label="Reveal" data-close-label="Close" title="명제 3.2.10: 행렬식과 행 연산">명제 3.2.10</a>를 엄밀히 증명하시오.</div></article><article class="exercise exercise-like" id="ex-03-02-zero-eigenvalue"><h4 class="heading">
+<a href="03-02-char.html#prop-det-column-operation" class="xref" data-knowl="./knowl/xref/prop-det-column-operation.html" data-reveal-label="Reveal" data-close-label="Close" title="명제 3.2.10: 행렬식과 열 연산">명제 3.2.10</a>를 엄밀히 증명하시오.</div></article><article class="exercise exercise-like" id="ex-03-02-zero-eigenvalue"><h4 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">비가역성과 영 고윳값.</span>
 </h4>
 <div class="para" id="ex-03-02-zero-eigenvalue-2">행렬 <span class="process-math">\(A\)</span>가 비가역일 필요충분조건은 스칼라 0이 <span class="process-math">\(A\)</span>의 고윳값이 되는 것임을 증명하시오.</div></article><article class="exercise exercise-like" id="ex-03-02-multiplicity-range"><h4 class="heading">
