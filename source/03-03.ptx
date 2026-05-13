@@ -322,10 +322,10 @@
     </exercise>
 
     <exercise xml:id="ex-minimal-polynomial-invertible">
-      <title>역행렬과 최소다항식</title>
+      <title>역행렬의 성분</title>
       <statement>
         <p>
-        케일리-해밀턴 정리를 활용하여, 역행렬이 존재하는 <m>n \times n</m> 정사각행렬 <m>A</m>의 역행렬을 차수가 <m>n-1</m> 이하인 <m>A</m>의 다항식 형태로 표현할 수 있음을 증명하시오.
+        행렬식이 <m>1</m>인 <m>n \times n</m> 정사각행렬 <m>A</m>에 대하여, 그 역행렬의 각 성분을 <m>A</m>의 성분에 대한 다항식 형태로 표현할 수 있음을 밝히고 그 차수가 <m>n-1</m> 이하임을 증명하시오.
         </p>
       </statement>
     </exercise>
@@ -343,7 +343,7 @@
       <title>최소다항식과 고윳값</title>
       <statement>
         <p>
-        어떤 행렬 <m>A</m>의 최소다항식이 <m>m_A(x) = x^2 - 5x + 6</m>으로 주어졌다. 인수 성질을 활용하여 이 행렬의 모든 고윳값을 확정하고 그 근거를 제시하시오.
+        <m>\mathbb F= \mathbb Q</m> 상에서 어떤 행렬 <m>A</m>의 최소다항식이 <m>m_A(x) = x^2 - 5x + 6</m>이라 하자. 인수 성질을 활용하여 이 행렬의 모든 고윳값을 확정하고 그 근거를 제시하시오.
         </p>
       </statement>
     </exercise>
