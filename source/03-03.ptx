@@ -361,7 +361,7 @@
       <title>블록 상삼각행렬의 최소다항식</title>
       <statement>
         <p>
-        블록 상삼각행렬 <m>M = \begin{pmatrix} A &amp; B \\ 0 &amp; C \end{pmatrix}</m>에 대하여, <m>M</m>의 최소다항식 <m>m_M(x)</m>가 대각 블록의 두 최소다항식의 곱 <m>m_A(x)m_C(x)</m>의 인수(약수)가 됨을 블록 행렬의 평가 성질을 통해 엄밀히 증명하시오.
+        블록 상삼각행렬 <m>M = \begin{pmatrix} A &amp; B \\ 0 &amp; C \end{pmatrix}</m>에 대하여, <m>M</m>의 최소다항식 <m>m_M(x)</m>가 대각 블록의 두 최소다항식의 곱 <m>m_A(x)m_C(x)</m>의 인수(약수)가 됨을 증명하시오.
         </p>
       </statement>
     </exercise>
@@ -370,7 +370,7 @@
       <title>직합 분해</title>
       <statement>
         <p>
-        임의의 선형변환 <m>T</m>에 대한 어떤 다항식 <m>f(x)</m>가 서로 공통인 인수를 가지지 않는 두 다항식의 곱 <m>f(x) = f_1(x)f_2(x)</m>로 인수분해된다고 하자. 다항식의 최대공약수 성질을 이용해 <m>a(x)f_1(x) + b(x)f_2(x) = 1</m>을 만족하는 <m>a(x), b(x)</m>가 존재함을 근거로, 변환의 덧셈 분해인 부분공간의 직합 <m>V = \ker(f_1(T)) \oplus \ker(f_2(T))</m>를 증명하시오.
+        선형변환 <m>T</m>의 특성다항식 <m>f(x)</m>가 서로 공통인 인수를 가지지 않는 두 다항식의 곱 <m>f(x) = f_1(x)f_2(x)</m>로 인수분해된다고 하자. 다항식의 최대공약수 성질을 이용해 <m>a(x)f_1(x) + b(x)f_2(x) = 1</m>을 만족하는 <m>a(x), b(x)</m>가 존재함을 근거로, 변환의 덧셈 분해인 부분공간의 직합 <m>V = \ker(f_1(T)) \oplus \ker(f_2(T))</m>를 증명하시오.
         </p>
       </statement>
     </exercise>
