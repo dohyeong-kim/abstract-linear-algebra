@@ -321,15 +321,6 @@
       </statement>
     </exercise>
 
-    <exercise xml:id="ex-minimal-polynomial-invertible">
-      <title>역행렬의 성분</title>
-      <statement>
-        <p>
-        행렬식이 <m>1</m>인 <m>n \times n</m> 정사각행렬 <m>A</m>에 대하여, 그 역행렬의 각 성분을 <m>A</m>의 성분에 대한 다항식 형태로 표현할 수 있음을 밝히고 그 차수가 <m>n-1</m> 이하임을 증명하시오.
-        </p>
-      </statement>
-    </exercise>
-
     <exercise xml:id="ex-similar-minimal-polynomial">
       <title>유사 행렬과 최소다항식</title>
       <statement>
