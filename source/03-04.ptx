@@ -105,7 +105,7 @@
       </statement>
       <proof>
         <p>
-          <m>q_i(x) = p_T(x) / (x-\lambda_i)^{m_i}</m>라 정의하자. 다항식 <m>q_1(x), \dots, q_k(x)</m>는 공통 인수를 가지지 않으므로 최대공약수가 1이다. 다항식 환의 베주 항등식에 의해 <m>\sum_{i=1}^k a_i(x)q_i(x) = 1</m>을 만족하는 다항식 <m>a_i(x)</m>들이 존재한다.
+          <m>q_i(x) = p_T(x) / (x-\lambda_i)^{m_i}</m>라 정의하자. 다항식 <m>q_1(x), \dots, q_k(x)</m>는 공통 인수를 가지지 않으므로 최대공약수가 1이다. 엄밀히 말하자면, <m>\sum_{i=1}^k a_i(x)q_i(x)</m>꼴의 다항식 집합(단, <m>a_i(x)</m>는 각 <m>i</m>에 대하여 임의의 다항식) <m>S</m>에 대하여 <xref ref="thm-poly-minimal-degree-theorem"/>를 적용하면 <m>1 \in S</m>를 얻는다. 즉, <m>\sum_{i=1}^k a_i(x)q_i(x) = 1</m>을 만족하는 다항식 <m>a_i(x)</m>들이 존재한다.
         </p>
         <p>
           여기에 선형변환 <m>T</m>를 대입하면 <m>I = \sum_{i=1}^k a_i(T)q_i(T)</m>이다. 임의의 <m>v \in V</m>에 대하여 <m>v = \sum_{i=1}^k a_i(T)q_i(T)(v)</m>로 분해된다. <m>v_i = a_i(T)q_i(T)(v)</m>라 두자.
@@ -123,10 +123,60 @@
       <title>소분해 정리의 응용</title>
       <statement>
         <p>
-          특성다항식이 <m>p_T(x) = (x-1)^2(x-2)</m>인 변환에 대하여, 공간 <m>V</m>는 고윳값 1에 대한 일반화된 고유공간 <m>K_1</m>과 고윳값 2에 대한 일반화된 고유공간 <m>K_2</m>(여기서는 대수적 중복도가 1이므로 일반 고유공간 <m>E_2</m>와 일치함)의 직합 <m>V = K_1 \oplus K_2</m>로 완벽하게 분리된다. <m>T</m>의 작용은 이 두 독립적인 블록 안에서의 작용으로 완전히 분해된다.
+          특성다항식이 <m>p_T(x) = (x-1)^2(x-2)</m>인 변환에 대하여, 공간 <m>V</m>는 고윳값 1에 대한 일반화된 고유공간 <m>K_1</m>과 고윳값 2에 대한 일반화된 고유공간 <m>K_2</m>(여기서는 대수적 중복도가 1이므로 일반 고유공간 <m>E_2</m>와 일치함)의 직합 <m>V = K_1 \oplus K_2</m>로 분리됩니다. <m>T</m>의 작용은 행렬로 나타내면 <m>3=2+1</m>에 해당하는 블록 형태가 됩니다.
         </p>
       </statement>
     </example>
+  </subsection>
+
+  <subsection xml:id="subsec-cyclic-basis-for-nilpotent-operators">
+    <title>순환 기저와 멱영 작용소</title>
+    <p>
+      멱영 작용소는 조르당 표준형의 핵심 구성 요소입니다. 이러한 작용소에 대한 순환 기저의 존재는 조르당 블록의 구조를 이해하는 데 필수적입니다.
+    </p>
+    <definition xml:id="def-cyclic-basis">
+      <title>순환기저</title>
+      <aside>
+        <p>순환기저:cyclic basis</p>
+      </aside>
+      <idx><h>순환기저</h></idx>
+      <statement>
+        <p>
+          <m>k</m>차원 벡터공간 <m>V</m>와, <m>V</m>상의 멱영작용소 <m>N</m>에 대하여 <term>순환기저</term>란 어떤 벡터 <m>v</m>가 생성하는 집합 <m>\{v, N(v), N^2(v), \dots, N^{k-1}(v)\}</m>이 <m>V</m>의 기저가 되는 것을 말한다.
+        </p>
+      </statement>
+    </definition>
+    <example xml:id="ex-cyclic-basis">
+      <title>순환기저의 예</title>
+      <statement>
+        <p>
+          <m>N = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}</m>인 경우, 벡터 <m>v = (1, 0)^T</m>에 대하여 <m>N(v) = (0, 1)^T</m>, <m>N^2(v) = (0, 0)^T</m>이므로 집합 <m>\{v, N(v)\}</m>는 <m>\mathbb{F}^2</m>의 기저를 이룹니다. 따라서 이 벡터는 멱영 작용소 <m>N</m>에 대한 순환기저를 생성합니다.
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="ex-without-cyclic-basis">
+      <title>순환 기저가 없는 경우</title>
+      <statement>
+        <p>
+          <m>N = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}</m>인 경우, 어떤 벡터 <m>v\neq 0</m>에 대해서도 <m>N(v) = 0</m>이므로 <m>\{v, N(v), N^2(v), \dots\} = \{v, 0, 0, \dots\}</m>는 1차원 공간을 생성할 뿐입니다. 따라서 이 멱영 작용소에는 순환기저가 존재하지 않습니다.
+        </p>
+      </statement>
+    </example>
+    
+    <theorem xml:id="thm-cyclic-basis-for-nilpotent-operators">
+      <title>멱영 작용소에 대한 순환 기저의 존재</title>
+      <statement>
+        <p>
+          유한차원 벡터공간 <m>V</m>와, <m>V</m>상의 멱영작용소 <m>N</m>에 대하여, <m>V</m>는 순환기저를 갖는 부분공간 <m>V_i \subset V</m>들이 적당히 존재하여 <m>N</m>-불변공간으로의 직합 분해 <m>V=\bigoplus_{i=1}^t V_i</m>를 이룬다.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          <m>V</m>의 차원에 대하여 귀납적으로 증명합시다. 1차원인 경우 자명하게 성립합니다. 일반적으로, <m>N</m>의 최소다항식이 <m>x^k</m>인 경우, <m>N^{k-1}v_0 \not 0</m>인 <m>v_0 \in V</m>를 택합니다. <m>V/\operatorname{span}(v_0)</m>에 대하여 귀납 가정을 적용합니다. <m>N</m>을 블록 행렬로 표현하여 대각블록 윗 부분을 소거합니다. 최소다항식이 <m>x^k</m>라는 것을 이용하면 <m>V</m>가 <m>N</m>-불변 부분공간들의 직합으로 분해됨을 보일 수 있습니다.
+        </p>
+      </proof>
+    </theorem>
   </subsection>
 
   <subsection xml:id="03-04-03-jordan-form">

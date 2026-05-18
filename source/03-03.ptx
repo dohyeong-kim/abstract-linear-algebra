@@ -277,7 +277,7 @@
       </p>
 
       <p>
-      반대로 <m>\lambda</m>가 <m>m_A(x)</m>의 근이라 가정하자. 명제 6에 의해 특성다항식은 최소다항식을 인수로 가지므로 <m>p_A(x) = q(x)m_A(x)</m>이다. 여기에 <m>\lambda</m>를 대입하면 <m>p_A(\lambda) = q(\lambda)m_A(\lambda) = 0</m>이 되어 <m>\lambda</m>는 특성다항식의 근이 된다.
+      반대로 <m>\lambda</m>가 <m>m_A(x)</m>의 근이라 가정하자. <xref ref="prop-minimal-divides"/>에 의해 특성다항식은 최소다항식을 인수로 가지므로 <m>p_A(x) = q(x)m_A(x)</m>이다. 여기에 <m>\lambda</m>를 대입하면 <m>p_A(\lambda) = q(\lambda)m_A(\lambda) = 0</m>이 되어 <m>\lambda</m>는 특성다항식의 근이 된다.
       </p>
     </proof>
     </theorem>
