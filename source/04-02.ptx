@@ -13,7 +13,7 @@
       <title>확장체</title>
       <statement>
         <p>
-          두 체 <m>\mathbb{F}</m>와 <m>\mathbb{K}</m>에 대하여, <m>\mathbb{F}</m>가 <m>\mathbb{K}</m>의 부분체일 때 <m>\mathbb{K}</m>를 <m>\mathbb{F}</m>의 확장체라 하고 기호로 <m>\mathbb{K}/\mathbb{F}</m>와 같이 표기한다. 이때 체 <m>\mathbb{K}</m>의 원소들끼리의 덧셈과, <m>\mathbb{F}</m>의 원소(스칼라)와 <m>\mathbb{K}</m>의 원소(벡터) 사이의 체의 곱셈 연산을 생각하면, 확장체 <m>\mathbb{K}</m>는 자연스럽게 기저체 <m>\mathbb{F}</m> 상의 벡터공간이 된다. 이 벡터공간의 차원을 <m>\mathbb{K}</m>의 <m>\mathbb{F}</m> 위에서의 차수라 부르며 <m>[\mathbb{K}:\mathbb{F}]</m>로 표기한다.
+          두 체 <m>\mathbb{F}</m>와 <m>\mathbb{K}</m>에 대하여, <m>\mathbb{F}</m>가 <m>\mathbb{K}</m>의 부분체일 때 <m>\mathbb{K}</m>를 <m>\mathbb{F}</m>의 확장체라 하며 기호로 <m>\mathbb{K}/\mathbb{F}</m>와 같이 표기합니다. 이때 체 <m>\mathbb{K}</m>의 원소들끼리의 덧셈과, <m>\mathbb{F}</m>의 원소(스칼라)와 <m>\mathbb{K}</m>의 원소(벡터) 사이의 체의 곱셈 연산을 생각하면, 확장체 <m>\mathbb{K}</m>는 자연스럽게 기저체 <m>\mathbb{F}</m> 상의 벡터공간이 됩니다. 이 벡터공간의 차원을 <m>\mathbb{K}</m>의 <m>\mathbb{F}</m> 위에서의 차수라 부르며 <m>[\mathbb{K}:\mathbb{F}]</m>로 표기합니다.
         </p>
       </statement>
     </definition>
@@ -22,17 +22,17 @@
       <title>확장체의 예시</title>
       <statement>
         <p>
-          우리가 가장 친숙하게 다루는 수 체계인 유리수체 <m>\mathbb{Q}</m>, 실수체 <m>\mathbb{R}</m>, 복소수체 <m>\mathbb{C}</m>는 훌륭한 확장체의 예시이다.
+          우리가 가장 친숙하게 다루는 수 체계인 유리수체 <m>\mathbb{Q}</m>, 실수체 <m>\mathbb{R}</m>, 복소수체 <m>\mathbb{C}</m>는 훌륭한 확장체의 예시입니다.
         </p>
         <ul>
           <li>
             <p>
-              <m>\mathbb{R}/\mathbb{Q}</m>: 실수체 <m>\mathbb{R}</m>은 유리수체 <m>\mathbb{Q}</m>의 확장체이다. <m>\mathbb{R}</m>을 <m>\mathbb{Q}</m> 상의 벡터공간으로 바라볼 때, 무수히 많은 무리수들의 선형독립성으로 인해 그 벡터공간의 차원 <m>[\mathbb{R}:\mathbb{Q}]</m>는 무한대가 된다.
+              <m>\mathbb{R}/\mathbb{Q}</m>: 실수체 <m>\mathbb{R}</m>은 유리수체 <m>\mathbb{Q}</m>의 확장체입니다. <m>\mathbb{R}</m>을 <m>\mathbb{Q}</m> 상의 벡터공간으로 바라볼 때, 무수히 많은 무리수들의 선형독립성으로 인해 그 벡터공간의 차원 <m>[\mathbb{R}:\mathbb{Q}]</m>는 무한대가 됩니다.
             </p>
           </li>
           <li>
             <p>
-              <m>\mathbb{C}/\mathbb{R}</m>: 복소수체 <m>\mathbb{C}</m>는 방정식 <m>x^2 + 1 = 0</m>의 근인 <m>i</m>를 추가하여 실수체 <m>\mathbb{R}</m>을 확장한 체이다. <m>\mathbb{C}</m>의 임의의 원소는 <m>a + bi</m> (<m>a, b \in \mathbb{R}</m>)로 유일하게 표현되므로, <m>\mathbb{C}</m>를 <m>\mathbb{R}</m> 상의 벡터공간으로 볼 때 기저는 <m>\{1, i\}</m>가 되며 그 차원 <m>[\mathbb{C}:\mathbb{R}]</m>은 정확히 2이다.
+              <m>\mathbb{C}/\mathbb{R}</m>: 복소수체 <m>\mathbb{C}</m>는 방정식 <m>x^2 + 1 = 0</m>의 근인 <m>i</m>를 추가하여 실수체 <m>\mathbb{R}</m>을 확장한 체입니다. <m>\mathbb{C}</m>의 임의의 원소는 <m>a + bi</m> (<m>a, b \in \mathbb{R}</m>)로 유일하게 표현되므로, <m>\mathbb{C}</m>를 <m>\mathbb{R}</m> 상의 벡터공간으로 볼 때 기저는 <m>\{1, i\}</m>가 되며 그 차원 <m>[\mathbb{C}:\mathbb{R}]</m>은 정확히 2입니다.
             </p>
           </li>
         </ul>
@@ -48,9 +48,9 @@
       <title>스칼라 확장</title>
       <statement>
         <p>
-          체 <m>\mathbb{F}</m>와 그 확장체 <m>\mathbb{K}</m>을 생각하자. 체 <m>\mathbb{K}</m>은 스스로가 <m>\mathbb{F}</m> 상의 벡터공간이기도 하다. 체 <m>\mathbb{F}</m> 상의 벡터공간 <m>V</m>가 주어졌을 때, 텐서곱을 이용하여 새로운 공간 <m>V_{\mathbb{K}} = \mathbb{K} \otimes_{\mathbb{F}} V</m>를 구성할 수 있다. 이 텐서곱 공간 <m>V_{\mathbb{K}}</m> 위에 새로운 스칼라 <m>k \in \mathbb{K}</m>에 대한 곱셈을 단일 텐서에 대하여 다음과 같이 정의한다.
+          체 <m>\mathbb{F}</m>와 그 확장체 <m>\mathbb{K}</m>을 생각합시다. 체 <m>\mathbb{K}</m>은 스스로가 <m>\mathbb{F}</m> 상의 벡터공간이기도 합니다. 체 <m>\mathbb{F}</m> 상의 벡터공간 <m>V</m>가 주어졌을 때, 텐서곱을 이용하여 새로운 공간 <m>V_{\mathbb{K}} = \mathbb{K} \otimes_{\mathbb{F}} V</m>를 구성할 수 있습니다. 이 텐서곱 공간 <m>V_{\mathbb{K}}</m> 위에 새로운 스칼라 <m>k \in \mathbb{K}</m>에 대한 곱셈을 단일 텐서에 대하여 다음과 같이 정의합니다.
           <me>k(c \otimes v) = (kc) \otimes v \quad (c \in \mathbb{K}, v \in V)</me>
-          이 스칼라 곱셈을 선형적으로 확장하면 <m>V_{\mathbb{K}}</m>은 체 <m>\mathbb{K}</m> 상의 벡터공간이 되며, 이를 <m>V</m>의 체 <m>\mathbb{K}</m>로의 스칼라 확장이라 한다.
+          이 스칼라 곱셈을 선형적으로 확장하면 <m>V_{\mathbb{K}}</m>은 체 <m>\mathbb{K}</m> 상의 벡터공간이 되며, 이를 <m>V</m>의 체 <m>\mathbb{K}</m>로의 스칼라 확장이라 합니다.
         </p>
       </statement>
     </definition>
@@ -81,7 +81,7 @@
       <title>다항식 공간의 스칼라 확장</title>  
       <statement>
         <p>
-          <m>\mathbb{F} = \mathbb{R}</m>, <m>\mathbb{K} = \mathbb{C}</m>라 하자. <m>V = \mathbb{R}[x]_{\le 2}</m>는 실수 계수를 가지는 2차 이하의 다항식 공간이다. 스칼라 확장 <m>\mathbb{C} \otimes_{\mathbb{R}} V</m>를 취하면, 기저 <m>\{1, x, x^2\}</m>은 집합 <m>\{1 \otimes 1, 1 \otimes x, 1 \otimes x^2\}</m>으로 대응되며 이는 <m>\mathbb{C}[x]_{\le 2}</m>의 복소수 기저와 완벽하게 식별된다. 즉, 실수 다항식 공간에 복소수 스칼라를 곱할 수 있는 권한을 부여하여 복소 다항식 공간을 얻어낸 것이다.
+          <m>\mathbb{F} = \mathbb{R}</m>, <m>\mathbb{K} = \mathbb{C}</m>라 합시다. <m>V = \mathbb{R}[x]_{\le 2}</m>는 실수 계수를 가지는 2차 이하의 다항식 공간입니다. 스칼라 확장 <m>\mathbb{C} \otimes_{\mathbb{R}} V</m>를 취하면, 기저 <m>\{1, x, x^2\}</m>은 집합 <m>\{1 \otimes 1, 1 \otimes x, 1 \otimes x^2\}</m>으로 대응되며 이는 <m>\mathbb{C}[x]_{\le 2}</m>의 복소수 기저와 완벽하게 식별됩니다. 즉, 실수 다항식 공간에 복소수 스칼라를 곱할 수 있는 권한을 부여하여 복소 다항식 공간을 얻어낸 것입니다.
         </p>
       </statement>
     </example>
@@ -92,31 +92,31 @@
   <title>선형변환의 확장</title>
   <p>
     스칼라 확장은 벡터공간뿐만 아니라 선형변환에도 자연스럽게 확장될 수 있습니다. 체 <m>\mathbb{F}</m> 상의 선형변환 <m>T: V \to W</m>가 주어졌을 때, 텐서곱을 이용하여 <m>\mathbb{K}</m>-선형변환 <m>T_{\mathbb{K}}: V_{\mathbb{K}} \to W_{\mathbb{K}}</m>를 다음과 같이 정의할 수 있습니다.
-      <me>T_{\mathbb{K}}(c \otimes v) = c \otimes T(v) \quad (c \in \mathbb{K}, v \in V)</me>
-      이 정의는 선형성에 의해 전체 공간으로 확장되며, 결과적으로 <m>T_{\mathbb{K}}</m>는 체 <m>\mathbb{K}</m> 상의 선형변환이 됩니다. 이 과정은 원래의 선형변환이 확장된 공간에서도 동일한 행위를 하도록 보장합니다.
+    <me>T_{\mathbb{K}}(c \otimes v) = c \otimes T(v) \quad (c \in \mathbb{K}, v \in V)</me>
+    이 정의는 선형성에 의해 전체 공간으로 확장되며, 결과적으로 <m>T_{\mathbb{K}}</m>는 체 <m>\mathbb{K}</m> 상의 선형변환이 됩니다. 이 과정은 원래의 선형변환이 확장된 공간에서도 동일한 행위를 하도록 보장합니다.
   </p>
+
   <proposition xml:id="prop-linear-map-space-scalar-extension">
     <title>선형변환 공간과 스칼라 확장의 가환성</title>
     <statement>
       <p>
-
         체 <m>\mathbb{F}</m> 상의 유한차원 벡터공간 <m>V, W</m>와 확장체 <m>\mathbb{K}</m>에 대하여, 다음 <m>\mathbb{K}</m>-벡터공간의 자연스러운 동형사상이 성립한다.
         <me>\mathbb{K} \otimes_{\mathbb{F}} \mathcal{L}_{\mathbb{F}}(V, W) \cong \mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</me>
-        즉, 선형변환 공간을 먼저 구성하고 스칼라를 나중에 확장하는 것과, 각각 스칼라 확장을 거친 공간들 사이에서 선형변환 공간을 새롭게 구성하는 것은 대수적으로 완전히 동일하다.
+        즉, 선형변환 공간을 먼저 구성하고 스칼라를 나중에 확장하는 것과, 각각 스칼라 확장을 거친 공간들 사이에서 선형변환 공간을 새롭게 구성하는 것은 대수적으로 동등하다.
       </p>
     </statement>
     <proof>
       <p>
-        사상 <m>B: \mathbb{K} \times \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</m>을 <m>B(c, T) = c T_{\mathbb{K}}</m>로 정의하자. 여기서 <m>T_{\mathbb{K}}: V_{\mathbb{K}} \to W_{\mathbb{K}}</m>은 <m>T_{\mathbb{K}}(a \otimes v) = (ca) \otimes T(v)</m>로 작용하는 <m>\mathbb{K}</m>-선형변환이다. 사상 <m>B</m>는 <m>c</m>와 <m>T</m> 각각에 대해 선형성을 가지므로 <m>\mathbb{F}</m>-쌍선형변환이다.
+        사상 <m>B: \mathbb{K} \times \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</m>을 <m>B(c, T) = c T_{\mathbb{K}}</m>로 정의합니다. 여기서 <m>T_{\mathbb{K}}: V_{\mathbb{K}} \to W_{\mathbb{K}}</m>은 <m>T_{\mathbb{K}}(a \otimes v) = (ca) \otimes T(v)</m>로 작용하는 <m>\mathbb{K}</m>-선형변환입니다. 사상 <m>B</m>는 <m>c</m>와 <m>T</m> 각각에 대해 선형성을 가지므로 <m>\mathbb{F}</m>-쌍선형변환입니다.
       </p>
       <p>
-        텐서곱의 보편성질에 의해, <m>\Phi(c \otimes T) = c T_{\mathbb{K}}</m>을 만족하는 <m>\mathbb{F}</m>-선형변환 <m>\Phi: \mathbb{K} \otimes_{\mathbb{F}} \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</m>이 유일하게 존재한다. 또한 임의의 스칼라 <m>k \in \mathbb{K}</m>에 대하여 <m>\Phi(k(c \otimes T)) = \Phi((kc) \otimes T) = (kc)T_{\mathbb{K}} = k(cT_{\mathbb{K}}) = k\Phi(c \otimes T)</m>가 성립하므로, 이 사상 <m>\Phi</m>는 사실 <m>\mathbb{K}</m>-선형변환이다.
+        텐서곱의 보편성질에 의해, <m>\Phi(c \otimes T) = c T_{\mathbb{K}}</m>을 만족하는 <m>\mathbb{F}</m>-선형변환 <m>\Phi: \mathbb{K} \otimes_{\mathbb{F}} \mathcal{L}_{\mathbb{F}}(V, W) \to \mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</m>이 유일하게 존재합니다. 또한 임의의 스칼라 <m>k \in \mathbb{K}</m>에 대하여 <m>\Phi(k(c \otimes T)) = \Phi((kc) \otimes T) = (kc)T_{\mathbb{K}} = k(cT_{\mathbb{K}}) = k\Phi(c \otimes T)</m>가 성립하므로, 이 사상 <m>\Phi</m>는 사실 <m>\mathbb{K}</m>-선형변환입니다.
       </p>
       <p>
-        <m>V</m>와 <m>W</m>의 <m>\mathbb{F}</m>-차원을 각각 <m>n, m</m>이라 하자. 양변의 <m>\mathbb{K}</m>-벡터공간으로서의 차원을 계산해 보면 모두 <m>nm</m>으로 동일하다.
+        <m>V</m>와 <m>W</m>의 <m>\mathbb{F}</m>-차원을 각각 <m>n, m</m>이라 합시다. 양변의 <m>\mathbb{K}</m>-벡터공간으로서의 차원을 계산해 보면 모두 <m>nm</m>으로 동일합니다.
       </p>
       <p>
-        <m>V</m>의 기저 <m>\{v_1, \dots, v_n\}</m>와 <m>W</m>의 기저 <m>\{w_1, \dots, w_m\}</m>에 대하여, <m>v_i</m>를 <m>w_j</m>로 보내고 나머지는 영벡터로 보내는 기본 선형변환 <m>E_{ji} \in \mathcal{L}_{\mathbb{F}}(V, W)</m>들을 생각하자. 사상 <m>\Phi</m>에 의해 <m>1 \otimes E_{ji}</m>는 기저 <m>1 \otimes v_k</m>를 <m>\delta_{ik} (1 \otimes w_j)</m>로 보내는 공역의 기본 <m>\mathbb{K}</m>-선형변환으로 매핑된다. 이 결과물들이 <m>\mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</m>의 <m>\mathbb{K}</m>-기저를 완벽하게 생성하므로 <m>\Phi</m>는 전사사상이며, 양변의 차원이 유한하고 동일하므로 전단사 동형사상이 된다.
+        <m>V</m>의 기저 <m>\{v_1, \dots, v_n\}</m>와 <m>W</m>의 기저 <m>\{w_1, \dots, w_m\}</m>에 대하여, <m>v_i</m>를 <m>w_j</m>로 보내고 나머지는 영벡터로 보내는 기본 선형변환 <m>E_{ji} \in \mathcal{L}_{\mathbb{F}}(V, W)</m>들을 생각합시다. 사상 <m>\Phi</m>에 의해 <m>1 \otimes E_{ji}</m>는 기저 <m>1 \otimes v_k</m>를 <m>\delta_{ik} (1 \otimes w_j)</m>로 보내는 공역의 기본 <m>\mathbb{K}</m>-선형변환으로 매핑됩니다. 이 결과물들이 <m>\mathcal{L}_{\mathbb{K}}(V_{\mathbb{K}}, W_{\mathbb{K}})</m>의 <m>\mathbb{K}</m>-기저를 완벽하게 생성하므로 <m>\Phi</m>는 전사사상이며, 양변의 차원이 유한하고 동일하므로 전단사 동형사상이 됩니다.
       </p>
     </proof>
   </proposition>
@@ -153,16 +153,17 @@
       <title>실수 구조로부터 원래 공간 복원</title>  
       <statement>
         <p>
-          복소 벡터공간 <m>W</m> 위에 실수 구조 <m>S: W \to W</m>가 존재하면, <m>W</m>의 고정점 공간 <m>W^S = \{w \in W \mid S(w) = w\}</m>는 <m>\mathbb{R}</m>-벡터공간을 이루며, 원래의 실수 벡터공간 <m>V</m>와 동형입니다.
+          복소 벡터공간 <m>W</m> 위에 실수 구조 <m>S: W \to W</m>가 존재하면, <m>W</m>의 고정점 공간 <m>W^S = \{w \in W \mid S(w) = w\}</m>는 <m>\mathbb{R}</m>-벡터공간을 이룬다. 이렇게 얻은 <m>V=W^S</m>에 대하여 <me>V_{\mathbb{C}} \cong W</me>인 동형사상이 존재하여, <m>\mathbb C</m>의 켤레 연산과 <m>S</m>이 대응된다.
         </p>
       </statement>
       <proof>
         <p>
-          실수 구조 <m>S</m>의 정의에 따라, 고정점 공간 <m>W^S</m>는 <m>\mathbb{R}</m>-선형 변환의 고정점 집합이므로 <m>\mathbb{R}</m>-벡터공간을 이룹니다. 또한, 스칼라 확장 과정에서 추가된 복소수 스칼라가 벡터공간의 구조에 영향을 미치지 않도록 설계되었기 때문에, <m>W^S</m>는 원래의 실수 벡터공간 <m>V</m>와 동형입니다. 구체적으로, <m>V</m>의 각 원소는 <m>V_{\mathbb C}</m>에서 고정점으로 나타나며, 이 대응은 선형적이고 전단사이므로 동형사상이 됩니다.
+          실수 구조 <m>S</m>의 정의에 따라, 고정점 공간 <m>W^S</m>는 <m>\mathbb{R}</m>-선형 변환의 고정점 집합이므로 <m>\mathbb{R}</m>-벡터공간을 이룹니다. 이제 <m>V = W^S</m>에 대하여, 사상 <m>\Phi: V_{\mathbb{C}} \to W</m>를 <m>\Phi(c \otimes v) = c v</m>로 정의합니다. 이 사상은 선형성에 의해 전체 공간으로 확장되며, <m>\Phi(\lambda (c \otimes v)) = \lambda \Phi(c \otimes v)</m>와 <m>\Phi((c_1 + c_2) \otimes v) = \Phi(c_1 \otimes v) + \Phi(c_2 \otimes v)</m>가 성립하므로 <m>\mathbb{C}</m>-선형변환입니다. 또한, <m>\Phi</m>는 전사사상입니다. 왜냐하면 임의의 <m>w \in W</m>에 대하여, <m>w + S(w)</m>는 <m>S</m>의 고정점이므로 <m>w + S(w) \in V</m>이고, <m>\Phi(1 \otimes (w + S(w))) = w + S(w)</m>이기 때문입니다. 마지막으로, <m>\Phi</m>의 커널이 자명하다는 것을 보여야 합니다. <m>\Phi(c \otimes v) = 0</m>이라면, <m>c v = 0</m>이므로 <m>c = 0</m>이거나 <m>v = 0</m>이어야 합니다. 따라서 <m>\Phi</m>는 단사사상입니다. 결론적으로, <m>\Phi</m>는 전단사 동형사상이 되어 <m>V_{\mathbb{C}} \cong W</m>가 성립합니다. 또한, <m>\Phi(\bar{c} \otimes v) = \bar{c} v = S(c v) = S(\Phi(c \otimes v))</m>이므로, <m>\mathbb{C}</m>의 켤레 연산과 <m>S</m>가 대응됩니다.
         </p>
       </proof>
     </proposition>
   </subsection>
+
   <exercises>
     <exercise xml:id="exercise-tensor-product-dimension">
       <title>텐서곱 공간의 차원</title>
