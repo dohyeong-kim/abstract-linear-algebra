@@ -146,6 +146,9 @@
       <statement>
         <p>
           복소 벡터공간 <m>\mathbb{C}^2</m>에서 <m>S(z_1, z_2) = (\bar{z}_2, \bar{z}_1)</m>로 정의된 변환이 켤레선형 대합인지 확인하여 실수 구조가 될 수 있는지 판별하시오.
+          <aside>
+            대합:involution
+          </aside>
         </p>
       </statement>
     </exercise>
