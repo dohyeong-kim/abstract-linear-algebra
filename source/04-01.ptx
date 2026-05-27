@@ -34,7 +34,7 @@
       <title>스칼라 곱셈과 텐서곱</title>
       <statement>
         <p>
-        스칼라 곱셈 사상 <m>B: \mathbb{F} \times V \to V</m>를 <m>B(c, v) = cv</m>로 정의하면 이는 쌍선형변환입니다. 보편성질에 의해 <m>\tilde{B}(c \otimes v) = cv</m>를 만족하는 유일한 선형변환 <m>\tilde{B}: \mathbb{F} \otimes V \to V</m>가 존재합니다.
+        스칼라 곱셈 사상 <m>\otimes: \mathbb{F} \times V \to V</m>를 <m>\otimes(c, v) = cv</m>로 정의하면 이는 쌍선형변환입니다. 어떤 벡터공간 <m>Z</m>와 쌍선형변환 <m>B: \mathbb{F} \times V \to Z</m>가 주어질 때, 보편성질이 요구하는 <m>\tilde{B}: V \to Z</m>가 유일하게 존재하는지 알아봅시다. 만약 그러한 <m>\tilde B</m>가 존재한다면, <m>\otimes(1,v)=v</m>와 <m>B=\tilde{B} \circ \otimes</m> 두 조건으로부터 <m>\tilde{B}(v) = \tilde{B}(\otimes(1, v)) = B(1, v)</m>가 되어야 합니다. 따라서 <m>\tilde{B}</m>가 존재한다면 반드시 <m>\tilde{B}(v) = B(1, v)</m>를 만족해야 합니다. 마침 <m>B</m>의 쌍선형성질에 의하여 <m>v \mapsto B(1,v)</m>가 선형사상이므로 원하던 <m>\tilde{B}</m>가 존재하며, 보편성질이 요구하는 유일성도 만족합니다. 따라서 스칼라 곱셈 사상은 텐서곱의 보편성질을 만족하는 쌍선형변환입니다. 간편하게 <m>\mathbb F \otimes V = V</m>로 표현합니다.
         </p>
       </statement>
       </example>
