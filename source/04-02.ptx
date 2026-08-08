@@ -190,7 +190,6 @@
       <statement>
         <p>
           복소 벡터공간 <m>\mathbb{C}^2</m>에서 <m>S(z_1, z_2) = (\bar{z}_2, \bar{z}_1)</m>로 정의된 변환이 켤레선형 대합인지 확인하여 실수 구조가 될 수 있는지 판별하시오.
-
         </p>
       </statement>
     </exercise>
@@ -245,7 +244,7 @@
       <title>실수 구조의 고정원소 공간</title>
       <statement>
         <p>
-          <m>\mathbb{C}^2</m> 상의 실수 구조 <m>S(z_1, z_2) = (i\bar{z}_2, -i\bar{z}_1)</m>에 대하여, 하강 정리에 등장하는 고정원소 공간 <m>V = \{w \in \mathbb{C}^2 \mid S(w) = w\}</m>의 <m>\mathbb{R}</m>-기저를 구체적으로 찾으시오.
+          <m>\mathbb{C}^2</m> 상의 실수 구조 <m>S(z_1, z_2) = (i\bar{z}_2, i\bar{z}_1)</m>에 대하여, 하강 정리에 등장하는 고정원소 공간 <m>V = \{w \in \mathbb{C}^2 \mid S(w) = w\}</m>의 <m>\mathbb{R}</m>-기저를 구체적으로 찾으시오.
         </p>
       </statement>
     </exercise>
